@@ -202,10 +202,9 @@ public final class DestructorTest {
             destructor.setPickupItems(true);
             destructor.setFilters(Set.of(asResource(STONE)));
 
-            helper.spawnItem(DIRT, pos.east());
-
             // Assert
             sequence
+                .thenExecute(() -> helper.spawnItem(DIRT, pos.east()))
                 .thenWaitUntil(() -> helper.assertItemEntityNotPresent(DIRT, pos.east(), 1))
                 .thenExecute(() -> helper.spawnItem(STONE, pos.east()))
                 .thenIdle(20)

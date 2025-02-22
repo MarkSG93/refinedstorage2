@@ -2,6 +2,7 @@ package com.refinedmods.refinedstorage.common;
 
 import com.refinedmods.refinedstorage.api.core.Action;
 import com.refinedmods.refinedstorage.api.network.Network;
+import com.refinedmods.refinedstorage.api.network.autocrafting.AutocraftingNetworkComponent;
 import com.refinedmods.refinedstorage.api.network.energy.EnergyNetworkComponent;
 import com.refinedmods.refinedstorage.api.network.node.NetworkNode;
 import com.refinedmods.refinedstorage.api.network.storage.StorageNetworkComponent;
@@ -22,9 +23,12 @@ import com.refinedmods.refinedstorage.common.support.network.AbstractBaseNetwork
 import com.refinedmods.refinedstorage.common.support.resource.FluidResource;
 import com.refinedmods.refinedstorage.common.support.resource.ItemResource;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import javax.annotation.Nullable;
@@ -38,11 +42,15 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.CraftingInput;
+import net.minecraft.world.level.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.phys.AABB;
+
+import static net.minecraft.world.item.Items.AIR;
 
 public final class GameTestUtil {
     public static final Blocks RSBLOCKS = Blocks.INSTANCE;
@@ -423,6 +431,26 @@ public final class GameTestUtil {
         }
     }
 
+    public static Runnable startAutocraftingTask(final GameTestHelper helper,
+                                                 final BlockPos pos,
+                                                 final ResourceAmount resource) {
+        return networkIsAvailable(helper, pos, network -> {
+            network.getComponent(AutocraftingNetworkComponent.class).startTask(
+                resource.resource(), resource.amount(), Actor.EMPTY, false);
+        });
+    }
+
+    public static void tickFurnace(final GameTestHelper helper,
+                                   final BlockPos pos,
+                                   final int amount) {
+        final AbstractFurnaceBlockEntity furnaceBlockEntity =
+            requireBlockEntity(helper, pos.below(), AbstractFurnaceBlockEntity.class);
+        for (int i = 0; i < amount; i++) {
+            AbstractFurnaceBlockEntity.serverTick(helper.getLevel(), pos.below(),
+                furnaceBlockEntity.getBlockState(), furnaceBlockEntity);
+        }
+    }
+
     public static ItemStack[] createStacks(final Item item, final int count, final int amount) {
         final ItemStack[] stacks = new ItemStack[amount];
         for (int i = 0; i < amount; i++) {
@@ -446,5 +474,14 @@ public final class GameTestUtil {
     public static ItemStack getItemAsDamaged(final ItemStack stack, final int damageValue) {
         stack.setDamageValue(damageValue);
         return stack;
+    }
+
+    public static CraftingInput.Positioned createCraftingMatrix(final List<Item> items,
+                                                                final List<Integer> itemIndices) {
+        final List<ItemStack> craftingMatrix = new ArrayList<>(Collections.nCopies(9, AIR.getDefaultInstance()));
+        for (final Integer index : itemIndices) {
+            craftingMatrix.set(index, items.get(index).getDefaultInstance());
+        }
+        return CraftingInput.ofPositioned(3, 3, craftingMatrix);
     }
 }
