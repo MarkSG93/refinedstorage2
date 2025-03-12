@@ -2,18 +2,40 @@
 :icon: crafting-grid.png
 :from: v0.3.0-alpha
 
-The {doctitle} is the same as a regular xref:grid.adoc[], but has a crafting inventory.
+The {doctitle} functions like a regular xref:grid.adoc[] but includes a crafting inventory.
 
-When an item is crafted, it won't just clear the crafting slots, but it'll try to retrieve the same items from the storage network again.
+== Controls
+
+Additional controls xref:grid.adoc#_controls[on top of the existing Grid controls]:
+
+[cols="1,1"]
+|===
+| Action | Description
+
+| **CTRL + X** | Clears the crafting matrix into the storage network. A separate keybinding allows clearing to the player inventory.
+| **CTRL + SHIFT on the crafting result slot** | Filters the {doctitle} view based on the items in the crafting matrix.
+|===
+
+== Crafting inventory restocking
+
+After crafting an item, the {doctitle} attempts to refill the crafting slots with the same items from the storage network.
+
+== Crafting inventory close behavior
+
+By default, items in the crafting inventory remain when closing and reopening the {doctitle}.
+
+The `craftingMatrixCloseBehavior` config option can be adjusted to clear the matrix to either the player inventory or the storage network upon closing.
 
 == Recipe transferring
 
-The {doctitle} integrates with link:https://minecraft.curseforge.com/projects/jei[JEI (Just Enough Items)] so the player can use recipe transferring.
+The {doctitle} integrates with various recipe viewer mods for seamless recipe transferring:
 
-Refined Storage will warn you when you don't have the required item present in your inventory, storage network or crafting matrix.
-Even with this warning, you can still transfer items.
+- xref:../integrations/just-enough-items.adoc#_recipe_transferring_in_the_crafting_grid[Just Enough Items]
+- xref:../integrations/roughly-enough-items.adoc#_recipe_transferring_in_the_crafting_grid[Roughly Enough Items]
+- xref:../integrations/emi.adoc#_recipe_transferring_in_the_crafting_grid[EMI]
 
-If you don't have some required items, but autocrafting is available for said items, you can press CTRL + CLICK to start autocrafting for said items.
-Note that you need a xref:../autocrafting/pattern.adoc[] configured for these items.
+include::../../partials/connections.adoc[]
+
+include::../../partials/redstone-mode.adoc[]
 
 include::../../partials/recoloring.adoc[]

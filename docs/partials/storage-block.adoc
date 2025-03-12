@@ -1,32 +1,21 @@
-The {doctitle} is a block that provides the system with storage.
-It is similar to the xref:../pages/storage/index.adoc#_storage_disks[storage disk], but can be placed in the world.
+The {doctitle} is a block that provides storage for the storage network.
 
-When breaking the {doctitle}, the items that it holds persist, so you won't lose any of your items.
+It functions like a xref:../pages/storage/index.adoc#_storage_disks[storage disk] but can be placed in the world.
 
-The {doctitle} won't despawn when dropped in the world.
+> Breaking the {doctitle} drops it with all stored resources intact.
 
-== Priority
+include::../partials/storage-filter.adoc[]
 
-A (negative or positive) priority can be chosen (where a higher priority gets higher precedence to place items in).
+include::../partials/access-mode.adoc[]
 
-== Allowlist and blocklist
+include::../partials/storage-priority.adoc[]
 
-There is also a allowlist and blocklist option to only allow or forbid some items from entering the {doctitle}.
-
-The allowlist or blocklist can be configured to be NBT or damage sensitive.
-
-== Mode
-
-The {doctitle} has support for the following modes:
-
-- Insert and extract (default)
-- Insert only
-- Extract only
+include::../partials/redstone-mode.adoc[]
 
 == Uncrafting
 
-Sneak and right click while holding the empty {doctitle} to retrieve the various parts back:
+Sneak and use an empty {doctitle} to retrieve its components:
 
-- The corresponding xref:../pages/storage/index.adoc#_storage_parts[Storage Part]
+- The corresponding xref:../pages/storage/index.adoc#_storage_parts[storage part]
 - xref:../pages/utility/basic-processor.adoc[]
 - xref:../pages/utility/machine-casing.adoc[]

@@ -2,9 +2,8 @@
 
 - xref:getting-started-with-autocrafting.adoc[]
 - xref:processing-recipes.adoc[]
-- xref:keeping-items-in-stock.adoc[]
+- xref:keeping-resources-in-stock.adoc[]
 - xref:fluid-autocrafting.adoc[]
-- xref:keeping-fluids-in-stock.adoc[]
 - xref:autocrafting-with-filled-buckets.adoc[]
 - xref:locking-and-unlocking.adoc[]
 - xref:pattern-grid.adoc[]
@@ -12,4 +11,3 @@
 - xref:crafter.adoc[]
 - xref:crafting-monitor.adoc[]
 - xref:crafter-manager.adoc[]
-- xref:processing-pattern-encoder.adoc[]

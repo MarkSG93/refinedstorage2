@@ -2,6 +2,4 @@
 :icon: quartz-enriched-iron.png
 :from: v0.3.0-alpha
 
-{doctitle} is like the name says, iron enriched with quartz.
-
-It is used in almost all the recipes in Refined Storage.
+include::../../partials/crafting-item.adoc[]

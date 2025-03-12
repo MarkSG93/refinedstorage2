@@ -2,35 +2,44 @@
 :icon: interface.png
 :from: v0.4.0-alpha
 
-The Interface is a block that acts as a combination of the xref:importer.adoc[] and the xref:exporter.adoc[].
-
-== Importing
-
-Let's talk about the difference between an xref:importer.adoc[] and the Interface for importing.
-
-The xref:importer.adoc[] needs to be connected to an inventory to import items or fluids.
-It has no internal inventory and you can't insert items directly to the xref:importer.adoc[.
-
-In comparison with the xref:importer.adoc[] the Interface has an internal inventory to receive items and import them (through piping, hoppers, etc).
-That internal inventory is accessible by opening the GUI and looking at the slots under "Interface Import").
-
-The Interface does NOT extract items from adjacent inventories automatically, you have to actually insert them in the Interface through piping, hoppers, etc.
+The Interface combines the functions of the xref:importer.adoc[] and xref:exporter.adoc[].
 
 == Exporting
 
-There is also an option for exporting items from the system.
-These items can be piped out through a piping system from another mod, hoppers, etc.
+The top row configures which resources are exported from the storage network to the _intermediate storage slots_ below.
 
-It can be configured to be NBT or damage sensitive.
+The bottom row contains the intermediate storage slots where exported resources are stored. These slots are accessible for extraction by external blocks.
 
-== Output configuration
+=== Fuzzy mode
 
-- Click an item in the export slots to configure that to be exported.
-- Use left or right click on the item to change the amount.
-- Use shift to clear the slot.
+Fuzzy mode, off by default, determines whether the filter considers additional attributes, such as a pickaxe’s damage value.
+
+== Importing
+
+The {doctitle} accepts resources from external blocks and places them in the intermediate storage slots. From there, they are instantly inserted into the storage network.
+
+> The {doctitle} does not extract resources from adjacent inventories automatically; you must insert them manually.
+
+== Differences from the Importer
+
+* The xref:importer.adoc[] must be connected to an external inventory, while the {doctitle} provides intermediate storage slots where external blocks can insert resources.
+* The xref:importer.adoc[] has no internal inventory and cannot receive resources directly.
+* The {doctitle} inserts resources instantly, while the xref:importer.adoc[]'s speed depends on upgrades.
+
+== Differences from the Exporter
+
+* The xref:exporter.adoc[] must be connected to an external inventory, whereas the {doctitle} exports to intermediate storage slots.
+* The {doctitle} instantly exports resources, while the xref:exporter.adoc[]'s speed depends on upgrades.
+
+== Interface acting as an External Storage source
+
+You may connect an xref:../storage/external-storage.adoc[] to an {doctitle}.
+
+At that point, the {doctitle} cannot extract resources from other {doctitle}s that are acting as an External Storage source.
+
+include::../../partials/redstone-mode.adoc[]
 
 == Applicable upgrades
 
-- xref:../upgrades/speed-upgrade.adoc[]
-- xref:../upgrades/stack-upgrade.adoc[]
-- xref:../upgrades/crafting-upgrade.adoc[]
+- xref:../upgrades/crafting-upgrade.adoc[] (1)
+* Starts an autocrafting task if the exported resource is missing.

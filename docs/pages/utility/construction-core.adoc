@@ -2,4 +2,4 @@
 :from: v0.3.0-alpha
 :icon: construction-core.png
 
-The {doctitle} is used in recipes for devices that turn resources from the storage network into resources in the world.
+include::../../partials/crafting-item.adoc[]

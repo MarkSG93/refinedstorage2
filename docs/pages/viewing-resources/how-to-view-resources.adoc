@@ -2,7 +2,7 @@
 
 == Grid
 
-You can use the xref:grid.adoc[], xref:crafting-grid.adoc[] or xref:fluid-grid.adoc[] to view resources in your network.
+You can use the xref:grid.adoc[] or xref:crafting-grid.adoc[] to view resources in your storage network.
 
 [#_wireless_access]
 == Wireless access

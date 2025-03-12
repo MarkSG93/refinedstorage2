@@ -2,22 +2,14 @@
 :from: v0.3.0-alpha
 :icon: external-storage.png
 
-The {doctitle} is a block that provides the storage network with storage of the inventory or fluid tank in front of the device.
+The {doctitle} provides the storage network with storage from the connected external inventory.
 
-== Priority
+include::../../partials/storage-filter.adoc[]
 
-A (negative or positive) priority can be chosen (where a higher priority gets higher precedence to place items in).
+include::../../partials/access-mode.adoc[]
 
-== Allowlist and blocklist
+include::../../partials/storage-priority.adoc[]
 
-There is also a allowlist and blocklist option to only allow or forbid some items or fluids from entering the connected inventory.
+include::../../partials/connections.adoc[]
 
-The allowlist or blocklist can be configured to be NBT or damage sensitive.
-
-== Mode
-
-The {doctitle} has support for the following modes:
-
-- Insert and extract (default)
-- Insert only
-- Extract only
+include::../../partials/redstone-mode.adoc[]

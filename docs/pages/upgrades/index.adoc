@@ -8,4 +8,3 @@
 - xref:regulator-upgrade.adoc[]
 - xref:fortune-upgrade.adoc[]
 - xref:silk-touch-upgrade.adoc[]
-- xref:interdimensional-upgrade.adoc[]

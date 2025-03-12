@@ -2,15 +2,29 @@
 :icon: destructor.png
 :from: v0.3.0-alpha
 
-The {doctitle} destroys blocks or fluids in front of it and puts the drops in the storage network.
+The {doctitle} destroys blocks in front of it and stores the drops in the storage network.
 
-The {doctitle} has the ability to only break certain blocks or fluids, with the allowlist and blocklist option.
-Said allowlist and blocklist can be NBT or damage sensitive.
+== Filter
 
-The {doctitle} can also pick up items in the world instead of destroying blocks.
+The top row of the {doctitle} configures which blocks can or cannot be destroyed.
+
+- By default, it operates in _blocklist_ mode, meaning blocks in the filter slots **will not** be destroyed. An empty blocklist allows breaking any block.
+- Switching to _allowlist_ mode makes it destroy **only** the listed blocks. If no blocks are set in allowlist mode, nothing will be destroyed.
+
+== Picking up items instead of breaking
+
+The {doctitle} can also pick up items in the world instead of breaking blocks.
 
 == Applicable upgrades
 
 - xref:../upgrades/speed-upgrade.adoc[]
+* Increases breaking speed.
 - xref:../upgrades/fortune-upgrade.adoc[]
+* Applies the fortune enchantment on a pickaxe when breaking blocks.
 - xref:../upgrades/silk-touch-upgrade.adoc[]
+* Picks up blocks as-is, like the silk touch enchantment on a pickaxe.
+
+include::../../partials/connections.adoc[]
+
+include::../../partials/redstone-mode.adoc[]
+

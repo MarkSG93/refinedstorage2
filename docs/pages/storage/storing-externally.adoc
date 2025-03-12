@@ -1,32 +1,34 @@
 = Storing externally
 
-So far you've used xref:index.adoc#_storage_disks[storage disks] or xref:index.adoc#_storage_blocks[storage blocks].
-What if you want to use a chest or another inventory as storage?
+So far, you've used xref:index.adoc#_storage_disks[storage disks] or xref:index.adoc#_storage_blocks[storage blocks] for storage.
+But what if you want to use a chest or another external inventory as storage in the storage network?
 
 == The External Storage
 
-Craft an xref:external-storage.adoc[] and connect it to an external inventory like a link:https://minecraft.gamepedia.com/Chest[Chest].
+Craft an xref:external-storage.adoc[] and connect it to an external inventory, such as a link:https://minecraft.gamepedia.com/Chest[Chest].
 
-If you now insert items, they will go in the inventory.
+Once connected, resources inserted into the storage network will be stored in the external inventory.
 
-You can also filter items that can enter the external inventory with the filter slots.
+You can also use filter slots to control which resources can enter the external inventory.
 
-== Supported storages
+== Supported Storages
 
-The xref:external-storage.adoc[] supports every block that is an inventory.
-Some examples:
+The xref:external-storage.adoc[] works with any block that functions as an inventory. Examples include:
 
 - link:https://minecraft.gamepedia.com/Chest[Chests]
 - Storage Drawers
-- Regular drawers
-- Drawer Controller
+- Regular Drawers
+- Drawer Controllers
 - Iron Chests
-- etc...
+- And more...
 
-== Using an External Storage alongside other storages
+== Prioritizing External Storage
 
-When you insert or extract an item from the storage network, Refined Storage will extract or insert from the storage with the highest priority first.
+When inserting or extracting resources, the storage network prioritizes storage with the **highest priority** first.
 
-Simply give a storage a higher priority than the other one, and Refined Storage will prioritize correctly.
+To control where resources go:
 
-If the storage is full, Refined Storage will attempt to insert or extract from the next available storage, with a lower priority.
+1. Assign a **higher priority** to the preferred storage.
+2. If the preferred storage is full, the network will attempt to use the next available storage with a lower priority.
+
+You may differentiate between the insert and extract priorities.

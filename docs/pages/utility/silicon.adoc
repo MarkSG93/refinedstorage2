@@ -2,6 +2,6 @@
 :icon: silicon.png
 :since: v0.3.0-alpha
 
-{doctitle} can be obtained by smelting quartz.
+include::../../partials/crafting-item.adoc[]
 
-This item has no use other than being used in crafting recipes.
+{doctitle} can be obtained by smelting Nether Quartz.

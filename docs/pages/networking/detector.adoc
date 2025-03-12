@@ -2,29 +2,24 @@
 :icon: detector.png
 :from: v0.3.0-alpha
 
-The {doctitle} is a block that emits a redstone signal if an item, or fluid count matches a given amount.
+The {doctitle} emits a redstone signal based on the amount of a specified resource in the storage network.
 
-It is also possible to be NBT or damage sensitive.
+== Filter
 
-== Types of criteria
+You can configure the resource and amount to monitor.
 
-[cols="1,1"]
-|===
-|Criteria|Explanation
+=== Fuzzy mode
 
-|<|Emits a signal when lower than the given amount
-|>|Emits a signal when higher than the given amount
-|=|Emits a signal when equal to the given amount
-|===
+Fuzzy mode, off by default, determines whether additional attributes, such as a pickaxe’s damage value, are considered.
 
-== Checking the total count in the storage
+== Mode
 
-When no item/fluid, is specified, the criteria won't care about the count of a specific item/fluid, but rather the count of all items/fluids, in the storage.
+The {doctitle} can emit a redstone signal under the following conditions:
 
-== Amounts in fluid mode
+- When the resource amount is **equal to** the set value
+- When the resource amount is **above** the set value
+- When the resource amount is **below** the set value
 
-When the {doctitle} is in fluid mode, the amount given is in millibuckets (mB).
-
-If you want to check for 1 bucket of a fluid, use 1000, not 1.
+include::../../partials/connections.adoc[]
 
 include::../../partials/recoloring.adoc[]

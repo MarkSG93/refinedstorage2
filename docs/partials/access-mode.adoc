@@ -1,0 +1,5 @@
+== Access mode
+
+- **Insert and extract** – The storage network can insert and extract resources.
+- **Insert only** – The storage network can only insert resources.
+- **Extract only** – The storage network can only extract resources.

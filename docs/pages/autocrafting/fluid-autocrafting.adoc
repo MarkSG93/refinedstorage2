@@ -1,7 +1,7 @@
 = Fluid autocrafting
 
 So far you've set up autocrafting for items.
-Since Refined Storage has support for xref:../storage/storing-fluids.adoc[storing fluids] as well, it speaks for itself that Refined Storage can also autocraft with fluids.
+Since Refined Storage has support for storing fluids as well, it speaks for itself that Refined Storage can also autocraft with fluids.
 
 Every autocrafting pattern that uses fluids is a processing pattern.
 If you forgot, a processing pattern is a xref:pattern.adoc[] that outputs items to an external inventory and expects an output back, as declared in the xref:pattern.adoc[].
@@ -9,7 +9,7 @@ If you forgot, a processing pattern is a xref:pattern.adoc[] that outputs items 
 With fluid autocrafting, you get the ability to make the xref:crafter.adoc[] output fluids (or items), and when the "result" fluid (or item) is back in the storage network, Refined Storage will detect the task and mark it as finished.
 
 This means that you can also declare fluids as an output in the processing pattern.
-It also means that you can request fluids from the xref:../viewing-resources/fluid-grid.adoc[].
+It also means that you can request fluids from the xref:../viewing-resources/grid.adoc[].
 
 You can mix fluid and item inputs/outputs freely.
 

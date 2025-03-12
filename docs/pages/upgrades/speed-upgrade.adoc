@@ -2,6 +2,13 @@
 :icon: speed-upgrade.png
 :from: v0.6.0-alpha
 
-The {doctitle} will increase the speed of the device that it is being inserted to.
+The {doctitle} increases the transfer speed of the device it is installed in.
 
-By using this upgrade, the amount of FE/t that this device draws will increase.
+It can be combined with a xref:stack-upgrade.adoc[] to increase the transfer amount per tick.
+
+== Applicable storage network devices
+
+- xref:../input-and-output/importer.adoc[] (4)
+- xref:../input-and-output/exporter.adoc[] (4)
+- xref:../input-and-output/constructor.adoc[] (4)
+- xref:../input-and-output/destructor.adoc[] (4)

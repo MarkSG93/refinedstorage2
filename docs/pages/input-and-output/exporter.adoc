@@ -2,17 +2,46 @@
 :icon: exporter.png
 :from: v0.3.0-alpha
 
-The {doctitle} extracts items or fluids from the storage network and inserts it in the inventory or tank in front of it.
+The {doctitle} extracts resources from the storage network and inserts them into a connected external inventory.
 
-Before being able to export anything, the player has to choose the items or fluids to export.
+> Ensure the {doctitle} is connected to the external inventory from the correct side, so it can access the desired slots for exporting.
 
-The chosen items can be configured to be NBT or damage sensitive.
+== Filter
 
-The {doctitle} should face the block it's exporting to in a way that the wanted slot or fluid tank is possible to reach from that side.
+In the top row of the {doctitle}, specify which resources should be exported. If no resources are set, the {doctitle} will not function.
+
+=== Fuzzy mode
+
+Fuzzy mode, off by default, determines whether the filter considers additional attributes, such as a pickaxe’s damage value.
+
+== Scheduling mode
+
+If multiple resources are set, the {doctitle} follows a scheduling mode to determine exporting order.
+
+=== Default
+
+Exports each resource in order, moving to the next only if the current one is unavailable.
+
+=== Round-robin
+
+Exports each resource in turn.
+
+=== Random
+
+Exports a random resource from the filter.
 
 == Applicable upgrades
 
-- xref:../upgrades/speed-upgrade.adoc[]
-- xref:../upgrades/stack-upgrade.adoc[]
-- xref:../upgrades/crafting-upgrade.adoc[]
-- xref:../upgrades/regulator-upgrade.adoc[]
+- xref:../upgrades/speed-upgrade.adoc[] (4)
+* Increases transfer speed.
+- xref:../upgrades/stack-upgrade.adoc[] (1)
+* Increases transfer amount per tick.
+- xref:../upgrades/crafting-upgrade.adoc[] (1)
+* Starts an autocrafting task if the exported resource is missing and space is available in the connected inventory.
+- xref:../upgrades/regulator-upgrade.adoc[] (4)
+* Maintains a maximum amount of a resource in the connected inventory.
+
+include::../../partials/connections.adoc[]
+
+include::../../partials/redstone-mode.adoc[]
+

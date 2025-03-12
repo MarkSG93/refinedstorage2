@@ -2,6 +2,8 @@
 :icon: silk-touch-upgrade.png
 :from: v1.2.0
 
-The {doctitle} makes the xref:../input-and-output/destructor.adoc[] use Silk Touch on the blocks that it is breaking.
+The {doctitle} allows the xref:../input-and-output/destructor.adoc[] to apply silk touch when breaking blocks.
 
-By using this upgrade, the amount of FE/t that this device draws will increase.
+== Applicable storage network devices
+
+- xref:../input-and-output/destructor.adoc[] (1)

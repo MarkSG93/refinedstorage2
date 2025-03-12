@@ -1,11 +1,8 @@
-A {doctitle} is an item where fluids from the storage system are stored on.
-It has to be put in a xref:../pages/storage/disk-drive.adoc[].
-
-The {doctitle} won't despawn when dropped in the world.
+Fluids in the storage network can be stored on a {doctitle}, which must be placed in a xref:../pages/storage/disk-drive.adoc[].
 
 == Uncrafting
 
-Sneak and right click while holding the empty {doctitle} to retrieve the various parts back:
+Sneak and use an empty {doctitle} to retrieve its components:
 
 - The corresponding xref:../pages/storage/index.adoc#_fluid_storage_parts[fluid storage part]
 - xref:../pages/storage/storage-housing.adoc[]

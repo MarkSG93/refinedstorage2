@@ -1,7 +1,6 @@
 = Storage
 
 - xref:storing-externally.adoc[]
-- xref:storing-fluids.adoc[]
 
 == Network devices
 

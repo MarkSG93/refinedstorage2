@@ -2,12 +2,23 @@
 :icon: regulator-upgrade.png
 :from: v1.8.3-beta
 
-The Regulator Upgrade is an upgrade that can be inserted into an xref:../input-and-output/exporter.adoc[] to keep certain items or fluids in stock in the connected inventory.
+The {doctitle} is an upgrade for the xref:../input-and-output/exporter.adoc[] and xref:../input-and-output/importer.adoc[] that maintains a set amount of resources in the connected inventory.
 
-It will try to keep the connected inventory stocked by using items or fluids from the storage network.
+Before inserting the {doctitle} into a device, configure the resource and amount to be stocked.
 
-As soon as the upgrade is inserted, you can right click on a filtered item or fluid in the xref:../input-and-output/exporter.adoc[] GUI to configure the amount to keep in stock.
+== Usage in an Exporter
 
-Additionally, the Regulator Upgrade can be combined with a xref:crafting-upgrade.adoc[] to start autocrafting tasks when the stock from the storage network runs out.
+When used in an xref:../input-and-output/exporter.adoc[], the {doctitle} ensures the connected inventory does not exceed the specified amount, only inserting more when necessary.
 
-By using this upgrade, the amount of FE/t that this device draws will increase.
+=== Autocrafting
+
+When combined with a xref:crafting-upgrade.adoc[], the {doctitle} can trigger autocrafting if the storage network runs out of stock.
+
+== Usage in an Importer
+
+When used in an xref:../input-and-output/importer.adoc[], the {doctitle} ensures the connected inventory does not drop below the specified amount, only extracting excess resources.
+
+== Applicable storage network devices
+
+- xref:../input-and-output/importer.adoc[] (4)
+- xref:../input-and-output/exporter.adoc[] (4)

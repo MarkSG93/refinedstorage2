@@ -1,1 +1,26 @@
 = Roughly Enough Items (REI)
+
+[#_recipe_transferring_in_the_crafting_grid]
+== Recipe transferring in the Crafting Grid
+
+Refined Storage will warn you when you don't have the required item present in your inventory, storage network or crafting matrix.
+Even with this warning, you can still transfer items.
+
+If you don't have some required items, but autocrafting is available for said items, you can press CTRL + CLICK to start autocrafting for said items.
+Note that you need a xref:../autocrafting/pattern.adoc[] configured for these items.
+
+== R/U key support
+blergh
+
+== Collapsible entries support
+blergh 2
+
+[#_recipe_viewer_synchronization]
+== Recipe viewer synchronization
+blergh
+
+== Exclusion zones
+blergh
+
+== Ghost ingredient dragging
+blergh

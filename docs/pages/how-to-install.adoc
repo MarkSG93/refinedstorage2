@@ -1,14 +1,12 @@
 = How to install
 
-Refined Storage is run using a modloader.
-The supported modloaders are **NeoForge and Fabric**.
+Refined Storage runs on a modloader, supporting **NeoForge and Fabric**.
 
-Installing Refined Storage is the same as for any other NeoForge or Fabric mod.
+Installing it follows the same process as any other NeoForge or Fabric mod.
 
 == Setting up NeoForge or Fabric
 
-You'll need a working NeoForge or Fabric instance to use Refined Storage.
-You can use launchers like MultiMC or even the vanilla launcher to do this.
+You'll need a working NeoForge or Fabric instance. Launchers like MultiMC or the vanilla launcher can set this up.
 
 == Downloading the mod
 
@@ -20,30 +18,28 @@ Download a Refined Storage `.jar` file for your Minecraft version and modloader 
 
 == Installing the mod
 
-Once you have the `.jar` file, place it in the `mods/` directory of your instance.
-You may have to start up your instance at least once so the modloader can autogenerate the `mods/` directory.
+Place the downloaded `.jar` file in your instance's `mods/` directory.
+If the folder doesn't exist, start your instance once to let the modloader create it.
 
 === Using the CurseForge App (and other launchers)
 
-When you're using the CurseForge App (and most other launchers), you can install Refined Storage in an instance with one click, without having to copy over `.jar` files.
+Most launchers, including the CurseForge App, allow one-click installation without manually copying `.jar` files.
 
 == Configuring the mod
 
-Changing the configuration isn't needed in most cases.
-However, you can change the configuration to suit your needs.
-The configuration file is located in the `config/` directory of your instance.
+Configuration isn't required in most cases, but you can adjust settings in the `config/` directory:
 
-- When using NeoForge: `config/refinedstorage-common.toml`
-- When using Fabric: `config/refinedstorage.toml`
+- **NeoForge**: `config/refinedstorage-common.toml`
+- **Fabric**: `config/refinedstorage.toml`
 
 [#_optional_dependencies]
 == Optional dependencies
 
-Refined Storage can work perfectly by itself without any additional mods, but it's helpful to install a few other mods alongside it.
+Refined Storage works on its own, but some additional mods improve the experience.
 
 === Integration with recipe viewers
 
-These mods will help you view the recipes of the various items and blocks in the mod.
+These mods help view recipes for items and blocks:
 
 - xref:integrations/just-enough-items.adoc[]
 - xref:integrations/roughly-enough-items.adoc[]
@@ -51,10 +47,7 @@ These mods will help you view the recipes of the various items and blocks in the
 
 === Energy generation
 
-Storage networks need energy to run.
-You'll need a mod that can generate energy.
-
-If you want to play with Refined Storage without requiring, customize your modpack and add recipes for the creative variants of the Refined Storage blocks and items.
+Storage networks require energy. Install a mod that generates energy or customize your modpack to allow creative energy options provided by Refined Storage.
 
 === Other integrations
 

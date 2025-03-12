@@ -7,6 +7,8 @@ It can take xref:../upgrades/speed-upgrade.adoc[speed upgrades] to increase the 
 
 With processing xref:pattern.adoc[patterns], the {doctitle} has to face the correct input side of the machine.
 
+The {doctitle} does _not_ transmit a network signal in the direction it's facing, with an exception for other {doctitle}s to allow for chaining.
+
 [#_chaining]
 == Chaining
 

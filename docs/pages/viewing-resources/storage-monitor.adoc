@@ -4,6 +4,8 @@
 
 The {doctitle} is a block that displays the current amount of a certain item or fluid in your storage system.
 
+The {doctitle} does _not_ transmit a network signal in the direction it's facing.
+
 == Configuration
 
 Use SHIFT + right click on the block to open a GUI to configure the item or fluid being displayed.

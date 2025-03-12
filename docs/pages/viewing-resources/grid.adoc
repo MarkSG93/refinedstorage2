@@ -6,10 +6,13 @@ The {doctitle} is a block that allows access to the resources stored in the stor
 
 You can insert and extract resources in the storage network within the {doctitle}.
 
-You can place the {doctitle} in any direction.
+You can place the {doctitle} in any direction, but the {doctitle} does _not_ transmit a network signal in the direction it's facing.
+
+[#_controls]
+== Controls
 
 [#_basic_controls]
-== Basic controls
+=== Basic controls
 
 [cols="1,1"]
 |===
@@ -23,7 +26,6 @@ You can place the {doctitle} in any direction.
 | Right-clicking with a resource container in hand in the {doctitle} | Empties the resource container into the {doctitle}.
 | SHIFT clicking a resource in the player inventory | Inserts the resource into the {doctitle}.
 | CTRL + clicking with an empty hand in the {doctitle} | Forces the autocrafting request window to open *even if the resource is available*.
-| CTRL + X | Clears the crafting matrix in the xref:crafting-grid.adoc[] to the storage network.
 | Right click on search bar | Clears the search query.
 | Tab | Selects the search bar when the {doctitle} isn't in autoselected mode.
 |===
@@ -69,9 +71,9 @@ The search box can be configured to synchronize with the recipe viewer search bo
 
 Read more:
 
-- xref:../integrations/just-enough-items.adoc[]
-- xref:../integrations/roughly-enough-items.adoc[]
-- xref:../integrations/emi.adoc[]
+- xref:../integrations/just-enough-items.adoc#_recipe_viewer_synchronization[Just Enough Items]
+- xref:../integrations/roughly-enough-items.adoc#_recipe_viewer_synchronization[Roughly Enough Items]
+- xref:../integrations/emi.adoc#_recipe_viewer_synchronization[EMI]
 
 === Remember search query
 
@@ -96,6 +98,10 @@ The resources in a {doctitle} can be sorted in a ascending or descending manner 
 The {doctitle} can be configured to only show autocraftable resources or only show non-autocraftable resources.
 
 > The view type applies to all {doctitle}s and is stored on the client for each player.
+
+=== Resource type
+
+The {doctitle} can be configured to only show certain resource types. By default, all resource types are shown.
 
 === Size
 
@@ -135,5 +141,7 @@ By default, the {doctitle} doesn't sort when you are inserting and extracting re
 As soon as you stop pressing the SHIFT key, the view is sorted again.
 
 To disable this behavior, modify the `preventSortingWhileShiftIsDown` config option.
+
+include::../../partials/redstone-mode.adoc[]
 
 include::../../partials/recoloring.adoc[]

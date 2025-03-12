@@ -3,12 +3,8 @@
 - xref:quartz-enriched-iron.adoc[]
 - xref:block-of-quartz-enriched-iron.adoc[]
 - xref:silicon.adoc[]
-- xref:cut-silicon.adoc[]
 - xref:wrench.adoc[]
-- xref:cutting-tool.adoc[]
-- xref:filter.adoc[]
 - xref:machine-casing.adoc[]
-- xref:solderer.adoc[]
 
 == Raw Processors
 
@@ -17,6 +13,7 @@
 - xref:raw-improved-processor.adoc[]
 - xref:raw-advanced-processor.adoc[]
 
+[#_processors]
 == Processors
 
 - xref:basic-processor.adoc[]
@@ -27,8 +24,3 @@
 
 - xref:construction-core.adoc[]
 - xref:destruction-core.adoc[]
-
-== Covers
-
-- xref:cover.adoc[]
-- xref:hollow-cover.adoc[]

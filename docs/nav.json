@@ -15,11 +15,6 @@
     "icon": "bi bi-file-earmark-text"
   },
   {
-    "title": "Getting started",
-    "ref": "getting-started.adoc",
-    "icon": "bi-book"
-  },
-  {
     "title": "Design philosophy",
     "ref": "design-philosophy.adoc",
     "icon": "bi-info-circle"
@@ -28,6 +23,47 @@
     "title": "Need help?",
     "ref": "need-help.adoc",
     "icon": "bi-person-raised-hand"
+  },
+  {
+    "title": "Getting started",
+    "ref": "getting-started.adoc",
+    "icon": "bi-book"
+  },
+  {
+    "title": "Guides",
+    "ref": "guides.adoc",
+    "children": [
+      {
+        "ref": "viewing-resources/how-to-view-resources.adoc"
+      },
+      {
+        "ref": "input-and-output/getting-resources-in-and-out.adoc"
+      },
+      {
+        "ref": "storage/storing-externally.adoc"
+      },
+      {
+        "ref": "wireless-networking/networks-over-long-distances.adoc"
+      },
+      {
+        "ref": "autocrafting/getting-started-with-autocrafting.adoc"
+      },
+      {
+        "ref": "autocrafting/processing-recipes.adoc"
+      },
+      {
+        "ref": "autocrafting/keeping-resources-in-stock.adoc"
+      },
+      {
+        "ref": "autocrafting/fluid-autocrafting.adoc"
+      },
+      {
+        "ref": "autocrafting/autocrafting-with-filled-buckets.adoc"
+      },
+      {
+        "ref": "autocrafting/locking-and-unlocking.adoc"
+      }
+    ]
   },
   {
     "title": "Networking",
@@ -54,12 +90,6 @@
     "title": "Storage",
     "ref": "storage/index.adoc",
     "children": [
-      {
-        "ref": "storage/storing-externally.adoc"
-      },
-      {
-        "ref": "storage/storing-fluids.adoc"
-      },
       {
         "ref": "storage/disk-drive.adoc"
       },
@@ -160,16 +190,10 @@
     "ref": "viewing-resources/index.adoc",
     "children": [
       {
-        "ref": "viewing-resources/how-to-view-resources.adoc"
-      },
-      {
         "ref": "viewing-resources/grid.adoc"
       },
       {
         "ref": "viewing-resources/crafting-grid.adoc"
-      },
-      {
-        "ref": "viewing-resources/fluid-grid.adoc"
       },
       {
         "ref": "viewing-resources/storage-monitor.adoc"
@@ -183,9 +207,6 @@
     "title": "Input and output",
     "ref": "input-and-output/index.adoc",
     "children": [
-      {
-        "ref": "input-and-output/getting-items-in-and-out.adoc"
-      },
       {
         "ref": "input-and-output/importer.adoc"
       },
@@ -202,16 +223,7 @@
         "ref": "input-and-output/interface.adoc"
       },
       {
-        "ref": "input-and-output/fluid-interface.adoc"
-      },
-      {
-        "ref": "input-and-output/disk-manipulator.adoc"
-      },
-      {
-        "ref": "input-and-output/reader.adoc"
-      },
-      {
-        "ref": "input-and-output/writer.adoc"
+        "ref": "input-and-output/disk-interface.adoc"
       }
     ]
   },
@@ -219,9 +231,6 @@
     "title": "Wireless networking",
     "ref": "wireless-networking/index.adoc",
     "children": [
-      {
-        "ref": "wireless-networking/networks-over-long-distances.adoc"
-      },
       {
         "ref": "wireless-networking/wireless-transmitter.adoc"
       },
@@ -233,12 +242,6 @@
       },
       {
         "ref": "wireless-networking/creative-wireless-grid.adoc"
-      },
-      {
-        "ref": "wireless-networking/wireless-fluid-grid.adoc"
-      },
-      {
-        "ref": "wireless-networking/creative-wireless-fluid-grid.adoc"
       },
       {
         "ref": "wireless-networking/wireless-crafting-monitor.adoc"
@@ -262,27 +265,6 @@
     "ref": "autocrafting/index.adoc",
     "children": [
       {
-        "ref": "autocrafting/getting-started-with-autocrafting.adoc"
-      },
-      {
-        "ref": "autocrafting/processing-recipes.adoc"
-      },
-      {
-        "ref": "autocrafting/keeping-items-in-stock.adoc"
-      },
-      {
-        "ref": "autocrafting/fluid-autocrafting.adoc"
-      },
-      {
-        "ref": "autocrafting/keeping-fluids-in-stock.adoc"
-      },
-      {
-        "ref": "autocrafting/autocrafting-with-filled-buckets.adoc"
-      },
-      {
-        "ref": "autocrafting/locking-and-unlocking.adoc"
-      },
-      {
         "ref": "autocrafting/pattern-grid.adoc"
       },
       {
@@ -296,9 +278,6 @@
       },
       {
         "ref": "autocrafting/crafter-manager.adoc"
-      },
-      {
-        "ref": "autocrafting/processing-pattern-encoder.adoc"
       }
     ]
   },
@@ -341,9 +320,6 @@
       },
       {
         "ref": "upgrades/silk-touch-upgrade.adoc"
-      },
-      {
-        "ref": "upgrades/interdimensional-upgrade.adoc"
       }
     ]
   },
@@ -361,16 +337,7 @@
         "ref": "utility/silicon.adoc"
       },
       {
-        "ref": "utility/cut-silicon.adoc"
-      },
-      {
         "ref": "utility/wrench.adoc"
-      },
-      {
-        "ref": "utility/cutting-tool.adoc"
-      },
-      {
-        "ref": "utility/filter.adoc"
       },
       {
         "ref": "utility/processor-binding.adoc"
@@ -401,15 +368,6 @@
       },
       {
         "ref": "utility/machine-casing.adoc"
-      },
-      {
-        "ref": "utility/solderer.adoc"
-      },
-      {
-        "ref": "utility/cover.adoc"
-      },
-      {
-        "ref": "utility/hollow-cover.adoc"
       }
     ]
   },
@@ -428,30 +386,6 @@
       },
       {
         "ref": "integrations/fabric-ecosystem.adoc"
-      }
-    ]
-  },
-  {
-    "title": "Advanced usage",
-    "ref": "advanced-usage/index.adoc",
-    "children": [
-      {
-        "ref": "advanced-usage/commands.adoc"
-      },
-      {
-        "ref": "advanced-usage/profiling.adoc"
-      },
-      {
-        "ref": "advanced-usage/resource-packs.adoc"
-      },
-      {
-        "ref": "advanced-usage/translating-refined-storage.adoc"
-      },
-      {
-        "ref": "advanced-usage/using-development-builds.adoc"
-      },
-      {
-        "ref": "advanced-usage/using-the-api.adoc"
       }
     ]
   }

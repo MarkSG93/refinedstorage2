@@ -1,11 +1,8 @@
-A {doctitle} is an item where items from the storage network are stored on.
-It has to be put in a xref:../pages/storage/disk-drive.adoc[].
-
-The {doctitle} won't despawn when dropped in the world.
+Items in the storage network can be stored on a {doctitle}, which must be placed in a xref:../pages/storage/disk-drive.adoc[].
 
 == Uncrafting
 
-Sneak and right click while holding the empty {doctitle} to retrieve the various parts back:
+Sneak and use an empty {doctitle} to retrieve its components:
 
 - The corresponding xref:../pages/storage/index.adoc#_storage_parts[storage part]
 - xref:../pages/storage/storage-housing.adoc[]

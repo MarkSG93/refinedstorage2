@@ -1,0 +1,13 @@
+== Filter
+
+The top row of the {doctitle} allows you to configure which resources can or cannot be inserted.
+
+By default, the {doctitle} is in _blocklist_ mode, meaning resources in the filter slots _will not_ be allowed. An empty blocklist allows all resources.
+
+You can switch to _allowlist_ mode, where only listed resources will be allowed. If no resources are configured in allowlist mode, nothing will be allowed.
+
+> Changing the filters does not affect the contents of the storage or the contents available in the storage network.
+
+=== Fuzzy mode
+
+Fuzzy mode, off by default, determines whether the filter considers additional attributes, such as a pickaxe’s damage value.

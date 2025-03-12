@@ -6,4 +6,6 @@ The {doctitle} provides the storage network with an infinite amount of energy.
 
 It can only be obtained in creative mode.
 
+include::../../partials/redstone-mode.adoc[]
+
 include::../../partials/recoloring.adoc[]

@@ -1,0 +1,13 @@
+= Guides
+
+- xref:getting-started.adoc[]
+- xref:viewing-resources/how-to-view-resources.adoc[]
+- xref:input-and-output/getting-resources-in-and-out.adoc[]
+- xref:storage/storing-externally.adoc[]
+- xref:wireless-networking/networks-over-long-distances.adoc[]
+- xref:autocrafting/getting-started-with-autocrafting.adoc[]
+- xref:autocrafting/processing-recipes.adoc[]
+- xref:autocrafting/keeping-resources-in-stock.adoc[]
+- xref:autocrafting/fluid-autocrafting.adoc[]
+- xref:autocrafting/autocrafting-with-filled-buckets.adoc[]
+- xref:autocrafting/locking-and-unlocking.adoc[]

@@ -2,6 +2,6 @@
 :icon: storage-housing.png
 :from: v0.6.0-alpha
 
-A Storage Housing is a xref:index.adoc#_storage_disks[storage disk] or xref:index.adoc#_fluid_storage_disks[fluid storage disk] without any xref:index.adoc#_storage_parts[storage part] or xref:index.adoc#_fluid_storage_parts[fluid storage part] assigned to it.
+A Storage Housing is an empty xref:index.adoc#_storage_disks[storage disk] or xref:index.adoc#_fluid_storage_disks[fluid storage disk] without an assigned xref:index.adoc#_storage_parts[storage part] or xref:index.adoc#_fluid_storage_parts[fluid storage part].
 
-The player can craft another xref:index.adoc#_storage_disks[storage disk] or xref:index.adoc#_fluid_storage_disks[fluid storage disk] with this item by combining the Storage Housing with a xref:index.adoc#_storage_parts[storage part] or xref:index.adoc#_fluid_storage_parts[fluid storage part] respectively.
+It can be used to craft a new storage disk by combining it with the corresponding xref:index.adoc#_storage_parts[storage part] or xref:index.adoc#_fluid_storage_parts[fluid storage part].
