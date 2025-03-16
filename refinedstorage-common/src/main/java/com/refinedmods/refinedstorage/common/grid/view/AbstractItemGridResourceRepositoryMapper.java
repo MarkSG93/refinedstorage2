@@ -28,7 +28,7 @@ public abstract class AbstractItemGridResourceRepositoryMapper implements Resour
         final ItemResource itemResource = (ItemResource) resource;
         final Item item = itemResource.item();
         final ItemStack itemStack = itemResource.toItemStack();
-        final String name = item.getDescription().getString();
+        final String name = item.getName(itemStack).getString();
         final String modId = getModId(itemStack);
         final String modName = getModName(modId).orElse("");
         final Set<String> tags = getTags(item);

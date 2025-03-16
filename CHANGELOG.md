@@ -19,6 +19,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 -   Fixed crash when trying to open block in spectator mode.
 -   Fixed crash when trying to open Grid with EnderIO autocrafting pattern in network.
 -   Fixed External Storage making resources flicker when the connected inventory is causing neighbor updates.
+-   Fixed not being able to search for Water Bottles.
 
 ## [2.0.0-milestone.4.14] - 2025-02-23
 
