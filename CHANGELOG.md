@@ -10,6 +10,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Changed
 
 -   The External Storage now supports multiple resource types on a single connected inventory.
+-   Tooltips for upgrade slots are now ordered.
 
 ### Fixed
 

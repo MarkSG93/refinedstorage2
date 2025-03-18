@@ -6,7 +6,7 @@ import com.refinedmods.refinedstorage.common.api.upgrade.UpgradeRegistry;
 
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
 
@@ -23,8 +23,8 @@ public class UpgradeRegistryImpl implements UpgradeRegistry {
             @Override
             public DestinationBuilder add(final Item upgradeItem, final int maxAmount) {
                 final UpgradeMapping mapping = createMapping(destination, upgradeItem, maxAmount);
-                byDestination.computeIfAbsent(destination, key -> new HashSet<>()).add(mapping);
-                byUpgradeItem.computeIfAbsent(upgradeItem, key -> new HashSet<>()).add(mapping);
+                byDestination.computeIfAbsent(destination, key -> new LinkedHashSet<>()).add(mapping);
+                byUpgradeItem.computeIfAbsent(upgradeItem, key -> new LinkedHashSet<>()).add(mapping);
                 return this;
             }
         };
