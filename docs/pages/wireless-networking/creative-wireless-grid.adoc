@@ -2,6 +2,6 @@
 :icon: wireless-grid.png
 :from: v0.5.3-alpha
 
-The {doctitle} is the same as a regular xref:wireless-grid.adoc[] but has infinite energy.
+The {doctitle} is a xref:wireless-grid.adoc[] that does not consume energy.
 
 It can only be obtained in creative mode.

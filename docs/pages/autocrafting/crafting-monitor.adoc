@@ -28,4 +28,6 @@ The size of any {doctitle} can be configured as well:
 When choosing the stretched size, the {doctitle} will take up all the vertical screen space.
 This can be limited through the `maxRowsStretch` config option.
 
+include::../../partials/connections-all.adoc[]
+
 include::../../partials/recoloring.adoc[]

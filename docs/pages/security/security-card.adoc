@@ -2,6 +2,12 @@
 :from: v1.4.0-beta
 :icon: security-card.png
 
-The {doctitle} is an item that is bound to a player by right clicking.
+The {doctitle} is used to configure player permissions in a storage network.
 
-The {doctitle} has to be inserted into a xref:security-manager.adoc[], and can be configured from there as well.
+To set permissions, use the {doctitle} in your hand. If it isn’t bound to a player yet, it will automatically bind to you.
+
+> To bind it to another online player, click the player button at the top of the screen.
+
+Once configured, insert the {doctitle} into a xref:security-manager.adoc[].
+
+To reset all permissions, press SHIFT and use the {doctitle}.

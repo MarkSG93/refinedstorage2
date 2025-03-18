@@ -2,6 +2,13 @@
 :from: v0.8.13-beta
 :icon: network-card.png
 
-A {doctitle} is an item that stores the coordinates of a xref:network-receiver.adoc[].
+The {doctitle} enables wireless connections between storage networks by linking a xref:network-receiver.adoc[] to a xref:network-transmitter.adoc[].
 
-The player has to insert the {doctitle} in a xref:network-transmitter.adoc[].
+To use the {doctitle}:
+
+1. Right-click a xref:network-receiver.adoc[] to store its location.
+2. Insert the {doctitle} into a xref:network-transmitter.adoc[].
+
+For more details, see:
+
+- xref:networks-over-long-distances.adoc[]

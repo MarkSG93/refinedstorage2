@@ -1,0 +1,9 @@
+= Configuration Card
+:from: v2.0.0
+:icon: configuration-card.png
+
+The {doctitle} copies and applies configurations between storage network devices of the same type.
+
+- **Copy a configuration:** SHIFT + Right-click a device.
+- **Apply a configuration:** SHIFT + Right-click another device of the same type.
+- **Clear a stored configuration:** SHIFT + Right-click in the air.

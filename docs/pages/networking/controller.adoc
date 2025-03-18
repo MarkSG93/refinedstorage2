@@ -21,4 +21,6 @@ If the {doctitle} runs out of energy, the network will attempt to draw power fro
 
 include::../../partials/redstone-mode.adoc[]
 
+include::../../partials/connections-all.adoc[]
+
 include::../../partials/recoloring.adoc[]

@@ -1,0 +1,3 @@
+== Connection with other storage network devices
+
+The {doctitle} connects to all adjacent blocks except the one in the direction it is facing.

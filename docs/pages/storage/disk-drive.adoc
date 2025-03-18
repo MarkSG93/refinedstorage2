@@ -12,6 +12,8 @@ include::../../partials/access-mode.adoc[]
 
 include::../../partials/storage-priority.adoc[]
 
+include::../../partials/storage-void-excess-resources.adoc[]
+
 include::../../partials/connections.adoc[]
 
 include::../../partials/redstone-mode.adoc[]

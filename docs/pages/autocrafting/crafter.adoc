@@ -32,6 +32,8 @@ The (un)locking mechanism is used to block the {doctitle}, so it can't insert it
 
 See xref:locking-and-unlocking.adoc[] for more details.
 
+include::../../partials/connections-all.adoc[]
+
 include::../../partials/recoloring.adoc[]
 
 == Applicable upgrades

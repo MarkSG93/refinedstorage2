@@ -2,40 +2,44 @@
 :from: v1.4.0-beta
 :icon: security-manager.png
 
-The {doctitle} is a block that can store xref:security-card.adoc[security cards].
+The {doctitle} is used to lock down a storage network and define player permissions through inserted xref:security-card.adoc[Security Cards].
 
-From its GUI, you can configure what permissions each player (that is bound with a xref:security-card.adoc[]) has.
+Once placed, the entire storage network becomes restricted—**including for the player who placed it**.
+To restore access, insert appropriate xref:security-card.adoc[Security Cards] into the {doctitle}.
 
-Once the xref:security-card.adoc[] is inserted in the top slots, the permissions for that player will be restricted to the ones configured.
+> The player who placed the {doctitle} can always open its interface.
+> Server operators bypass all security restrictions.
 
-== Behavior
+== Multiple security managers
 
-When no xref:security-card.adoc[security cards] are active on the network, everyone has access to all permissions.
+You can place multiple {doctitle}s in the same network.
 
-Start inserting xref:security-card.adoc[security cards] to define permissions for players.
+If a player has multiple active xref:security-card.adoc[Security Cards], an action is denied if **any** {doctitle} blocks it.
 
-Players who have no configured xref:security-card.adoc[] are still able to do everything in the network (all permissions).
+== Fallback Security Card
 
-To configure a "global" set of permissions for all unconfigured players, configure a xref:security-card.adoc[] that isn't bound to a player and insert it in the {doctitle}.
+When a {doctitle} is active, network access is locked for all players by default.
 
-Operators (OPs) on a server have access to all permissions, overriding all network security.
+To define permissions for players **without** a matching xref:security-card.adoc[], insert a xref:fallback-security-card.adoc[].
 
-== The placer
-
-The placer of the {doctitle} will always be able to open it's GUI and change the security settings, regardless of permissions.
+> If multiple xref:fallback-security-card.adoc[Fallback Security Cards] are present, an action is denied if **any** of them blocks it.
 
 == Permissions
 
-[cols="1,1"]
+[cols="1,3"]
 |===
 |Type|Description
 
-|Insert|Inserting items to the network
-|Extract|Extracting items from the network
-|Autocrafting|Starting, cancelling and viewing crafting tasks
-|Modify|Opening block GUIs from the network
-|Build|Adding or removing devices to or from the network
-|Security|Ability to change security options
+|Insert|Whether the player can insert resources in a network.
+|Extract|Whether the player can extract resources from a network.
+|Autocrafting|Whether the player can start, cancel or view an autocrafting task.
+|Open|Whether the player can open network device GUIs.
+|Build|Whether the player can add or remove network devices.
+|Security|Whether the player can manage the security options for a network.
 |===
+
+include::../../partials/redstone-mode.adoc[]
+
+include::../../partials/connections-all.adoc[]
 
 include::../../partials/recoloring.adoc[]

@@ -200,6 +200,9 @@
       },
       {
         "ref": "viewing-resources/portable-grid.adoc"
+      },
+      {
+        "ref": "viewing-resources/creative-portable-grid.adoc"
       }
     ]
   },
@@ -290,6 +293,9 @@
       },
       {
         "ref": "security/security-card.adoc"
+      },
+      {
+        "ref": "security/fallback-security-card.adoc"
       }
     ]
   },
@@ -302,6 +308,9 @@
       },
       {
         "ref": "upgrades/range-upgrade.adoc"
+      },
+      {
+        "ref": "upgrades/creative-range-upgrade.adoc"
       },
       {
         "ref": "upgrades/speed-upgrade.adoc"
@@ -338,6 +347,9 @@
       },
       {
         "ref": "utility/wrench.adoc"
+      },
+      {
+        "ref": "utility/configuration-card.adoc"
       },
       {
         "ref": "utility/processor-binding.adoc"

@@ -4,4 +4,6 @@
 
 The {doctitle} increases the range of the xref:../wireless-networking/wireless-transmitter.adoc[].
 
-By using this upgrade, the amount of FE/t that this device draws will increase.
+== Applicable storage network devices
+
+- xref:../wireless-networking/wireless-transmitter.adoc[] (4)

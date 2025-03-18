@@ -144,4 +144,6 @@ To disable this behavior, modify the `preventSortingWhileShiftIsDown` config opt
 
 include::../../partials/redstone-mode.adoc[]
 
+include::../../partials/connections-all.adoc[]
+
 include::../../partials/recoloring.adoc[]

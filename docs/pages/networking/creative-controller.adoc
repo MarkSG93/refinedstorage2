@@ -8,4 +8,6 @@ It can only be obtained in creative mode.
 
 include::../../partials/redstone-mode.adoc[]
 
+include::../../partials/connections-all.adoc[]
+
 include::../../partials/recoloring.adoc[]

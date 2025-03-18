@@ -1,0 +1,7 @@
+= Creative Portable Grid
+:icon: creative-portable-grid.png
+:from: v1.4.5-beta
+
+The {doctitle} is a xref:portable-grid.adoc[] that does not consume energy.
+
+It can only be obtained in creative mode.

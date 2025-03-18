@@ -2,14 +2,19 @@
 :icon: network-transmitter.png
 :from: v0.8.13-beta
 
-A {doctitle} sends a network signal to a xref:network-receiver.adoc[] that is specified in the given xref:network-card.adoc[].
+In order to connect storage networks to each other wirelessly, a {doctitle} must be used on the transmitting end.
+It sends a wireless signal to a xref:network-receiver.adoc[] via a xref:network-card.adoc[].
 
-In order for the {doctitle} to work the xref:../networking/controller.adoc[] where the {doctitle} is connected to has to be chunkloaded.
+> In order for the {doctitle} to work reliably the {doctitle} has to be placed in a loaded chunk.
+
+If the xref:network-receiver.adoc[] cannot be reached, because it no longer exists or the chunk is not loaded, the {doctitle} will go into an error state and will keep retrying to connect with the xref:network-receiver.adoc[].
 
 The {doctitle} can work in the current dimension or across different dimensions.
 
+Read more:
+
+- xref:networks-over-long-distances.adoc[]
+
+include::../../partials/redstone-mode.adoc[]
+
 include::../../partials/recoloring.adoc[]
-
-== Using Refined Storage v1.7.x or v1.8.x?
-
-Cross dimensional functionality isn't available in this version.

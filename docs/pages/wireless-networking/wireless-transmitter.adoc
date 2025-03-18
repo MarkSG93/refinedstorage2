@@ -2,30 +2,29 @@
 :icon: wireless-transmitter.png
 :from: v0.6.0-alpha
 
-The {doctitle} is used to send signals to wireless network items in Refined Storage.
+To use wireless tools, the storage network must be accessible wirelessly by installing {doctitle}s in the network.
 
 == Range
 
-The default range is 16 blocks, but can be upgraded with xref:../upgrades/range-upgrade.adoc[range upgrades].
+The default range is 16 blocks but can be extended with xref:../upgrades/range-upgrade.adoc[range upgrades].
 
-=== Bigger range
+== Multiple {doctitle}s in a network
 
-Keep in mind, **you are not limited to 1 {doctitle}**!
+A storage network can have multiple {doctitle}s. Distribute them strategically, each upgraded with xref:../upgrades/range-upgrade.adoc[range upgrades], to maximize coverage.
 
-You can spread multiple around in your world, each maximally upgraded with xref:../upgrades/range-upgrade.adoc[range upgrades].
+== Efficient placement
 
-Note that every {doctitle} needs to be connected to the network through a xref:../networking/cable.adoc[] or xref:network-receiver.adoc[].
+Placing two {doctitle}s next to each other has minimal effect on range.
 
-== Placing transmitters efficiently
-
-Placing 2 {doctitle}s just next to each other will not do that much.
-
-The wireless signal starts from the {doctitle}'s position, so, if you place 2 transmitters next to each other you'll only have a net gain of 1 block.
-
-Instead, you have to spread your wireless transmitters around.
-
-include::../../partials/recoloring.adoc[]
+Since the wireless signal originates from the {doctitle}'s position, adjacent transmitters provide only a **1-block net gain**. To optimize range, spread transmitters across the network.
 
 == Applicable upgrades
 
-- xref:../upgrades/range-upgrade.adoc[]
+- xref:../upgrades/range-upgrade.adoc[] (4)
+* Increases the base range of the {doctitle}.
+- xref:../upgrades/creative-range-upgrade.adoc[] (1)
+* Grants infinite range to the {doctitle}.
+
+include::../../partials/redstone-mode.adoc[]
+
+include::../../partials/recoloring.adoc[]

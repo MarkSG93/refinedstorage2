@@ -20,6 +20,6 @@ The {doctitle} can emit a redstone signal under the following conditions:
 - When the resource amount is **above** the set value
 - When the resource amount is **below** the set value
 
-include::../../partials/connections.adoc[]
+include::../../partials/connections-all.adoc[]
 
 include::../../partials/recoloring.adoc[]
