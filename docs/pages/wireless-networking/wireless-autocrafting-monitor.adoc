@@ -1,0 +1,15 @@
+= Wireless Autocrafting Monitor
+:icon: wireless-autocrafting-monitor.png
+:from: v1.2.1
+
+The {doctitle} is a wireless version of the xref:../autocrafting/autocrafting-monitor.adoc[]
+
+To use the {doctitle}:
+
+- Bind it to a storage network by using it on any storage network device.
+- Ensure at least one xref:wireless-transmitter.adoc[] is installed in the storage network for connectivity.
+- Charge the {doctitle}, as it consumes energy when opening the view, canceling a task, or cancelling all tasks.
+
+== Keybinding
+
+An unbound keybinding is available to open the {doctitle}.

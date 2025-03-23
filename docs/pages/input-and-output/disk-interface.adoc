@@ -4,6 +4,8 @@
 
 The {doctitle} transfers resources between xref:../storage/index.adoc#_storage_disks[storage disks] and the storage network.
 
+> The {doctitle} was formerly known as "Disk Manipulator".
+
 == Transfer modes
 
 - **Insert into network** – Moves resources from the storage disks into the storage network.

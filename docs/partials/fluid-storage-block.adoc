@@ -1,16 +1,14 @@
-The {doctitle} is a block that provides storage for the storage network.
+The {doctitle} provides storage for the storage network.
 
 It functions like a xref:../pages/storage/index.adoc#_fluid_storage_disks[fluid storage disk] but can be placed in the world.
 
 > Breaking the {doctitle} drops it with all stored resources intact.
 
-include::../partials/storage-filter.adoc[]
+== Upgrading
 
-include::../partials/access-mode.adoc[]
+You can combine the {doctitle} with a higher tier xref:../pages/storage/index.adoc#_fluid_storage_parts[fluid storage part] to upgrade it.
 
-include::../partials/storage-priority.adoc[]
-
-include::../partials/redstone-mode.adoc[]
+The original xref:../pages/storage/index.adoc#_fluid_storage_parts[fluid storage part] will be returned.
 
 == Uncrafting
 
@@ -19,3 +17,11 @@ Sneak and use an empty {doctitle} to retrieve its components:
 - The corresponding xref:../pages/storage/index.adoc#_fluid_storage_parts[fluid storage part]
 - xref:../pages/utility/basic-processor.adoc[]
 - xref:../pages/utility/machine-casing.adoc[]
+
+include::../partials/storage-filter.adoc[]
+
+include::../partials/access-mode.adoc[]
+
+include::../partials/storage-priority.adoc[]
+
+include::../partials/redstone-mode.adoc[]

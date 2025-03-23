@@ -9,6 +9,11 @@ Even with this warning, you can still transfer items.
 If you don't have some required items, but autocrafting is available for said items, you can press CTRL + CLICK to start autocrafting for said items.
 Note that you need a xref:../autocrafting/pattern.adoc[] configured for these items.
 
+[#_recipe_transferring_in_the_pattern_grid]
+== Recipe transferring in the Pattern Grid
+
+tbd
+
 == R/U key support
 blergh
 

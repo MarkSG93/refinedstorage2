@@ -53,8 +53,8 @@
              th:each="article, articleStat : ${articles}"
              th:if="${articleStat.index < 3}">
             <div class="card-body">
-                <h5 class="card-title" th:text="${article.title}"></h5>
-                <p class="card-text" th:text="${article.description}"></p>
+                <h5 class="card-title" th:utext="${article.title}"></h5>
+                <p class="card-text" th:utext="${article.description}"></p>
                 <a class="btn btn-primary"
                    th:href="@{'./' + ${currentComponent.slug} + '/' + ${currentComponent.latest ? '' : currentComponent.version.friendlyName() + '/'} + ${article.url}}">
                     Read more <i class="bi bi-chevron-right"></i>

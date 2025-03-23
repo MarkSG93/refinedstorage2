@@ -1,0 +1,42 @@
+= Autocrafter Manager
+:icon: autocrafter-manager.png
+:from: v1.5.33
+
+The {doctitle} provides an overview of all xref:pattern.adoc[patterns] stored in connected xref:autocrafter.adoc[autocrafters].
+
+== Grouping
+
+Patterns are grouped based on the xref:autocrafter.adoc#_naming[name of the autocrafter] they belong to.
+
+xref:autocrafter.adoc#_visibility_to_the_autocrafter_manager[Autocrafters can be hidden] from the {doctitle} if desired.
+
+== View type
+
+You can filter visible Autocrafters by:
+
+- **Visible** (default) – Only shows autocrafters visible to the {doctitle}.
+- **All** – Shows all autocrafters.
+- **Not full** – Only shows autocrafters with available space.
+
+== Search mode
+
+The pattern search can be filtered by:
+
+- **All** (default)
+- **Pattern inputs**
+- **Pattern outputs**
+- xref:autocrafter.adoc#_naming[**Autocrafter names**]
+
+== Search box autoselected
+
+include::../../partials/search-box-autoselected.adoc[]
+
+== Size
+
+include::../../partials/size.adoc[]
+
+include::../../partials/redstone-mode.adoc[]
+
+include::../../partials/connections-all.adoc[]
+
+include::../../partials/recoloring.adoc[]

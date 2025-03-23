@@ -1,0 +1,5 @@
+= Quartz Enriched Copper
+:icon: quartz-enriched-copper.png
+:from: v2.0.0
+
+{doctitle} is used to craft xref:../networking/cable.adoc[].

@@ -59,9 +59,6 @@
       },
       {
         "ref": "autocrafting/autocrafting-with-filled-buckets.adoc"
-      },
-      {
-        "ref": "autocrafting/locking-and-unlocking.adoc"
       }
     ]
   },
@@ -241,16 +238,19 @@
         "ref": "wireless-networking/wireless-grid.adoc"
       },
       {
-        "ref": "wireless-networking/wireless-crafting-grid.adoc"
-      },
-      {
         "ref": "wireless-networking/creative-wireless-grid.adoc"
       },
       {
-        "ref": "wireless-networking/wireless-crafting-monitor.adoc"
+        "ref": "wireless-networking/wireless-crafting-grid.adoc"
       },
       {
-        "ref": "wireless-networking/creative-wireless-crafting-monitor.adoc"
+        "ref": "wireless-networking/creative-wireless-crafting-grid.adoc"
+      },
+      {
+        "ref": "wireless-networking/wireless-autocrafting-monitor.adoc"
+      },
+      {
+        "ref": "wireless-networking/creative-wireless-autocrafting-monitor.adoc"
       },
       {
         "ref": "wireless-networking/network-card.adoc"
@@ -274,13 +274,13 @@
         "ref": "autocrafting/pattern.adoc"
       },
       {
-        "ref": "autocrafting/crafter.adoc"
+        "ref": "autocrafting/autocrafter.adoc"
       },
       {
-        "ref": "autocrafting/crafting-monitor.adoc"
+        "ref": "autocrafting/autocrafting-monitor.adoc"
       },
       {
-        "ref": "autocrafting/crafter-manager.adoc"
+        "ref": "autocrafting/autocrafter-manager.adoc"
       }
     ]
   },
@@ -319,7 +319,7 @@
         "ref": "upgrades/stack-upgrade.adoc"
       },
       {
-        "ref": "upgrades/crafting-upgrade.adoc"
+        "ref": "upgrades/autocrafting-upgrade.adoc"
       },
       {
         "ref": "upgrades/regulator-upgrade.adoc"
@@ -340,7 +340,7 @@
         "ref": "utility/quartz-enriched-iron.adoc"
       },
       {
-        "ref": "utility/block-of-quartz-enriched-iron.adoc"
+        "ref": "utility/quartz-enriched-copper.adoc"
       },
       {
         "ref": "utility/silicon.adoc"
@@ -384,20 +384,35 @@
     ]
   },
   {
-    "title": "Integrations",
-    "ref": "integrations/index.adoc",
+    "title": "Addons",
+    "ref": "addons/index.adoc",
     "children": [
       {
-        "ref": "integrations/just-enough-items.adoc"
+        "ref": "addons/quartz-arsenal.adoc"
       },
       {
-        "ref": "integrations/roughly-enough-items.adoc"
+        "ref": "addons/quartz-accessories.adoc"
       },
       {
-        "ref": "integrations/emi.adoc"
+        "ref": "addons/just-enough-items.adoc"
       },
       {
-        "ref": "integrations/fabric-ecosystem.adoc"
+        "ref": "addons/roughly-enough-items.adoc"
+      },
+      {
+        "ref": "addons/emi.adoc"
+      },
+      {
+        "ref": "addons/mekanism.adoc"
+      },
+      {
+        "ref": "addons/curios.adoc"
+      },
+      {
+        "ref": "addons/trinkets.adoc"
+      },
+      {
+        "ref": "addons/fabric-ecosystem.adoc"
       }
     ]
   }

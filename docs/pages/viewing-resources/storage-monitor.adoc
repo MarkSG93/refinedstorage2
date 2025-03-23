@@ -25,6 +25,10 @@ Fuzzy mode, off by default, determines whether additional attributes, such as a 
 - **Extracting:** Left-click to extract a fluid. A bucket must be available in the storage network or your inventory.
 - **Inserting:** Right-click a fluid container to insert its contents.
 
+== Autocrafting
+
+If a resource is no longer available, you can start an autocrafting task for it from the {doctitle}.
+
 include::../../partials/redstone-mode.adoc[]
 
 include::../../partials/connections-uncolored.adoc[]

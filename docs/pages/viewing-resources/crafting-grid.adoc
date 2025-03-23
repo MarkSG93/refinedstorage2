@@ -30,11 +30,13 @@ The `craftingMatrixCloseBehavior` config option can be adjusted to clear the mat
 
 The {doctitle} integrates with various recipe viewer mods for seamless recipe transferring:
 
-- xref:../integrations/just-enough-items.adoc#_recipe_transferring_in_the_crafting_grid[Just Enough Items]
-- xref:../integrations/roughly-enough-items.adoc#_recipe_transferring_in_the_crafting_grid[Roughly Enough Items]
-- xref:../integrations/emi.adoc#_recipe_transferring_in_the_crafting_grid[EMI]
+- xref:../addons/just-enough-items.adoc#_recipe_transferring_in_the_crafting_grid[Just Enough Items]
+- xref:../addons/roughly-enough-items.adoc#_recipe_transferring_in_the_crafting_grid[Roughly Enough Items]
+- xref:../addons/emi.adoc#_recipe_transferring_in_the_crafting_grid[EMI]
 
-include::../../partials/connections.adoc[]
+If an item is not available for transferring, but autocrafting is available for it, you are able to trigger autocrafting for the missing items immediately from the recipe viewer.
+
+include::../../partials/connections-all.adoc[]
 
 include::../../partials/redstone-mode.adoc[]
 

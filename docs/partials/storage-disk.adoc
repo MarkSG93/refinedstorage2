@@ -1,5 +1,11 @@
 Items in the storage network can be stored on a {doctitle}, which must be placed in a xref:../pages/storage/disk-drive.adoc[].
 
+== Upgrading
+
+You can combine the {doctitle} with a higher tier xref:../pages/storage/index.adoc#_storage_parts[storage part] to upgrade it.
+
+The original xref:../pages/storage/index.adoc#_storage_parts[storage part] will be returned.
+
 == Uncrafting
 
 Sneak and use an empty {doctitle} to retrieve its components:

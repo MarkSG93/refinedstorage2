@@ -8,6 +8,14 @@ The Interface combines the functions of the xref:importer.adoc[] and xref:export
 
 The top row configures which resources are exported from the storage network to the _intermediate storage slots_ below.
 
+The last known state for each configured resource is displayed:
+
+- **None** – The resource was exported successfully or hasn't been exported yet.
+- **Resource missing** – The resource is not available in the storage network.
+- **Storage does not accept resource** - The resource could not be returned to the storage network as the storage network is full or does not accept the resource.
+- **Autocrafting started** – An autocrafting task was started for the missing resource (requires a xref:../upgrades/autocrafting-upgrade.adoc[]).
+- **Autocrafting detected missing resources** – The autocrafting task could not start due to missing ingredients.
+
 The bottom row contains the intermediate storage slots where exported resources are stored. These slots are accessible for extraction by external blocks.
 
 === Fuzzy mode
@@ -41,5 +49,5 @@ include::../../partials/redstone-mode.adoc[]
 
 == Applicable upgrades
 
-- xref:../upgrades/crafting-upgrade.adoc[] (1)
+- xref:../upgrades/autocrafting-upgrade.adoc[] (1)
 * Starts an autocrafting task if the exported resource is missing.

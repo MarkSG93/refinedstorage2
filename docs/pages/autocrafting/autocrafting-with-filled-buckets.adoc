@@ -1,15 +1,18 @@
 = Autocrafting with filled buckets
 
-Some crafting recipes may require a filled fluid bucket.
-To use fluids from your fluid storage to fill buckets, you can set up a xref:pattern.adoc#_processing[processing pattern] that has following inputs:
+Some recipes require filled fluid buckets. To automate this using fluid storage, create a xref:pattern.adoc#_processing_patterns[processing pattern] with:
+
+**Inputs:**
 
 - 1 empty bucket
-- 1000 mB of the fluid of your choice
+- 1 bucket of the desired fluid
 
-For the output:
+**Output:**
 
 - 1 filled bucket
 
-Put that in a xref:crafter.adoc[] that faces a bucket filling machine (link:https://teamcofh.com/docs/thermal-expansion/fluid-transposer/[that for example Thermal Expansion has]).
-Refined Storage will output the fluid from your fluid storage, and, an empty bucket.
-It is up to the external machine to fill it.
+Insert the pattern into a xref:autocrafter.adoc[] facing a bucket-filling machine (e.g., a link:https://teamcofh.com/docs/thermal-expansion/fluid-transposer/[Fluid Transposer from Thermal Expansion]).
+
+The autocrafter will output the fluid and the empty bucket. The external machine is responsible for filling the bucket.
+
+When the external machine is finished processing, get the filled bucket back into the storage network.

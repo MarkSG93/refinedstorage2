@@ -17,8 +17,8 @@
            th:each="article : ${articles}">
             <div class="d-flex gap-2 w-100 justify-content-between">
                 <div>
-                    <h6 class="mb-0" th:text="${article.title}"></h6>
-                    <p class="mb-0 opacity-75" th:text="${article.description}"></p>
+                    <h6 class="mb-0" th:utext="${article.title}"></h6>
+                    <p class="mb-0 opacity-75" th:utext="${article.description}"></p>
                 </div>
                 <small class="opacity-50 text-nowrap">
                     <i class="bi bi-clock"></i> <span th:text="${#temporals.format(article.date, 'yyyy-MM-dd')}"></span>

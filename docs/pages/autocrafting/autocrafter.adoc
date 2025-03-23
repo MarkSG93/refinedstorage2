@@ -1,0 +1,52 @@
+= Autocrafter
+:icon: autocrafter.png
+:from: v0.6.0-alpha
+
+The {doctitle} executes autocrafting tasks using xref:pattern.adoc[patterns] inserted into it or available in the storage network.
+
+== Processing patterns
+
+When a xref:pattern.adoc#_processing_patterns[processing pattern] is inserted, the {doctitle} attempts to insert the required input resources from the storage network into the connected machine.
+
+== Lock mode
+
+The {doctitle} can pause between insertions, based on the selected lock mode:
+
+- **Never** (default) – Continues inserting as long as possible.
+- **Lock until redstone pulse** – Waits for a redstone pulse.
+- **Lock until machine is empty** – Waits until the connected machine is empty (useful for _blocking mode_).
+- **Lock until all outputs are received** – Waits until a full output set is received (useful for _blocking mode_).
+- **Lock until high redstone signal** – Waits for a high signal.
+- **Lock until low redstone signal** – Waits for a low signal.
+
+[#_chaining]
+== Chaining
+
+If more than 9 xref:pattern.adoc#_processing_patterns[processing patterns] are needed for a single machine, you can chain {doctitle}s by placing them facing each other.
+
+> If you use a specific _lock mode_, you can only configure it at the head of the chain.
+
+== Priority
+
+If multiple xref:pattern.adoc[patterns] are available for a resource, the {doctitle} with the highest priority will be used.
+
+[#_visibility_to_the_autocrafter_manager]
+== Visibility to the Autocrafter Manager
+
+You can toggle whether the {doctitle} is visible in the xref:autocrafter-manager.adoc[].
+
+[#_naming]
+== Naming
+
+By default, the {doctitle} is named "{doctitle}".
+If connected to a machine, it will inherit the machine's name, unless overridden manually.
+This name is shown in the xref:autocrafter-manager.adoc[].
+
+== Applicable upgrades
+
+- xref:../upgrades/speed-upgrade.adoc[] (4)
+* Increases autocrafting speed.
+
+include::../../partials/connections-all.adoc[]
+
+include::../../partials/recoloring.adoc[]

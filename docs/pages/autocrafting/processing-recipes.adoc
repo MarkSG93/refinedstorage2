@@ -2,46 +2,44 @@
 
 == What are processing recipes?
 
-So far, in xref:getting-started-with-autocrafting.adoc[] you learnt how to automate regular crafting recipes.
+In xref:getting-started-with-autocrafting.adoc[], you learned how to automate regular crafting recipes.
 
-What if you want to automate the creation of items that don't involve a crafting recipe, like ores to ingots in a furnace?
+But what if you want to automate tasks that don’t use a crafting grid—like smelting iron ore into ingots?
+For this, you use xref:pattern.adoc#_processing_patterns[processing patterns].
 
-For this you use processing xref:pattern.adoc[patterns].
+== Creating processing patterns
 
-== Processing patterns
+Use the xref:pattern-grid.adoc[] in processing mode to create a xref:pattern.adoc#_processing_patterns[processing pattern].
+The interface allows defining up to 9 inputs and 9 expected outputs:
 
-You can create processing xref:pattern.adoc[patterns] in the xref:pattern-grid.adoc[] by toggling the "processing" checkbox.
-
-The GUI will change and it'll allow you to define up to 9 inputs and outputs.
-
-- Inputs is what Refined Storage will extract from your storage network.
-- Outputs are what Refined Storage expects back in the network when the item has processed.
+- **Inputs** – Resources pulled from the storage network and inserted into the machine.
+- **Outputs** – Resources expected back in the storage network after processing.
 
 == Example
 
-Let's say you want to automate link:https://minecraft.gamepedia.com/Iron_Ore[Iron Ore] to link:https://minecraft.gamepedia.com/Iron_Ingot[Iron Ingot].
+To automate the conversion of
+link:https://minecraft.gamepedia.com/Iron_Ore[Iron Ore] → link:https://minecraft.gamepedia.com/Iron_Ingot[Iron Ingot]:
 
-- In the input section you put 1 link:https://minecraft.gamepedia.com/Iron_Ore[Iron Ore].
-- In the output section you put 1 link:https://minecraft.gamepedia.com/Iron_Ingot[Iron Ingot].
+- Set **1 Iron Ore** as the input.
+- Set **1 Iron Ingot** as the output.
 
-== Inserting the pattern
+=== Alternatives
 
-Make a xref:crafter.adoc[] and let it face the machine in a way it can input it in the correct slot.
+For each input, you can define allowed alternatives using link:https://minecraft.gamepedia.com/Tag[Minecraft’s tag system].
 
-Insert the processing xref:pattern.adoc[] you just created in the xref:crafter.adoc[] facing the machine.
+== Using the pattern
 
-When you now request the item, Refined Storage will insert the inputs in the machine.
+1. Place a xref:autocrafter.adoc[] facing the machine correctly (e.g., furnace) so it can insert inputs into the correct slot.
+2. Insert the xref:pattern.adoc#_processing_patterns[processing pattern] into the autocrafter.
+3. When requested, the autocrafter will insert the inputs into the machine.
 
-You do need to get the item manually back in the storage network so Refined Storage knows that the item has been processed.
-You can use any device to get the item back in the storage network, like an xref:../input-and-output/interface.adoc[] or xref:../input-and-output/importer.adoc[].
+You must ensure the output is returned to the storage network—this is how the storage network knows that the task can be completed.
 
-== Allowed tags
+Use a device like:
 
-The allowed tags system in Refined Storage allows the player to decide which items or fluids can be used as alternatives when the original specified item or fluid isn't found in the storage network.
+- xref:../input-and-output/interface.adoc[]
+- xref:../input-and-output/importer.adoc[]
 
-These tags are retrieved from Minecraft's tag system.
-You can specify the allowed tags in the xref:pattern-grid.adoc[].
+== Chaining autocrafters
 
-== Chaining crafters
-
-You can xref:crafter.adoc#_chaining[chain crafters] to connect multiple xref:crafter.adoc[crafters] to the same machine.
+You can xref:autocrafter.adoc#_chaining[chain multiple autocrafters] to a single machine to handle more patterns for a single machine.

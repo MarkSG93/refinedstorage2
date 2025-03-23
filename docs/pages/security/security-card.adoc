@@ -11,3 +11,7 @@ To set permissions, use the {doctitle} in your hand. If it isn’t bound to a pl
 Once configured, insert the {doctitle} into a xref:security-manager.adoc[].
 
 To reset all permissions, press SHIFT and use the {doctitle}.
+
+== Size
+
+include::../../partials/size.adoc[]

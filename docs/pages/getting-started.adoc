@@ -15,7 +15,7 @@ In this guide, you will:
 
 Here are some key terms to understand before you start:
 
-[cols="1,2", options="header"]
+[cols="1,3", options="header"]
 |===
 | Term | Description
 | **Storage network** | A system of connected devices that store and manage items or fluids. Requires power from a xref:networking/controller.adoc[].

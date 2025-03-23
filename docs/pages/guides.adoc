@@ -10,4 +10,3 @@
 - xref:autocrafting/keeping-resources-in-stock.adoc[]
 - xref:autocrafting/fluid-autocrafting.adoc[]
 - xref:autocrafting/autocrafting-with-filled-buckets.adoc[]
-- xref:autocrafting/locking-and-unlocking.adoc[]

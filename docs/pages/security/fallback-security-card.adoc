@@ -7,3 +7,7 @@ When a xref:security-manager.adoc[] is added to a storage network, access is loc
 To define permissions for players that do not have a matching xref:security-card.adoc[], use a {doctitle}.
 
 Once configured, insert the {doctitle} into a xref:security-manager.adoc[].
+
+== Size
+
+include::../../partials/size.adoc[]

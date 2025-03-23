@@ -1,27 +1,12 @@
 = Fluid autocrafting
 
-So far you've set up autocrafting for items.
-Since Refined Storage has support for storing fluids as well, it speaks for itself that Refined Storage can also autocraft with fluids.
+In addition to items, the storage network also supports autocrafting with fluids.
 
-Every autocrafting pattern that uses fluids is a processing pattern.
-If you forgot, a processing pattern is a xref:pattern.adoc[] that outputs items to an external inventory and expects an output back, as declared in the xref:pattern.adoc[].
+All fluid-based recipes are created using xref:pattern.adoc#_processing_patterns[processing patterns]. These patterns send inputs to an external machine and expect defined outputs in return.
 
-With fluid autocrafting, you get the ability to make the xref:crafter.adoc[] output fluids (or items), and when the "result" fluid (or item) is back in the storage network, Refined Storage will detect the task and mark it as finished.
+You can use a fluid container to define the fluid as an input or output for the pattern. Alternatively, you can use xref:pattern-grid.adoc#_recipe_transferring[recipe viewer transferring integration].
 
-This means that you can also declare fluids as an output in the processing pattern.
-It also means that you can request fluids from the xref:../viewing-resources/grid.adoc[].
+With fluid autocrafting, the xref:autocrafter.adoc[] can handle both fluid and item inputs/outputs. Once the expected fluid or item is returned to the storage network, the task is marked as complete.
 
-You can mix fluid and item inputs/outputs freely.
-
-== Creation of the mixed pattern
-
-To make a mixed (fluid or item) processing pattern, toggle the xref:pattern-grid.adoc[] in fluid or item mode.
-
-You can then use link:https://minecraft.curseforge.com/projects/jei[JEI (Just Enough Items)] transfer to transfer item and fluid ingredients.
-You can also use a filled fluid container (like a bucket) to specify the fluid.
-
-Use left or right click on the fluid slot to modify the millibuckets (mB).
-
-== Other resources
-
-- link:https://www.youtube.com/watch?v=6v-e_NdLEnI[Demo video]
+You can freely mix fluid and item inputs and outputs in a single processing pattern.
+Fluids can also be requested directly from the xref:../viewing-resources/grid.adoc[].

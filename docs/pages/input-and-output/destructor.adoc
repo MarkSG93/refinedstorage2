@@ -17,11 +17,11 @@ The {doctitle} can also pick up items in the world instead of breaking blocks.
 
 == Applicable upgrades
 
-- xref:../upgrades/speed-upgrade.adoc[]
+- xref:../upgrades/speed-upgrade.adoc[] (4)
 * Increases breaking speed.
-- xref:../upgrades/fortune-upgrade.adoc[]
+- xref:../upgrades/fortune-upgrade.adoc[] (1)
 * Applies the fortune enchantment on a pickaxe when breaking blocks.
-- xref:../upgrades/silk-touch-upgrade.adoc[]
+- xref:../upgrades/silk-touch-upgrade.adoc[] (1)
 * Picks up blocks as-is, like the silk touch enchantment on a pickaxe.
 
 include::../../partials/connections.adoc[]

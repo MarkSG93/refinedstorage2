@@ -1,9 +1,10 @@
 = Utility
 
 - xref:quartz-enriched-iron.adoc[]
-- xref:block-of-quartz-enriched-iron.adoc[]
+- xref:quartz-enriched-copper.adoc[]
 - xref:silicon.adoc[]
 - xref:wrench.adoc[]
+- xref:configuration-card.adoc[]
 - xref:machine-casing.adoc[]
 
 == Raw Processors

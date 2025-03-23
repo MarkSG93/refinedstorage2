@@ -12,7 +12,7 @@ When used in an xref:../input-and-output/exporter.adoc[], the {doctitle} ensures
 
 === Autocrafting
 
-When combined with a xref:crafting-upgrade.adoc[], the {doctitle} can trigger autocrafting if the storage network runs out of stock.
+When combined with a xref:autocrafting-upgrade.adoc[], the {doctitle} can trigger autocrafting if the storage network runs out of stock.
 
 == Usage in an Importer
 

@@ -11,3 +11,4 @@ It can be combined with xref:speed-upgrade.adoc[speed upgrades] to increase the 
 - xref:../input-and-output/importer.adoc[] (1)
 - xref:../input-and-output/exporter.adoc[] (1)
 - xref:../input-and-output/constructor.adoc[] (1)
+- xref:../input-and-output/disk-interface.adoc[] (1)

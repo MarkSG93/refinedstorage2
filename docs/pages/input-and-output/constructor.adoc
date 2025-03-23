@@ -10,6 +10,13 @@ The {doctitle} places resources from the storage network into the block space in
 
 The top row of the {doctitle} specifies which resources should be placed. If no resources are set, it will not function.
 
+The last known state for each filtered resource is displayed:
+
+- **None** – The resource was placed successfully or hasn't been placed yet.
+- **Resource missing** – The resource is not available in the storage network.
+- **Autocrafting started** – An autocrafting task was started for the missing resource (requires a xref:../upgrades/autocrafting-upgrade.adoc[]).
+- **Autocrafting detected missing resources** – The autocrafting task could not start due to missing ingredients.
+
 === Fuzzy mode
 
 Fuzzy mode, off by default, determines whether the filter considers additional attributes, such as a pickaxe’s damage value.
@@ -46,7 +53,7 @@ The {doctitle} can drop items into the world instead of placing blocks.
 * Increases placement speed.
 - xref:../upgrades/stack-upgrade.adoc[] (1)
 * Drops stacks instead of individual items when in drop mode.
-- xref:../upgrades/crafting-upgrade.adoc[] (1)
+- xref:../upgrades/autocrafting-upgrade.adoc[] (1)
 * Starts an autocrafting task if the configured resource is missing and a block can be placed.
 
 include::../../partials/connections.adoc[]

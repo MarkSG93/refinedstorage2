@@ -10,6 +10,14 @@ The {doctitle} extracts resources from the storage network and inserts them into
 
 In the top row of the {doctitle}, specify which resources should be exported. If no resources are set, the {doctitle} will not function.
 
+The last known state for each filtered resource is displayed:
+
+- **None** – The resource was exported successfully or hasn't been exported yet.
+- **Destination does not accept** – The external inventory rejected the resource.
+- **Resource missing** – The resource is not available in the storage network.
+- **Autocrafting started** – An autocrafting task was started for the missing resource (requires a xref:../upgrades/autocrafting-upgrade.adoc[]).
+- **Autocrafting detected missing resources** – The autocrafting task could not start due to missing ingredients.
+
 === Fuzzy mode
 
 Fuzzy mode, off by default, determines whether the filter considers additional attributes, such as a pickaxe’s damage value.
@@ -36,7 +44,7 @@ Exports a random resource from the filter.
 * Increases transfer speed.
 - xref:../upgrades/stack-upgrade.adoc[] (1)
 * Increases transfer amount per tick.
-- xref:../upgrades/crafting-upgrade.adoc[] (1)
+- xref:../upgrades/autocrafting-upgrade.adoc[] (1)
 * Starts an autocrafting task if the exported resource is missing and space is available in the connected inventory.
 - xref:../upgrades/regulator-upgrade.adoc[] (4)
 * Maintains a maximum amount of a resource in the connected inventory.

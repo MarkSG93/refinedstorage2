@@ -37,13 +37,17 @@ Configuration isn't required in most cases, but you can adjust settings in the `
 
 Refined Storage works on its own, but some additional mods improve the experience.
 
+=== Official addons
+
+- xref:addons/quartz-accessories.adoc[]
+
 === Integration with recipe viewers
 
 These mods help view recipes for items and blocks:
 
-- xref:integrations/just-enough-items.adoc[]
-- xref:integrations/roughly-enough-items.adoc[]
-- xref:integrations/emi.adoc[]
+- xref:addons/just-enough-items.adoc[]
+- xref:addons/roughly-enough-items.adoc[]
+- xref:addons/emi.adoc[]
 
 === Energy generation
 
@@ -51,6 +55,6 @@ Storage networks require energy. Install a mod that generates energy or customiz
 
 === Other integrations
 
-- xref:integrations/mekanism.adoc[]
-- xref:integrations/curios.adoc[]
-- xref:integrations/trinkets.adoc[]
+- xref:addons/mekanism.adoc[]
+- xref:addons/curios.adoc[]
+- xref:addons/trinkets.adoc[]
