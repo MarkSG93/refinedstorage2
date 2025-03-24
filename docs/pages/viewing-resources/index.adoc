@@ -1,6 +1,5 @@
 = Viewing resources
 
-- xref:how-to-view-resources.adoc[]
 - xref:grid.adoc[]
 - xref:crafting-grid.adoc[]
 - xref:storage-monitor.adoc[]

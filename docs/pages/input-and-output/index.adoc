@@ -1,6 +1,5 @@
 = Input and output
 
-- xref:getting-resources-in-and-out.adoc[]
 - xref:importer.adoc[]
 - xref:exporter.adoc[]
 - xref:constructor.adoc[]

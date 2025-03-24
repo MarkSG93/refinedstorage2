@@ -1,7 +1,5 @@
 = Storage
 
-- xref:storing-externally.adoc[]
-
 == Network devices
 
 - xref:disk-drive.adoc[]

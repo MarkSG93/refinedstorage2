@@ -5,7 +5,7 @@ But what if you want to use a chest or another external inventory as storage in 
 
 == The External Storage
 
-Craft an xref:external-storage.adoc[] and connect it to an external inventory, such as a link:https://minecraft.gamepedia.com/Chest[Chest].
+Craft an xref:../storage/external-storage.adoc[] and connect it to an external inventory, such as a link:https://minecraft.gamepedia.com/Chest[Chest].
 
 Once connected, resources inserted into the storage network will be stored in the external inventory.
 
@@ -13,7 +13,7 @@ You can also use filter slots to control which resources can enter the external 
 
 == Supported Storages
 
-The xref:external-storage.adoc[] works with any block that functions as an inventory. Examples include:
+The xref:../storage/external-storage.adoc[] works with any block that functions as an inventory. Examples include:
 
 - link:https://minecraft.gamepedia.com/Chest[Chests]
 - Storage Drawers

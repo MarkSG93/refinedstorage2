@@ -9,6 +9,6 @@ To use the {doctitle}:
 1. Right-click a xref:network-receiver.adoc[] to store its location.
 2. Insert the {doctitle} into a xref:network-transmitter.adoc[].
 
-For more details, see:
+Read more:
 
-- xref:networks-over-long-distances.adoc[]
+- xref:../guides/networks-over-long-distances.adoc[]

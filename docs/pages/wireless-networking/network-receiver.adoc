@@ -8,6 +8,6 @@ In order to connect storage networks to each other wirelessly, a {doctitle} must
 
 Read more:
 
-- xref:networks-over-long-distances.adoc[]
+- xref:../guides/networks-over-long-distances.adoc[]
 
 include::../../partials/recoloring.adoc[]

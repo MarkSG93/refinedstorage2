@@ -1,7 +1,5 @@
 = Wireless networking
 
-- xref:networks-over-long-distances.adoc[]
-
 == Wireless tools
 
 - xref:wireless-transmitter.adoc[]

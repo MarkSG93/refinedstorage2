@@ -1,10 +1,5 @@
 = Autocrafting
 
-- xref:getting-started-with-autocrafting.adoc[]
-- xref:processing-recipes.adoc[]
-- xref:keeping-resources-in-stock.adoc[]
-- xref:fluid-autocrafting.adoc[]
-- xref:autocrafting-with-filled-buckets.adoc[]
 - xref:pattern-grid.adoc[]
 - xref:pattern.adoc[]
 - xref:autocrafter.adoc[]

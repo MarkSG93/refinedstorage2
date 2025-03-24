@@ -13,7 +13,7 @@ The {doctitle} can work in the current dimension or across different dimensions.
 
 Read more:
 
-- xref:networks-over-long-distances.adoc[]
+- xref:../guides/networks-over-long-distances.adoc[]
 
 include::../../partials/redstone-mode.adoc[]
 

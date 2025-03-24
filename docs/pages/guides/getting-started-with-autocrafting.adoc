@@ -7,7 +7,7 @@ While you can already craft manually using the xref:../viewing-resources/craftin
 
 == Patterns
 
-Autocrafting requires a xref:pattern-grid.adoc[] to create xref:pattern.adoc[patterns].
+Autocrafting requires a xref:../autocrafting/pattern-grid.adoc[] to create xref:../autocrafting/pattern.adoc[patterns].
 Each pattern defines how a specific resource is crafted.
 
 === Pattern dependencies
@@ -30,7 +30,7 @@ Enabling Fuzzy mode on a pattern allows alternative inputs (e.g. any type of woo
 
 == Autocrafters
 
-Once your patterns are ready, insert them into a xref:autocrafter.adoc[] connected to the storage network.
+Once your patterns are ready, insert them into a xref:../autocrafting/autocrafter.adoc[] connected to the storage network.
 
 == Requesting a resource
 
@@ -57,14 +57,14 @@ If resources are added to the network mid-task, they’ll be intercepted by the 
 
 == Monitoring autocrafting tasks
 
-Use a xref:autocrafting-monitor.adoc[] to monitor and cancel active tasks.
+Use a xref:../autocrafting/autocrafting-monitor.adoc[] to monitor and cancel active tasks.
 
 To check tasks remotely, use a xref:../wireless-networking/wireless-autocrafting-monitor.adoc[].
 
 == Managing patterns
 
-To view and organize all patterns across the network, use the xref:autocrafter-manager.adoc[].
+To view and organize all patterns across the network, use the xref:../autocrafting/autocrafter-manager.adoc[].
 
 == Speeding up autocrafting
 
-Insert xref:../upgrades/speed-upgrade.adoc[speed upgrades] into xref:autocrafter.adoc[autocrafters] to increase the crafting speed.
+Insert xref:../upgrades/speed-upgrade.adoc[speed upgrades] into xref:../autocrafting/autocrafter.adoc[autocrafters] to increase the crafting speed.

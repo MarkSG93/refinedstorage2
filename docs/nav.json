@@ -31,34 +31,34 @@
   },
   {
     "title": "Guides",
-    "ref": "guides.adoc",
+    "ref": "guides/index.adoc",
     "children": [
       {
-        "ref": "viewing-resources/how-to-view-resources.adoc"
+        "ref": "guides/how-to-view-resources.adoc"
       },
       {
-        "ref": "input-and-output/getting-resources-in-and-out.adoc"
+        "ref": "guides/getting-resources-in-and-out.adoc"
       },
       {
-        "ref": "storage/storing-externally.adoc"
+        "ref": "guides/storing-externally.adoc"
       },
       {
-        "ref": "wireless-networking/networks-over-long-distances.adoc"
+        "ref": "guides/networks-over-long-distances.adoc"
       },
       {
-        "ref": "autocrafting/getting-started-with-autocrafting.adoc"
+        "ref": "guides/getting-started-with-autocrafting.adoc"
       },
       {
-        "ref": "autocrafting/processing-recipes.adoc"
+        "ref": "guides/processing-recipes.adoc"
       },
       {
-        "ref": "autocrafting/keeping-resources-in-stock.adoc"
+        "ref": "guides/keeping-resources-in-stock.adoc"
       },
       {
-        "ref": "autocrafting/fluid-autocrafting.adoc"
+        "ref": "guides/fluid-autocrafting.adoc"
       },
       {
-        "ref": "autocrafting/autocrafting-with-filled-buckets.adoc"
+        "ref": "guides/autocrafting-with-filled-buckets.adoc"
       }
     ]
   },

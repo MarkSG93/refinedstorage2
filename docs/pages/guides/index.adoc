@@ -1,0 +1,12 @@
+= Guides
+
+- xref:../getting-started.adoc[]
+- xref:how-to-view-resources.adoc[]
+- xref:getting-resources-in-and-out.adoc[]
+- xref:storing-externally.adoc[]
+- xref:networks-over-long-distances.adoc[]
+- xref:getting-started-with-autocrafting.adoc[]
+- xref:processing-recipes.adoc[]
+- xref:keeping-resources-in-stock.adoc[]
+- xref:fluid-autocrafting.adoc[]
+- xref:autocrafting-with-filled-buckets.adoc[]
