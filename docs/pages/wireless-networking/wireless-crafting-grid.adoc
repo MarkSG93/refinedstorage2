@@ -1,5 +1,5 @@
 = Wireless Crafting Grid
-:icon: wireless-crafting-grid.png
+:icon: addons/wireless-crafting-grid.png
 
 The {doctitle} is a wireless version of the xref:../viewing-resources/crafting-grid.adoc[].
 

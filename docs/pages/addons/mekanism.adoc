@@ -47,6 +47,7 @@ Creative Chemical Storage Block
 - **8192B** stores 8,192 buckets
 - **Creative** stores an infinite amount of buckets
 
+They support uncrafting and upgrading like any other storage disk.
 
 == Importer
 

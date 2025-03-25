@@ -106,3 +106,7 @@ td p {
 .main-content img {
   margin-bottom: 15px;
 }
+
+#preamble {
+  font-size: 1.25rem;
+}

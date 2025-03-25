@@ -3,6 +3,14 @@
 Quartz Accessories is an addon for Refined Storage that adds various quartz tools and blocks.
 
 Currently, it adds:
+[cols="1,8"]
+|===
 
-- Block of Quartz Enriched Iron
-- Block of Quartz Enriched Copper
+| image:../../assets/addons/block-of-quartz-enriched-iron.png[Block of Quartz Enriched Iron,32,32]
+| Block of Quartz Enriched Iron
+
+| image:../../assets/addons/block-of-quartz-enriched-copper.png[Block of Quartz Enriched Copper,32,32]
+| Block of Quartz Enriched Copper
+
+|===
+
