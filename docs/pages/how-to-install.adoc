@@ -40,6 +40,7 @@ Refined Storage works on its own, but some additional mods improve the experienc
 === Official addons
 
 - xref:addons/quartz-accessories.adoc[]
+- xref:addons/quartz-arsenal.adoc[]
 
 === Integration with recipe viewers
 
@@ -58,3 +59,4 @@ Storage networks require energy. Install a mod that generates energy or customiz
 - xref:addons/mekanism.adoc[]
 - xref:addons/curios.adoc[]
 - xref:addons/trinkets.adoc[]
+- xref:addons/fabric-ecosystem.adoc[]
