@@ -1,6 +1,4 @@
-The {doctitle} provides storage for the storage network.
-
-It functions like a xref:../pages/storage/index.adoc#_fluid_storage_disks[fluid storage disk] but can be placed in the world.
+The {doctitle} provides storage for the storage network. It functions like a xref:../pages/storage/index.adoc#_fluid_storage_disks[fluid storage disk] but can be placed in the world.
 
 > Breaking the {doctitle} drops it with all stored resources intact.
 

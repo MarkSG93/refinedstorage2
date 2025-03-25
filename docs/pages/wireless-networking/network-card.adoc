@@ -4,6 +4,8 @@
 
 The {doctitle} enables wireless connections between storage networks by linking a xref:network-receiver.adoc[] to a xref:network-transmitter.adoc[].
 
+== Usage
+
 To use the {doctitle}:
 
 1. Right-click a xref:network-receiver.adoc[] to store its location.

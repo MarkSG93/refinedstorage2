@@ -4,6 +4,8 @@
 
 The {doctitle} displays the status of all active autocrafting tasks.
 
+== Tasks
+
 Each task is shown as a grid of cells, where each cell represents how a resource is used in the task.
 
 Terminology used in cells:

@@ -1,7 +1,5 @@
 = Getting started with autocrafting
 
-== What is autocrafting?
-
 Autocrafting automates crafting within your storage network.
 While you can already craft manually using the xref:../viewing-resources/crafting-grid.adoc[], autocrafting lets the network handle it for you.
 

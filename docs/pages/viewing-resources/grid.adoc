@@ -6,8 +6,6 @@ The {doctitle} allows access to the resources stored in the storage network.
 
 You can insert and extract resources in the storage network within the {doctitle}.
 
-You can place the {doctitle} in any direction, but the {doctitle} does _not_ transmit a network signal in the direction it's facing.
-
 [#_controls]
 == Controls
 

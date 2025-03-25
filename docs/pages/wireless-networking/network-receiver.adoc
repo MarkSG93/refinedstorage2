@@ -4,6 +4,8 @@
 
 In order to connect storage networks to each other wirelessly, a {doctitle} must be used on the receiving end. It receives a wireless signal from a xref:network-transmitter.adoc[].
 
+== Troubleshooting
+
 > In order for the {doctitle} to work reliably the {doctitle} has to be placed in a loaded chunk.
 
 Read more:

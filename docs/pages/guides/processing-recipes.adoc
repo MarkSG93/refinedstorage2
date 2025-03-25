@@ -1,7 +1,5 @@
 = Processing recipes
 
-== What are processing recipes?
-
 In xref:getting-started-with-autocrafting.adoc[], you learned how to automate regular crafting recipes.
 
 But what if you want to automate tasks that don’t use a crafting grid—like smelting iron ore into ingots?

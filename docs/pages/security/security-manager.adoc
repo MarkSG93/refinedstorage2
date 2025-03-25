@@ -4,6 +4,8 @@
 
 The {doctitle} is used to lock down a storage network and define player permissions through inserted xref:security-card.adoc[Security Cards].
 
+== Behavior
+
 Once placed, the entire storage network becomes restricted—**including for the player who placed it**.
 To restore access, insert appropriate xref:security-card.adoc[Security Cards] into the {doctitle}.
 

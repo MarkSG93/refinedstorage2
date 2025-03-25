@@ -4,6 +4,8 @@
 
 The Disk Drive stores xref:index.adoc#_storage_disks[storage disks] and xref:index.adoc#_fluid_storage_disks[fluid storage disks].
 
+== Behavior
+
 By inserting storage disks, the {doctitle} expands the storage capacity of the storage network. The total available storage depends on the number and type of disks inside. Removing a disk will make its stored contents temporarily inaccessible until reinserted.
 
 include::../../partials/storage-filter.adoc[]

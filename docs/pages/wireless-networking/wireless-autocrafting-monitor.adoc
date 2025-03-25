@@ -4,6 +4,8 @@
 
 The {doctitle} is a wireless version of the xref:../autocrafting/autocrafting-monitor.adoc[]
 
+== Usage
+
 To use the {doctitle}:
 
 - Bind it to a storage network by using it on any storage network device.

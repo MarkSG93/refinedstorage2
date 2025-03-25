@@ -4,6 +4,8 @@
 
 The {doctitle} allows the xref:../input-and-output/destructor.adoc[] to apply a fortune level when breaking blocks. The level depends on the upgrade used.
 
+== Tiers
+
 This upgrade comes in three tiers:
 
 - Fortune 1
