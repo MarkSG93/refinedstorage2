@@ -1,0 +1,146 @@
+= Grid
+:icon: grid.png
+:from: v0.3.0-alpha
+
+The {doctitle} allows access to the resources stored in the storage network.
+
+You can insert and extract resources in the storage network within the {doctitle}.
+
+[#_controls]
+== Controls
+
+[#_basic_controls]
+=== Basic controls
+
+[cols="1,1"]
+|===
+| Type | Description
+
+| Left-clicking with an empty hand in the {doctitle} | Extracts the maximum stacking size of the resource.
+| Left-clicking with a resource container (like a bucket) in hand in the {doctitle} | Fills the resource container.
+| Right-clicking with an empty hand in the {doctitle} | Takes half of the maximum stacking size of a resource
+| Left-clicking with a resource in hand in the {doctitle} | Inserts the resource into the {doctitle}.
+| Right-clicking with a resource in hand in the {doctitle} | Inserts a single resource into the {doctitle}.
+| Right-clicking with a resource container in hand in the {doctitle} | Empties the resource container into the {doctitle}.
+| SHIFT clicking a resource in the player inventory | Inserts the resource into the {doctitle}.
+| CTRL + clicking with an empty hand in the {doctitle} | Forces the autocrafting request window to open *even if the resource is available*.
+| Right click on search bar | Clears the search query.
+| Tab | Selects the search bar when the {doctitle} isn't in autoselected mode.
+|===
+
+=== Scrolling controls
+
+[cols="1,1"]
+|===
+| Type | Description
+
+| Scrolling up + SHIFT in the {doctitle} | Inserts a single resource into the {doctitle}.
+| Scrolling down + SHIFT in the {doctitle} | Extracts a single resource from the {doctitle}.
+| Scrolling down + CTRL in the {doctitle} | Extracts a resource from the {doctitle} on the player's hand.
+| Scrolling up + SHIFT in the player inventory | Inserts a single resource into the {doctitle}.
+| Scrolling down + SHIFT in the player inventory | Extracts a single resource from the {doctitle}.
+|===
+
+== Autocrafting
+
+Autocraftable resources can be crafted by clicking the resource, or by using CTRL + click if the resource is already available. This opens the autocrafting preview.
+
+In the preview, you can:
+
+- Adjust the amount to craft.
+- View a live simulation of the crafting steps.
+- Click **Max** to craft the maximum possible amount.
+- Enable **Notify** to receive a notification when the task is complete.
+
+== Searching
+
+Use the text box at the top of the {doctitle} to search.
+You can just type words to search for resources with that name in your storage network.
+
+However, the search is more powerful than that, supporting an entire query language with syntax highlighting.
+
+- You may use logical operators like `&&` (AND) and `||` (OR) .
+- You may use parentheses to group expressions.
+- You may use following unary operators:
+* `!` (NOT)
+* Search by mod name with `@`
+* Search in tooltips with `#`
+* Search in tags with `$`
+* `>`, `<`, `>=`, `<=` for amount comparisons
+
+=== Search box autoselected
+
+include::../../partials/search-box-autoselected.adoc[]
+
+=== Recipe viewer synchronization
+
+The search box can be configured to synchronize with the recipe viewer search box, one-way (from the {doctitle} to the recipe viewer) or two-way synchronization.
+
+Read more:
+
+- xref:../addons/just-enough-items.adoc#_recipe_viewer_synchronization[Just Enough Items]
+- xref:../addons/roughly-enough-items.adoc#_recipe_viewer_synchronization[Roughly Enough Items]
+- xref:../addons/emi.adoc#_recipe_viewer_synchronization[EMI]
+
+=== Remember search query
+
+The {doctitle} can be configured to remember the search query when closing and re-opening the {doctitle}.
+You can do this by modifying the `rememberSearchQuery` config option.
+
+== Sorting
+
+The resources in a {doctitle} can be sorted in a ascending or descending manner in various ways:
+
+- By name
+- By quantity
+- By ID
+- Last modified
+
+> The sorting type applies to all {doctitle}s and is stored on the client for each player.
+
+== Display
+
+=== Autocraftable resources
+
+Resources that can be autocrafted are shown with an orange-tinted background, making them easy to identify at a glance.
+
+Even if the corresponding xref:../autocrafting/pattern.adoc[] is only in your inventory and not yet inserted into an xref:../autocrafting/autocrafter.adoc[], the resource will still be marked as autocraftable.
+
+=== View type
+
+The {doctitle} can be configured to only show autocraftable resources or only show non-autocraftable resources.
+
+> The view type applies to all {doctitle}s and is stored on the client for each player.
+
+=== Resource type
+
+The {doctitle} can be configured to only show certain resource types. By default, all resource types are shown.
+
+=== Size
+
+include::../../partials/size.adoc[]
+
+=== Detailed tooltips
+
+By default, the tooltips for resources in a {doctitle} are a little bit bigger to display the total amount and the last modified information.
+This can be turned off by using the `detailedTooltip` config option.
+
+=== Other configuration
+
+By default, the {doctitle} uses a small font size to display resource amounts.
+Use the `largeFont` config option to change this.
+
+The scrollbar uses __smooth-scrolling__, if you prefer regular scrolling you can use the `smoothScrolling` config option.
+
+== Prevent sorting while shift is down
+
+By default, the {doctitle} doesn't sort when you are inserting and extracting resources from the network.
+As soon as you stop pressing the SHIFT key, the view is sorted again.
+
+To disable this behavior, modify the `preventSortingWhileShiftIsDown` config option.
+
+include::../../partials/redstone-mode.adoc[]
+
+include::../../partials/connections-all.adoc[]
+
+include::../../partials/recoloring.adoc[]

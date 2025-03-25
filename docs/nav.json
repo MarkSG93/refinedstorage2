@@ -1,0 +1,419 @@
+[
+  {
+    "title": "Home",
+    "ref": "index.adoc",
+    "icon": "bi-house-fill"
+  },
+  {
+    "title": "News",
+    "ref": "news/index.adoc",
+    "icon": "bi bi-newspaper"
+  },
+  {
+    "title": "Release notes",
+    "ref": "release-notes.adoc",
+    "icon": "bi bi-file-earmark-text"
+  },
+  {
+    "title": "Design philosophy",
+    "ref": "design-philosophy.adoc",
+    "icon": "bi-info-circle"
+  },
+  {
+    "title": "Need help?",
+    "ref": "need-help.adoc",
+    "icon": "bi-person-raised-hand"
+  },
+  {
+    "title": "Getting started",
+    "ref": "getting-started.adoc",
+    "icon": "bi-book"
+  },
+  {
+    "title": "Guides",
+    "ref": "guides/index.adoc",
+    "children": [
+      {
+        "ref": "guides/how-to-view-resources.adoc"
+      },
+      {
+        "ref": "guides/getting-resources-in-and-out.adoc"
+      },
+      {
+        "ref": "guides/storing-externally.adoc"
+      },
+      {
+        "ref": "guides/networks-over-long-distances.adoc"
+      },
+      {
+        "ref": "guides/getting-started-with-autocrafting.adoc"
+      },
+      {
+        "ref": "guides/processing-recipes.adoc"
+      },
+      {
+        "ref": "guides/keeping-resources-in-stock.adoc"
+      },
+      {
+        "ref": "guides/fluid-autocrafting.adoc"
+      },
+      {
+        "ref": "guides/autocrafting-with-filled-buckets.adoc"
+      }
+    ]
+  },
+  {
+    "title": "Networking",
+    "ref": "networking/index.adoc",
+    "children": [
+      {
+        "ref": "networking/controller.adoc"
+      },
+      {
+        "ref": "networking/creative-controller.adoc"
+      },
+      {
+        "ref": "networking/cable.adoc"
+      },
+      {
+        "ref": "networking/detector.adoc"
+      },
+      {
+        "ref": "networking/relay.adoc"
+      }
+    ]
+  },
+  {
+    "title": "Storage",
+    "ref": "storage/index.adoc",
+    "children": [
+      {
+        "ref": "storage/disk-drive.adoc"
+      },
+      {
+        "ref": "storage/external-storage.adoc"
+      },
+      {
+        "ref": "storage/1k-storage-part.adoc"
+      },
+      {
+        "ref": "storage/4k-storage-part.adoc"
+      },
+      {
+        "ref": "storage/16k-storage-part.adoc"
+      },
+      {
+        "ref": "storage/64k-storage-part.adoc"
+      },
+      {
+        "ref": "storage/storage-housing.adoc"
+      },
+      {
+        "ref": "storage/1k-storage-disk.adoc"
+      },
+      {
+        "ref": "storage/4k-storage-disk.adoc"
+      },
+      {
+        "ref": "storage/16k-storage-disk.adoc"
+      },
+      {
+        "ref": "storage/64k-storage-disk.adoc"
+      },
+      {
+        "ref": "storage/creative-storage-disk.adoc"
+      },
+      {
+        "ref": "storage/1k-storage-block.adoc"
+      },
+      {
+        "ref": "storage/4k-storage-block.adoc"
+      },
+      {
+        "ref": "storage/16k-storage-block.adoc"
+      },
+      {
+        "ref": "storage/64k-storage-block.adoc"
+      },
+      {
+        "ref": "storage/creative-storage-block.adoc"
+      },
+      {
+        "ref": "storage/64b-fluid-storage-part.adoc"
+      },
+      {
+        "ref": "storage/256b-fluid-storage-part.adoc"
+      },
+      {
+        "ref": "storage/1024b-fluid-storage-part.adoc"
+      },
+      {
+        "ref": "storage/4096b-fluid-storage-part.adoc"
+      },
+      {
+        "ref": "storage/64b-fluid-storage-disk.adoc"
+      },
+      {
+        "ref": "storage/256b-fluid-storage-disk.adoc"
+      },
+      {
+        "ref": "storage/1024b-fluid-storage-disk.adoc"
+      },
+      {
+        "ref": "storage/4096b-fluid-storage-disk.adoc"
+      },
+      {
+        "ref": "storage/creative-fluid-storage-disk.adoc"
+      },
+      {
+        "ref": "storage/64b-fluid-storage-block.adoc"
+      },
+      {
+        "ref": "storage/256b-fluid-storage-block.adoc"
+      },
+      {
+        "ref": "storage/1024b-fluid-storage-block.adoc"
+      },
+      {
+        "ref": "storage/4096b-fluid-storage-block.adoc"
+      },
+      {
+        "ref": "storage/creative-fluid-storage-block.adoc"
+      }
+    ]
+  },
+  {
+    "title": "Viewing resources",
+    "ref": "viewing-resources/index.adoc",
+    "children": [
+      {
+        "ref": "viewing-resources/grid.adoc"
+      },
+      {
+        "ref": "viewing-resources/crafting-grid.adoc"
+      },
+      {
+        "ref": "viewing-resources/storage-monitor.adoc"
+      },
+      {
+        "ref": "viewing-resources/portable-grid.adoc"
+      },
+      {
+        "ref": "viewing-resources/creative-portable-grid.adoc"
+      }
+    ]
+  },
+  {
+    "title": "Input and output",
+    "ref": "input-and-output/index.adoc",
+    "children": [
+      {
+        "ref": "input-and-output/importer.adoc"
+      },
+      {
+        "ref": "input-and-output/exporter.adoc"
+      },
+      {
+        "ref": "input-and-output/constructor.adoc"
+      },
+      {
+        "ref": "input-and-output/destructor.adoc"
+      },
+      {
+        "ref": "input-and-output/interface.adoc"
+      },
+      {
+        "ref": "input-and-output/disk-interface.adoc"
+      }
+    ]
+  },
+  {
+    "title": "Wireless networking",
+    "ref": "wireless-networking/index.adoc",
+    "children": [
+      {
+        "ref": "wireless-networking/wireless-transmitter.adoc"
+      },
+      {
+        "ref": "wireless-networking/wireless-grid.adoc"
+      },
+      {
+        "ref": "wireless-networking/creative-wireless-grid.adoc"
+      },
+      {
+        "ref": "wireless-networking/wireless-crafting-grid.adoc"
+      },
+      {
+        "ref": "wireless-networking/creative-wireless-crafting-grid.adoc"
+      },
+      {
+        "ref": "wireless-networking/wireless-autocrafting-monitor.adoc"
+      },
+      {
+        "ref": "wireless-networking/creative-wireless-autocrafting-monitor.adoc"
+      },
+      {
+        "ref": "wireless-networking/network-card.adoc"
+      },
+      {
+        "ref": "wireless-networking/network-receiver.adoc"
+      },
+      {
+        "ref": "wireless-networking/network-transmitter.adoc"
+      }
+    ]
+  },
+  {
+    "title": "Autocrafting",
+    "ref": "autocrafting/index.adoc",
+    "children": [
+      {
+        "ref": "autocrafting/pattern-grid.adoc"
+      },
+      {
+        "ref": "autocrafting/pattern.adoc"
+      },
+      {
+        "ref": "autocrafting/autocrafter.adoc"
+      },
+      {
+        "ref": "autocrafting/autocrafting-monitor.adoc"
+      },
+      {
+        "ref": "autocrafting/autocrafter-manager.adoc"
+      }
+    ]
+  },
+  {
+    "title": "Security",
+    "ref": "security/index.adoc",
+    "children": [
+      {
+        "ref": "security/security-manager.adoc"
+      },
+      {
+        "ref": "security/security-card.adoc"
+      },
+      {
+        "ref": "security/fallback-security-card.adoc"
+      }
+    ]
+  },
+  {
+    "title": "Upgrades",
+    "ref": "upgrades/index.adoc",
+    "children": [
+      {
+        "ref": "upgrades/upgrade.adoc"
+      },
+      {
+        "ref": "upgrades/range-upgrade.adoc"
+      },
+      {
+        "ref": "upgrades/creative-range-upgrade.adoc"
+      },
+      {
+        "ref": "upgrades/speed-upgrade.adoc"
+      },
+      {
+        "ref": "upgrades/stack-upgrade.adoc"
+      },
+      {
+        "ref": "upgrades/autocrafting-upgrade.adoc"
+      },
+      {
+        "ref": "upgrades/regulator-upgrade.adoc"
+      },
+      {
+        "ref": "upgrades/fortune-upgrade.adoc"
+      },
+      {
+        "ref": "upgrades/silk-touch-upgrade.adoc"
+      }
+    ]
+  },
+  {
+    "title": "Utility",
+    "ref": "utility/index.adoc",
+    "children": [
+      {
+        "ref": "utility/quartz-enriched-iron.adoc"
+      },
+      {
+        "ref": "utility/quartz-enriched-copper.adoc"
+      },
+      {
+        "ref": "utility/silicon.adoc"
+      },
+      {
+        "ref": "utility/wrench.adoc"
+      },
+      {
+        "ref": "utility/configuration-card.adoc"
+      },
+      {
+        "ref": "utility/processor-binding.adoc"
+      },
+      {
+        "ref": "utility/raw-basic-processor.adoc"
+      },
+      {
+        "ref": "utility/raw-improved-processor.adoc"
+      },
+      {
+        "ref": "utility/raw-advanced-processor.adoc"
+      },
+      {
+        "ref": "utility/basic-processor.adoc"
+      },
+      {
+        "ref": "utility/improved-processor.adoc"
+      },
+      {
+        "ref": "utility/advanced-processor.adoc"
+      },
+      {
+        "ref": "utility/construction-core.adoc"
+      },
+      {
+        "ref": "utility/destruction-core.adoc"
+      },
+      {
+        "ref": "utility/machine-casing.adoc"
+      }
+    ]
+  },
+  {
+    "title": "Addons",
+    "ref": "addons/index.adoc",
+    "children": [
+      {
+        "ref": "addons/quartz-arsenal.adoc"
+      },
+      {
+        "ref": "addons/quartz-accessories.adoc"
+      },
+      {
+        "ref": "addons/just-enough-items.adoc"
+      },
+      {
+        "ref": "addons/roughly-enough-items.adoc"
+      },
+      {
+        "ref": "addons/emi.adoc"
+      },
+      {
+        "ref": "addons/mekanism.adoc"
+      },
+      {
+        "ref": "addons/curios.adoc"
+      },
+      {
+        "ref": "addons/trinkets.adoc"
+      },
+      {
+        "ref": "addons/fabric-ecosystem.adoc"
+      }
+    ]
+  }
+]

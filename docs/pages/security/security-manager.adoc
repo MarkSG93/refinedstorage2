@@ -1,0 +1,47 @@
+= Security Manager
+:from: v1.4.0-beta
+:icon: security-manager.png
+
+The {doctitle} is used to lock down a storage network and define player permissions through inserted xref:security-card.adoc[Security Cards].
+
+== Behavior
+
+Once placed, the entire storage network becomes restricted—**including for the player who placed it**.
+To restore access, insert appropriate xref:security-card.adoc[Security Cards] into the {doctitle}.
+
+> The player who placed the {doctitle} can always open its interface.
+> Server operators bypass all security restrictions.
+
+== Multiple security managers
+
+You can place multiple {doctitle}s in the same network.
+
+If a player has multiple active xref:security-card.adoc[Security Cards], an action is denied if **any** {doctitle} blocks it.
+
+== Fallback Security Card
+
+When a {doctitle} is active, network access is locked for all players by default.
+
+To define permissions for players **without** a matching xref:security-card.adoc[], insert a xref:fallback-security-card.adoc[].
+
+> If multiple xref:fallback-security-card.adoc[Fallback Security Cards] are present, an action is denied if **any** of them blocks it.
+
+== Permissions
+
+[cols="1,3"]
+|===
+|Type|Description
+
+|Insert|Whether the player can insert resources in a network.
+|Extract|Whether the player can extract resources from a network.
+|Autocrafting|Whether the player can start, cancel or view an autocrafting task.
+|Open|Whether the player can open network device GUIs.
+|Build|Whether the player can add or remove network devices.
+|Security|Whether the player can manage the security options for a network.
+|===
+
+include::../../partials/redstone-mode.adoc[]
+
+include::../../partials/connections-all.adoc[]
+
+include::../../partials/recoloring.adoc[]

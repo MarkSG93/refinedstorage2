@@ -1,0 +1,3 @@
+The {doctitle} can be configured to automatically select the search bar when opening it.
+
+> The autoselected mode applies to all {doctitle}s and is stored on the client for each player.

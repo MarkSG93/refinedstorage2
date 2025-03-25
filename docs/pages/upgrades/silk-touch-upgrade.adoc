@@ -1,0 +1,9 @@
+= Silk Touch Upgrade
+:icon: silk-touch-upgrade.png
+:from: v1.2.0
+
+The {doctitle} allows the xref:../input-and-output/destructor.adoc[] to apply silk touch when breaking blocks.
+
+== Applicable storage network devices
+
+- xref:../input-and-output/destructor.adoc[] (1)

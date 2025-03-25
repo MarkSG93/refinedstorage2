@@ -1,0 +1,34 @@
+= Pattern Grid
+:icon: pattern-grid.png
+:from: v0.6.0-alpha
+
+The {doctitle} functions like a regular xref:../viewing-resources/grid.adoc[] but also supports creating xref:pattern.adoc[patterns].
+
+== Supported pattern types
+
+You can create patterns for:
+
+- xref:pattern.adoc#_crafting_patterns[Regular crafting recipes]
+- xref:pattern.adoc#_processing_patterns[Processing recipes]
+- Stonecutter recipes
+- Smithing Table recipes
+
+== Modifying existing patterns
+
+Insert a {doctitle} into the output slot of the {doctitle} to modify it.
+
+[#_recipe_transferring]
+== Recipe transferring
+
+You don’t need the actual resources in your network to create a xref:pattern.adoc[].
+
+The {doctitle} integrates with recipe viewer mods for recipe transferring:
+- xref:../addons/just-enough-items.adoc#_recipe_transferring_in_the_pattern_grid[Just Enough Items]
+- xref:../addons/roughly-enough-items.adoc#_recipe_transferring_in_the_pattern_grid[Roughly Enough Items]
+- xref:../addons/emi.adoc#_recipe_transferring_in_the_pattern_grid[EMI]
+
+include::../../partials/connections-all.adoc[]
+
+include::../../partials/redstone-mode.adoc[]
+
+include::../../partials/recoloring.adoc[]

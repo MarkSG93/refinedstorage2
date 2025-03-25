@@ -1,0 +1,5 @@
+= Quartz Enriched Iron
+:icon: quartz-enriched-iron.png
+:from: v0.3.0-alpha
+
+include::../../partials/crafting-item.adoc[]

@@ -1,0 +1,22 @@
+= Network Transmitter
+:icon: network-transmitter.png
+:from: v0.8.13-beta
+
+In order to connect storage networks to each other wirelessly, a {doctitle} must be used on the transmitting end.
+It sends a wireless signal to a xref:network-receiver.adoc[] via a xref:network-card.adoc[].
+
+== Troubleshooting
+
+> In order for the {doctitle} to work reliably the {doctitle} has to be placed in a loaded chunk.
+
+If the xref:network-receiver.adoc[] cannot be reached, because it no longer exists or the chunk is not loaded, the {doctitle} will go into an error state and will keep retrying to connect with the xref:network-receiver.adoc[].
+
+The {doctitle} can work in the current dimension or across different dimensions.
+
+Read more:
+
+- xref:../guides/networks-over-long-distances.adoc[]
+
+include::../../partials/redstone-mode.adoc[]
+
+include::../../partials/recoloring.adoc[]

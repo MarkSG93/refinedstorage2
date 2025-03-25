@@ -1,0 +1,69 @@
+= Relay
+:from: v0.4.0-alpha
+:icon: relay.png
+
+The {doctitle} acts as a connection buffer within a storage network. It has input sides and an output side and can conditionally transmit a network signal from the input sides to the output side.
+
+== Pass-through
+
+By default, the {doctitle} is in pass-through mode. This allows the network signal to flow directly from the input sides to the output side.
+
+When pass-through mode is *off*, the {doctitle} stops transmitting the signal by default. From that point, the output side receives an isolated (empty) network unless specific components are manually passed through.
+
+== Pass energy
+
+When pass-through mode is off, the {doctitle} can be configured to pass energy from the input sides to the output side.
+
+== Pass security
+
+Security settings can also be passed through when pass-through mode is off.
+
+== Pass autocrafting
+
+When enabled, the {doctitle} exposes autocrafting patterns from the input sides to the output side.
+
+- Tasks are executed in the output network using its resources.
+- Autocrafters and patterns come from the input network.
+
+=== Filter
+
+The top row defines which patterns are exposed.
+
+- Default mode: _blocklist_ — patterns in the filter are hidden.
+- Empty blocklist: all patterns are exposed.
+- _Allowlist_ mode: only listed patterns are exposed. If empty, none are exposed.
+
+==== Fuzzy mode
+
+Fuzzy mode, off by default, determines whether the filter considers additional attributes, such as a pickaxe’s damage value.
+
+== Pass storage
+
+When enabled, the {doctitle} exposes resources from storage to the output network.
+
+=== Access mode
+
+- **Insert and extract** – The output storage network can insert and extract resources.
+- **Insert only** – The output storage network can only insert resources.
+- **Extract only** – The output storage network can only extract resources.
+
+=== Storage priority
+
+The {doctitle}'s priority affects insert/extract order in the output network, with higher values taking precedence.
+Insert and extract priorities can be set separately.
+
+=== Filter
+
+The top row defines which resources are exposed.
+
+- Default mode: _blocklist_ — resources in the filter are hidden.
+- Empty blocklist: all resources are exposed.
+- _Allowlist_ mode: only listed resources are exposed. If empty, none are exposed.
+
+==== Fuzzy mode
+
+Fuzzy mode, off by default, determines whether the filter considers additional attributes, such as a pickaxe’s damage value.
+
+include::../../partials/redstone-mode.adoc[]
+
+include::../../partials/recoloring.adoc[]

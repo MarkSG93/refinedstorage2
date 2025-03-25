@@ -1,0 +1,43 @@
+= Crafting Grid
+:icon: crafting-grid.png
+:from: v0.3.0-alpha
+
+The {doctitle} functions like a regular xref:grid.adoc[] but includes a crafting inventory.
+
+== Controls
+
+Additional controls xref:grid.adoc#_controls[on top of the existing Grid controls]:
+
+[cols="1,1"]
+|===
+| Action | Description
+
+| **CTRL + X** | Clears the crafting matrix into the storage network. A separate keybinding allows clearing to the player inventory.
+| **CTRL + SHIFT on the crafting result slot** | Filters the {doctitle} view based on the items in the crafting matrix.
+|===
+
+== Crafting inventory restocking
+
+After crafting an item, the {doctitle} attempts to refill the crafting slots with the same items from the storage network.
+
+== Crafting inventory close behavior
+
+By default, items in the crafting inventory remain when closing and reopening the {doctitle}.
+
+The `craftingMatrixCloseBehavior` config option can be adjusted to clear the matrix to either the player inventory or the storage network upon closing.
+
+== Recipe transferring
+
+The {doctitle} integrates with various recipe viewer mods for seamless recipe transferring:
+
+- xref:../addons/just-enough-items.adoc#_recipe_transferring_in_the_crafting_grid[Just Enough Items]
+- xref:../addons/roughly-enough-items.adoc#_recipe_transferring_in_the_crafting_grid[Roughly Enough Items]
+- xref:../addons/emi.adoc#_recipe_transferring_in_the_crafting_grid[EMI]
+
+If an item is not available for transferring, but autocrafting is available for it, you are able to trigger autocrafting for the missing items immediately from the recipe viewer.
+
+include::../../partials/connections-all.adoc[]
+
+include::../../partials/redstone-mode.adoc[]
+
+include::../../partials/recoloring.adoc[]

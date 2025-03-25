@@ -1,0 +1,44 @@
+= Just Enough Items (JEI)
+
+Refined Storage has an optional integration mod for Just Enough Items (JEI), enhancing crafting and recipe interaction.
+
+[#_recipe_transferring_in_the_crafting_grid]
+== Recipe transferring in the Crafting Grid
+
+You can transfer recipes from JEI directly into the xref:../viewing-resources/crafting-grid.adoc[].
+
+- Missing ingredients? The transfer will still place what you have.
+- If autocrafting is available for missing ingredients, you can start autocrafting tasks from the preview.
+
+image::../../assets/addons/jei-crafting-grid-transfer.png[JEI crafting grid transfer]
+
+image::../../assets/addons/jei-crafting-grid-transfer-preview.png[JEI crafting grid transfer preview]
+
+[#_recipe_transferring_in_the_pattern_grid]
+== Recipe transferring in the Pattern Grid
+
+Recipes from JEI can also be transferred into the xref:../autocrafting/pattern-grid.adoc[].
+The interface will show which ingredients are autocraftable.
+
+== R/U key support
+You can use the R and U keys on xref:../viewing-resources/grid.adoc[] and filter slots to view recipes and usages respectively.
+
+[#_recipe_viewer_synchronization]
+== Recipe viewer synchronization
+
+You can sync the search box between JEI and the xref:../viewing-resources/grid.adoc[]:
+
+- One-way (Grid → JEI)
+- Two-way sync
+
+image::../../assets/addons/jei-sync.png[JEI sync in the Grid]
+
+== Ghost ingredient dragging
+
+You can drag any type of ingredient from JEI to filter slots in Refined Storage.
+
+image::../../assets/addons/jei-ghost-dragging.png[JEI ghost ingredient dragging]
+
+== Exclusion zones
+
+JEI elements automatically reposition to avoid overlapping Refined Storage GUI components.

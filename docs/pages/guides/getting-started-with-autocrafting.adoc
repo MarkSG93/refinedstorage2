@@ -1,0 +1,68 @@
+= Getting started with autocrafting
+
+Autocrafting automates crafting within your storage network.
+While you can already craft manually using the xref:../viewing-resources/crafting-grid.adoc[], autocrafting lets the network handle it for you.
+
+== Patterns
+
+Autocrafting requires a xref:../autocrafting/pattern-grid.adoc[] to create xref:../autocrafting/pattern.adoc[patterns].
+Each pattern defines how a specific resource is crafted.
+
+=== Pattern dependencies
+
+You must create a pattern for every intermediate item.
+If an item needed for crafting isn't in storage, the system will use its pattern to craft it.
+If no pattern exists for that sub-item, it will be marked as missing and the task won’t start.
+
+=== Example
+
+To autocraft a link:https://minecraft.gamepedia.com/Chest[chest]:
+
+- Create a pattern for the chest.
+- If planks are available, they’ll be used.
+- If planks run out, create a pattern for crafting planks too.
+
+=== Fuzzy mode
+
+Enabling Fuzzy mode on a pattern allows alternative inputs (e.g. any type of wooden plank).
+
+== Autocrafters
+
+Once your patterns are ready, insert them into a xref:../autocrafting/autocrafter.adoc[] connected to the storage network.
+
+== Requesting a resource
+
+With the patterns in place, you can request the resource from any xref:../viewing-resources/grid.adoc[].
+
+Click the resource (or CTRL + click if it's already available) to open the autocrafting preview. From there, you can:
+
+- Set the desired amount
+- View a live simulation
+- Click **Max** to craft as much as possible
+- Enable **Notify** to get a notification when the task is complete
+
+Autocrafting tasks cannot start unless all required resources are present or autocraftable.
+
+== How autocrafting works internally
+
+When an autocrafting task starts:
+
+- The required resources are pulled into an internal task inventory.
+- All crafting is done inside this internal inventory—no changes are visible to the network while the task runs.
+- This prevents other operations from interfering with the task.
+
+If resources are added to the network mid-task, they’ll be intercepted by the task if needed.
+
+== Monitoring autocrafting tasks
+
+Use a xref:../autocrafting/autocrafting-monitor.adoc[] to monitor and cancel active tasks.
+
+To check tasks remotely, use a xref:../wireless-networking/wireless-autocrafting-monitor.adoc[].
+
+== Managing patterns
+
+To view and organize all patterns across the network, use the xref:../autocrafting/autocrafter-manager.adoc[].
+
+== Speeding up autocrafting
+
+Insert xref:../upgrades/speed-upgrade.adoc[speed upgrades] into xref:../autocrafting/autocrafter.adoc[autocrafters] to increase the crafting speed.

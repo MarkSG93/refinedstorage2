@@ -1,0 +1,7 @@
+= Creative Wireless Autocrafting Monitor
+:icon: wireless-autocrafting-monitor.png
+:from: v1.2.1
+
+The {doctitle} is a xref:wireless-autocrafting-monitor.adoc[] that does not consume energy.
+
+It can only be obtained in creative mode.

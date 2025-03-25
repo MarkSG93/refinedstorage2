@@ -1,0 +1,38 @@
+= Disk Interface
+:icon: disk-interface.png
+:from: v1.0.5
+
+The {doctitle} transfers resources between xref:../storage/index.adoc#_storage_disks[storage disks] and the storage network.
+
+> The {doctitle} was formerly known as "Disk Manipulator".
+
+== Transfer modes
+
+- **Insert into network** – Moves resources from the storage disks into the storage network.
+- **Extract from network** – Moves resources from the storage network into the storage disks.
+
+== Filter
+
+The top row configures which resources can or cannot be transferred.
+
+- Default mode: _blocklist_ — resources in the filter are blocked.
+- An empty blocklist allows all resources.
+- _Allowlist_ mode allows only listed resources.
+If empty, nothing will be transferred.
+
+=== Fuzzy mode
+
+Fuzzy mode, off by default, determines whether the filter considers additional attributes, such as a pickaxe’s damage value.
+
+== Applicable upgrades
+
+- xref:../upgrades/speed-upgrade.adoc[] (4)
+* Increases transfer speed.
+- xref:../upgrades/stack-upgrade.adoc[] (1)
+* Increases transfer amount per tick.
+
+include::../../partials/connections-all.adoc[]
+
+include::../../partials/redstone-mode.adoc[]
+
+include::../../partials/recoloring.adoc[]

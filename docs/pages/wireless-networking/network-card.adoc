@@ -1,0 +1,16 @@
+= Network Card
+:from: v0.8.13-beta
+:icon: network-card.png
+
+The {doctitle} enables wireless connections between storage networks by linking a xref:network-receiver.adoc[] to a xref:network-transmitter.adoc[].
+
+== Usage
+
+To use the {doctitle}:
+
+1. Right-click a xref:network-receiver.adoc[] to store its location.
+2. Insert the {doctitle} into a xref:network-transmitter.adoc[].
+
+Read more:
+
+- xref:../guides/networks-over-long-distances.adoc[]

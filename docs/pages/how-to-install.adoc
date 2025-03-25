@@ -1,0 +1,62 @@
+= How to install
+
+Refined Storage runs on a modloader, supporting **NeoForge and Fabric**.
+
+Installing it follows the same process as any other NeoForge or Fabric mod.
+
+== Setting up NeoForge or Fabric
+
+You'll need a working NeoForge or Fabric instance. Launchers like MultiMC or the vanilla launcher can set this up.
+
+== Downloading the mod
+
+Download a Refined Storage `.jar` file for your Minecraft version and modloader from official sources:
+
+- link:https://www.curseforge.com/minecraft/mc-mods/refined-storage[CurseForge]
+- link:https://modrinth.com/mod/refined-storage[Modrinth]
+- link:https://github.com/refinedmods/refinedstorage2/releases[GitHub]
+
+== Installing the mod
+
+Place the downloaded `.jar` file in your instance's `mods/` directory.
+If the folder doesn't exist, start your instance once to let the modloader create it.
+
+=== Using the CurseForge App (and other launchers)
+
+Most launchers, including the CurseForge App, allow one-click installation without manually copying `.jar` files.
+
+== Configuring the mod
+
+Configuration isn't required in most cases, but you can adjust settings in the `config/` directory:
+
+- **NeoForge**: `config/refinedstorage-common.toml`
+- **Fabric**: `config/refinedstorage.toml`
+
+[#_optional_dependencies]
+== Optional dependencies
+
+Refined Storage works on its own, but some additional mods improve the experience.
+
+=== Official addons
+
+- xref:addons/quartz-accessories.adoc[]
+- xref:addons/quartz-arsenal.adoc[]
+
+=== Integration with recipe viewers
+
+These mods help view recipes for items and blocks:
+
+- xref:addons/just-enough-items.adoc[]
+- xref:addons/roughly-enough-items.adoc[]
+- xref:addons/emi.adoc[]
+
+=== Energy generation
+
+Storage networks require energy. Install a mod that generates energy or customize your modpack to allow creative energy options provided by Refined Storage.
+
+=== Other integrations
+
+- xref:addons/mekanism.adoc[]
+- xref:addons/curios.adoc[]
+- xref:addons/trinkets.adoc[]
+- xref:addons/fabric-ecosystem.adoc[]

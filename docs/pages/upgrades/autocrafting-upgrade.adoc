@@ -1,0 +1,11 @@
+= Autocrafting Upgrade
+:icon: autocrafting-upgrade.png
+:from: v0.6.0-alpha
+
+The {doctitle} will schedule an autocrafting task when a resource that is required by a storage network device is needed, but not available.
+
+== Applicable storage network devices
+
+- xref:../input-and-output/exporter.adoc[] (1)
+- xref:../input-and-output/constructor.adoc[] (1)
+- xref:../input-and-output/interface.adoc[] (1)

@@ -1,0 +1,5 @@
+== Storage priority
+
+The {doctitle}'s priority determines the order in which resources are inserted or extracted, with higher priorities taking precedence.
+
+By default, insert and extract priorities are the same, but they can be configured separately if needed.

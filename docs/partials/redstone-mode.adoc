@@ -1,0 +1,7 @@
+== Redstone mode
+
+The {doctitle} can be set to operate only when a specific redstone state is met.
+
+* **Ignore** – Always active, regardless of redstone.
+* **High** – Only works when receiving a redstone signal.
+* **Low** – Only works when no redstone signal is present.

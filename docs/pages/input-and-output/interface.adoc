@@ -1,0 +1,53 @@
+= Interface
+:icon: interface.png
+:from: v0.4.0-alpha
+
+The Interface combines the functions of the xref:importer.adoc[] and xref:exporter.adoc[].
+
+== Exporting
+
+The top row configures which resources are exported from the storage network to the _intermediate storage slots_ below.
+
+The last known state for each configured resource is displayed:
+
+- **None** – The resource was exported successfully or hasn't been exported yet.
+- **Resource missing** – The resource is not available in the storage network.
+- **Storage does not accept resource** - The resource could not be returned to the storage network as the storage network is full or does not accept the resource.
+- **Autocrafting started** – An autocrafting task was started for the missing resource (requires a xref:../upgrades/autocrafting-upgrade.adoc[]).
+- **Autocrafting detected missing resources** – The autocrafting task could not start due to missing ingredients.
+
+The bottom row contains the intermediate storage slots where exported resources are stored. These slots are accessible for extraction by external blocks.
+
+=== Fuzzy mode
+
+Fuzzy mode, off by default, determines whether the filter considers additional attributes, such as a pickaxe’s damage value.
+
+== Importing
+
+The {doctitle} accepts resources from external blocks and places them in the intermediate storage slots. From there, they are instantly inserted into the storage network.
+
+> The {doctitle} does not extract resources from adjacent inventories automatically; you must insert them manually.
+
+== Differences from the Importer
+
+* The xref:importer.adoc[] must be connected to an external inventory, while the {doctitle} provides intermediate storage slots where external blocks can insert resources.
+* The xref:importer.adoc[] has no internal inventory and cannot receive resources directly.
+* The {doctitle} inserts resources instantly, while the xref:importer.adoc[]'s speed depends on upgrades.
+
+== Differences from the Exporter
+
+* The xref:exporter.adoc[] must be connected to an external inventory, whereas the {doctitle} exports to intermediate storage slots.
+* The {doctitle} instantly exports resources, while the xref:exporter.adoc[]'s speed depends on upgrades.
+
+== Interface acting as an External Storage source
+
+You may connect an xref:../storage/external-storage.adoc[] to an {doctitle}.
+
+At that point, the {doctitle} cannot extract resources from other {doctitle}s that are acting as an External Storage source.
+
+include::../../partials/redstone-mode.adoc[]
+
+== Applicable upgrades
+
+- xref:../upgrades/autocrafting-upgrade.adoc[] (1)
+* Starts an autocrafting task if the exported resource is missing.

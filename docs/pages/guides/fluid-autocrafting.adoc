@@ -1,0 +1,12 @@
+= Fluid autocrafting
+
+In addition to items, the storage network also supports autocrafting with fluids.
+
+All fluid-based recipes are created using xref:../autocrafting/pattern.adoc#_processing_patterns[processing patterns]. These patterns send inputs to an external machine and expect defined outputs in return.
+
+You can use a fluid container to define the fluid as an input or output for the pattern. Alternatively, you can use xref:../autocrafting/pattern-grid.adoc#_recipe_transferring[recipe viewer transferring integration].
+
+With fluid autocrafting, the xref:../autocrafting/autocrafter.adoc[] can handle both fluid and item inputs/outputs. Once the expected fluid or item is returned to the storage network, the task is marked as complete.
+
+You can freely mix fluid and item inputs and outputs in a single processing pattern.
+Fluids can also be requested directly from the xref:../viewing-resources/grid.adoc[].
