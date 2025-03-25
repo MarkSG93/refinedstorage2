@@ -1,1 +1,70 @@
 = Mekanism integration
+
+This optional integration adds support for Mekanism chemicals in various Refined Storage components, allowing storage, transfer, viewing, and autocrafting with chemicals.
+
+== Chemical storage
+
+Chemical storage blocks and disks allow you to store chemicals in the storage network. Each tier has a specific capacity:
+
+[cols="1,2,2", options="header"]
+|===
+| Tier | Disk | Block
+
+| 64B
+| image:../../assets/addons/mekanism/64b_chemical_storage_disk.png[64B Chemical Storage Disk,32,32]
+64B Chemical Storage Disk
+| image:../../assets/addons/mekanism/64b_chemical_storage_block.png[64B Chemical Storage Block,32,32]
+64B Chemical Storage Block
+
+| 256B
+| image:../../assets/addons/mekanism/256b_chemical_storage_disk.png[256B Chemical Storage Disk,32,32]
+256B Chemical Storage Disk
+| image:../../assets/addons/mekanism/256b_chemical_storage_block.png[256B Chemical Storage Block,32,32]
+256B Chemical Storage Block
+
+| 1024B
+| image:../../assets/addons/mekanism/1024b_chemical_storage_disk.png[1024B Chemical Storage Disk,32,32]
+1024B Chemical Storage Disk
+| image:../../assets/addons/mekanism/1024b_chemical_storage_block.png[1024B Chemical Storage Block,32,32]
+1024B Chemical Storage Block
+
+| 8192B
+| image:../../assets/addons/mekanism/8192b_chemical_storage_disk.png[8192B Chemical Storage Disk,32,32]
+8192B Chemical Storage Disk
+| image:../../assets/addons/mekanism/8192b_chemical_storage_block.png[8192B Chemical Storage Block,32,32]
+8192B Chemical Storage Block
+
+| Creative
+| image:../../assets/addons/mekanism/creative_chemical_storage_disk.png[Creative Chemical Storage Disk,32,32]
+Creative Chemical Storage Disk
+| image:../../assets/addons/mekanism/creative_chemical_storage_block.png[Creative Chemical Storage Block,32,32]
+Creative Chemical Storage Block
+|===
+
+- **64B** stores 64 buckets of any chemical
+- **256B** stores 256 buckets
+- **1024B** stores 1,024 buckets
+- **8192B** stores 8,192 buckets
+- **Creative** stores an infinite amount of buckets
+
+
+== Importer
+
+The xref:../input-and-output/importer.adoc[] supports extracting chemicals from external chemical tanks into the storage network.
+
+== Exporter
+
+The xref:../input-and-output/exporter.adoc[] can insert chemicals from the storage network into external chemical-compatible machines or tanks.
+
+== External Storage
+
+The xref:../storage/external-storage.adoc[] can connect to Mekanism chemical tanks, allowing them to act as external storage for chemicals.
+
+== Storage Monitor
+
+The xref:../viewing-resources/storage-monitor.adoc[] can display the amount of a configured chemical in the storage network.
+
+== Autocrafting
+
+You can autocraft chemicals by using xref:../autocrafting/pattern.adoc#_processing_patterns[processing patterns] that define chemical inputs and outputs.
+The xref:../autocrafting/autocrafter.adoc[] will insert chemicals into compatible machines, and expect the output chemicals to be returned to complete the task.
