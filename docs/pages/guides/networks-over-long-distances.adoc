@@ -20,6 +20,6 @@ A xref:../wireless-networking/network-transmitter.adoc[] and xref:../wireless-ne
 3. Place a xref:../wireless-networking/network-receiver.adoc[] at the remote location.
 4. Right-click the xref:../wireless-networking/network-receiver.adoc[] with the xref:../wireless-networking/network-card.adoc[] to store its location.
 5. Insert the xref:../wireless-networking/network-card.adoc[] into the xref:../wireless-networking/network-transmitter.adoc[].
-6. Ensure both the xref:../wireless-networking/network-transmitter.adoc[] at the main network and the xref:../wireless-networking/network-receiver.adoc[] at the remote location are **chunkloaded before linking** and remain chunkloaded for the connection to stay active.
+6. Ensure that both the xref:../wireless-networking/network-transmitter.adoc[] at the main network and the xref:../wireless-networking/network-receiver.adoc[] at the remote location are **chunkloaded before linking** and remain chunkloaded for the connection to stay active.
 
 Once linked, machines can be connected to the xref:../wireless-networking/network-receiver.adoc[] like any other network device.

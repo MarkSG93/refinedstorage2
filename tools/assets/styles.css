@@ -2,6 +2,11 @@
   margin-bottom: 0;
 }
 
+blockquote {
+  border-left: 3px solid var(--bs-secondary-bg);
+  padding-left: 0.5rem;
+}
+
 .dropdown-toggle {
   outline: 0;
 }

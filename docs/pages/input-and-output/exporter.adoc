@@ -4,7 +4,7 @@
 
 The {doctitle} extracts resources from the storage network and inserts them into a connected external inventory.
 
-> Ensure the {doctitle} is connected to the external inventory from the correct side, so it can access the desired slots for exporting.
+> Ensure that the {doctitle} is connected to the external inventory from the correct side, so it can access the desired slots for exporting.
 
 == Filter
 

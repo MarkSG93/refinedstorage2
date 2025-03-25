@@ -4,7 +4,7 @@
 
 The {doctitle} extracts resources from a connected external inventory and inserts them into the storage network.
 
-> Ensure the {doctitle} is connected to the external inventory from the correct side, so it can access the desired slots for importing.
+> Ensure that the {doctitle} is connected to the external inventory from the correct side, so it can access the desired slots for importing.
 
 Each tick, it extracts as much of a single resource type as allowed by its per-tick quota. It cannot extract multiple resource types at once.
 
