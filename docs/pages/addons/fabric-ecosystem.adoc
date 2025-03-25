@@ -1,7 +1,17 @@
 = Integration with the Fabric ecosystem
 
+Refined Storage includes optional integration with several popular mods in the Fabric ecosystem.
+
 == ModMenu
+
+If ModMenu is installed, Refined Storage will appear in the mod list with a dedicated configuration button.
+This allows easy access to configuration options without navigating to the file system manually.
 
 == ClothConfig
 
+When ClothConfig is present, the configuration button in ModMenu will open a user-friendly interface for editing the Refined Storage config file.
+This eliminates the need to manually edit `.toml` files.
+
 == Team Reborn Energy
+
+If Team Reborn Energy is available, Refined Storage will use it as an energy backend for devices that consume energy.

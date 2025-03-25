@@ -1,6 +1,6 @@
 = EMI
 
-Refined Storage integrates with EMI to enhance crafting and recipe interaction.
+Refined Storage has an optional integration mod for EMI, enhancing crafting and recipe interaction.
 
 [#_recipe_transferring_in_the_crafting_grid]
 == Recipe transferring in the Crafting Grid

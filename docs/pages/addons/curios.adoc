@@ -1,1 +1,14 @@
 = Curios integration
+
+An optional integration mod adds support for Curios on NeoForge, providing two dedicated Curios slots for the following tools:
+
+- xref:../wireless-networking/wireless-grid.adoc[]
+- xref:../wireless-networking/creative-wireless-grid.adoc[]
+- xref:../wireless-networking/wireless-crafting-grid.adoc[]
+- xref:../wireless-networking/creative-wireless-crafting-grid.adoc[]
+- xref:../viewing-resources/portable-grid.adoc[]
+- xref:../viewing-resources/creative-portable-grid.adoc[]
+
+You can combine this with a keybinding to quickly open these tools while equipped.
+
+image::../../assets/addons/curios.png[Curios slots]

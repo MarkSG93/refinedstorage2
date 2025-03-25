@@ -1,6 +1,6 @@
 = Just Enough Items (JEI)
 
-Refined Storage integrates with Just Enough Items (JEI) to enhance crafting and recipe interaction.
+Refined Storage has an optional integration mod for Just Enough Items (JEI), enhancing crafting and recipe interaction.
 
 [#_recipe_transferring_in_the_crafting_grid]
 == Recipe transferring in the Crafting Grid
