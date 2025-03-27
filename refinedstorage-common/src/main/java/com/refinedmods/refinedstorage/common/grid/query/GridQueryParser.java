@@ -31,8 +31,8 @@ import java.util.function.BiPredicate;
 public class GridQueryParser {
     private static final Map<String, Set<GridResourceAttributeKey>> ATTRIBUTE_MAPPING = Map.of(
         "@", Set.of(GridResourceAttributeKeys.MOD_ID, GridResourceAttributeKeys.MOD_NAME),
-        "$", Set.of(GridResourceAttributeKeys.TAGS),
-        "#", Set.of(GridResourceAttributeKeys.TOOLTIP)
+        "#", Set.of(GridResourceAttributeKeys.TAGS),
+        "$", Set.of(GridResourceAttributeKeys.TOOLTIP)
     );
 
     private final LexerTokenMappings tokenMappings;

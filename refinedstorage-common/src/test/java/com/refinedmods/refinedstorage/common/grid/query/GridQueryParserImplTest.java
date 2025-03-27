@@ -90,7 +90,7 @@ class GridQueryParserImplTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"$underwater", "$UnDerWate", "$water", "$unrelated", "$UNREL", "$laTed"})
+    @ValueSource(strings = {"#underwater", "#UnDerWate", "#water", "#unrelated", "#UNREL", "#laTed"})
     void testTagQuery(final String query) throws GridQueryParserException {
         // Act
         final var predicate = sut.parse(query);

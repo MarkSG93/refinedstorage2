@@ -9,8 +9,8 @@ refinedarchitect {
     dataGeneration(project(":refinedstorage-common"))
     publishing {
         maven = true
-        // curseForge = "243076"
-        // modrinth = "refined-storage"
+        curseForge = "243076"
+        modrinth = "refined-storage"
     }
 }
 

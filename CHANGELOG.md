@@ -11,6 +11,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 -   The External Storage now supports multiple resource types on a single connected inventory.
 -   Tooltips for upgrade slots are now ordered.
+-   Grid tag search now uses the `#` prefix, tooltips use the `$` prefix.
 
 ### Fixed
 
@@ -21,6 +22,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 -   Fixed crash when trying to open Grid with EnderIO autocrafting pattern in network.
 -   Fixed External Storage making resources flicker when the connected inventory is causing neighbor updates.
 -   Fixed not being able to search for Water Bottles.
+-   Fixed crash when creating a Pattern for a shield.
 
 ## [2.0.0-milestone.4.14] - 2025-02-23
 

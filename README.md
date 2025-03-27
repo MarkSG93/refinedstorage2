@@ -30,7 +30,6 @@ this mod that allow the player to set up auto-crafting, allowing the crafting of
 - [Crowdin](https://crowdin.com/project/refined-storage-2)
 - [Javadoc](https://refinedmods.com/javadoc/refinedstorage2)
 - [Discord](https://discordapp.com/invite/VYzsydb)
-- [Twitter](https://twitter.com/refinedmods)
 
 ## Building
 
