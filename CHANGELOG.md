@@ -11,6 +11,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 -   The External Storage now supports multiple resource types on a single connected inventory.
 -   Tooltips for upgrade slots are now ordered.
+-   Grid tag search now uses the `#` prefix, tooltips use the `$` prefix.
 
 ### Fixed
 

@@ -64,8 +64,8 @@ However, the search is more powerful than that, supporting an entire query langu
 - You may use following unary operators:
 * `!` (NOT)
 * Search by mod name with `@`
-* Search in tooltips with `#`
-* Search in tags with `$`
+* Search in tags with `#`
+* Search in tooltips with `$`
 * `>`, `<`, `>=`, `<=` for amount comparisons
 
 === Search box autoselected
