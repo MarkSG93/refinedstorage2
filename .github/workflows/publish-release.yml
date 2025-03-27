@@ -12,3 +12,5 @@ jobs:
     with:
       project-name: 'Refined Storage'
       gametests: true
+      curseforge: true
+      modrinth: true

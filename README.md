@@ -1,7 +1,7 @@
 <!--suppress HtmlDeprecatedAttribute -->
 <div align="center">
   <img width="280" alt="Refined Storage logo" src="https://raw.githubusercontent.com/refinedmods/refinedstorage2/develop/images/logo.png" />
-  <h1 style="margin-top: 0">Refined Storage 2</h1>
+  <h1 style="margin-top: 0">Refined Storage</h1>
   <p>Refined Storage is a mass storage mod for Minecraft that offers the player a network-based storage system, allowing
 them to store items and fluids on a massively expandable device network.</p>
 
@@ -24,9 +24,10 @@ this mod that allow the player to set up auto-crafting, allowing the crafting of
     - [Releases](https://github.com/refinedmods/refinedstorage2/releases)
     - [Packages](https://github.com/refinedmods/refinedstorage2/packages)
     - [Issues](https://github.com/refinedmods/refinedstorage2/issues)
-    - [Roadmap](https://github.com/refinedmods/refinedstorage2/projects)
-    - [Wiki](https://github.com/refinedmods/refinedstorage2/wiki)
     - [Refined Mods on GitHub](https://github.com/refinedmods)
+- [CurseForge](https://curseforge.com/minecraft/mc-mods/refined-storage)
+- [Modrinth](https://modrinth.com/mod/refined-storage)
+- [Wiki](https://refinedmods.com/refined-storage)
 - [Crowdin](https://crowdin.com/project/refined-storage-2)
 - [Javadoc](https://refinedmods.com/javadoc/refinedstorage2)
 - [Discord](https://discordapp.com/invite/VYzsydb)
