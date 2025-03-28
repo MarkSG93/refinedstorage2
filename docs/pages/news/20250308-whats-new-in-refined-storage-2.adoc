@@ -262,7 +262,7 @@ Special thanks to:
 - Technici4n for early API feedback and major influence on the final design.
 - shartte for untangling Gradle issues.
 - Ultramega for help with integration tests.
-- My supporters on link:https://patreon.com/c/raoulvdberge[Patreon] and link:https://ko-fi.com/raoulvdberge[Ko-Fi].
+- My supporters on link:https://patreon.com/raoulvdberge[Patreon] and link:https://ko-fi.com/raoulvdberge[Ko-Fi].
 - My partner Robin, for supporting me through every step of this journey.
 
 > Disclaimer: Refined Storage v2.0.0 is **beta** software. While sufficiently tested, bugs may occur.
