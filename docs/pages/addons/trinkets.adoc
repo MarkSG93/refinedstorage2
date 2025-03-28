@@ -12,3 +12,8 @@ An optional integration mod adds support for Trinkets on Fabric, providing two d
 You can combine this with a keybinding to quickly open these tools while equipped.
 
 image::../../assets/addons/trinkets.png[Trinket slots]
+
+== Download
+
+- link:https://www.curseforge.com/minecraft/mc-mods/refined-storage-trinkets-integration[Download on CurseForge]
+- link:https://modrinth.com/mod/refined-storage-trinkets-integration[Download on Modrinth]

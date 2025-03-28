@@ -74,6 +74,8 @@ Refined Storage 2 xref:../addons/unofficial-addons.adoc[already has a few unoffi
 - link:https://www.curseforge.com/minecraft/mc-mods/interdimensional-wireless-transmitter[Interdimensional Wireless Transmitter]
 - link:https://www.curseforge.com/minecraft/mc-mods/universal-grid[Universal Grid]
 - link:https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals[Advanced Peripherals]
+- link:https://www.curseforge.com/minecraft/mc-mods/extrastorage[ExtraStorage]
+- link:https://www.curseforge.com/minecraft/mc-mods/ender-io[EnderIO]
 
 === Viewing resources
 

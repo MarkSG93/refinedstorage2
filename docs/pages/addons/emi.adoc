@@ -42,3 +42,8 @@ image::../../assets/addons/emi-ghost-dragging.png[EMI ghost ingredient dragging]
 == Exclusion zones
 
 EMI elements automatically reposition to avoid overlapping Refined Storage GUI components.
+
+== Download
+
+- link:https://www.curseforge.com/minecraft/mc-mods/refined-storage-emi-integration[Download on CurseForge]
+- link:https://modrinth.com/mod/refined-storage-emi-integration[Download on Modrinth]
