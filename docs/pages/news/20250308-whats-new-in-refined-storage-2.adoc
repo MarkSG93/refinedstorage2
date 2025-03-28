@@ -259,7 +259,7 @@ Special thanks to:
 - My friends on the ForgeCraft server for helping out with all sorts of random questions.
 - link:https://discordapp.com/invite/VYzsydb[The Refined Mods Discord community] for bug reports, testing, and feedback.
 - Translators on Crowdin who eagerly kept up with all the changes.
-- Technici4n for early API feedback and major influence on the final design.
+- Technici4n for early API feedback and major influence on the final API design.
 - shartte for untangling Gradle issues.
 - Ultramega for help with integration tests.
 - My supporters on link:https://patreon.com/raoulvdberge[Patreon] and link:https://ko-fi.com/raoulvdberge[Ko-Fi].
