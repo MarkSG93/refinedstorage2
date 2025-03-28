@@ -19,7 +19,7 @@ refinedarchitect {
     publishing {
         maven = true
         curseForge = "243076"
-        modrinth = "refined-storage"
+        modrinth = "KDvYkUg3"
     }
 }
 
