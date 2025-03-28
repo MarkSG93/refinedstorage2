@@ -1,7 +1,7 @@
 = What's new in Refined Storage 2
 :type: article
-:description: The first beta of Refined Storage v2.0.0 has been released. What's new?
-:date: 2025-03-08
+:description: The first beta of Refined Storage 2 has been released. What's new?
+:date: 2025-03-28
 
 Since 2020, I've been working on Refined Storage 2—an evolution of the original mod, rebuilt from the ground up with a focus on code quality, modern architecture, and Fabric support. After years of development and public GitHub milestones, the first beta is now available on CurseForge and Modrinth for Minecraft 1.21.1.
 
@@ -15,7 +15,9 @@ I started Refined Storage back in high school. Today, I'm a professional softwar
 
 Rewriting a mod of this size was a big risk. It could’ve failed. But I believed it was necessary to secure the long-term future of the project.
 
-Refined Storage 2 has been rebuilt from the ground up with:
+== Goal
+
+Refined Storage 2 has been rebuilt from the ground up with the following goals in mind:
 
 - A strong focus on code quality
 - Long-term maintainability
@@ -24,18 +26,36 @@ Refined Storage 2 has been rebuilt from the ground up with:
 
 == What has changed?
 
-Refined Storage 2 is a complete rewrite, modernizing and rethinking nearly every part of the mod. Below is a categorized and detailed overview of the most important changes and additions.
+=== Summary
+
+- Integrations have been moved to xref:../addons/index.adoc[addons].
+- There is a xref:../addons/mekanism.adoc[*Mekanism integration*] now adding support for chemical storage.
+- The *Fluid Grid* was removed. The regular xref:../viewing-resources/grid.adoc[*Grid*] now handles items, fluids, and chemicals.
+- The *Grid* marks autocraftable resources with an orange backdrop, also considering uninserted patterns in your inventory.
+- The xref:../autocrafting/autocrafter.adoc[*Autocrafter*] now supports more locking options for easier blocking mode.
+- *Autocrafting* now takes into account multiple patterns with the same output, respecting priority defined in the xref:../autocrafting/autocrafter.adoc[].
+- The *crafting preview* and amount selection screens have been merged into one screen with live updates, ability to receive autocrafting notifications and a "Max" button to fill out max craftable.
+- The xref:../autocrafting/pattern-grid.adoc[*Pattern Grid*] now supports encoding stonecutter and smithing table recipes.
+- *Storage disks and blocks* can now be upgraded by combining with a higher-tier Storage Part. The original part is returned.
+- You can now configure separate *insert and extract priorities* on storages.
+- Storages now support **void excess mode** to automatically delete overflow.
+- The *Fluid Interface* has been removed and the xref:../input-and-output/interface.adoc[*Interface*] now supports all resource types.
+- Multiple xref:../networking/controller.adoc[*Controllers*] can now be placed in one network to meet energy demand.
+- The xref:../networking/relay.adoc[*Relay*] now supports creating subnetworks.
+- The xref:../utility/configuration-card.adoc[*Configuration Card*] has been added to easily move configurations across devices.
+- The xref:../utility/wrench.adoc[*Wrench*] now supports dismantling devices.
+- *Colored cables and variants* (Importers, Exporters, External Storages) connect only with matching colors.
 
 === Official integrations and addons
 
 To reduce core complexity, integrations have been moved to their own addon mods.
 
-Removed from core into a dedicated addon:
+==== Removed from core into a dedicated addon
 
 - xref:../addons/just-enough-items.adoc[]
 - xref:../addons/curios.adoc[] (NeoForge)
 
-New integrations:
+==== New integrations
 
 - xref:../addons/roughly-enough-items.adoc[]
 - xref:../addons/emi.adoc[]
@@ -44,6 +64,16 @@ New integrations:
 - NeoForge config screen
 - xref:../addons/fabric-ecosystem.adoc[]
 * xref:../addons/trinkets.adoc[]
+- The xref:../wireless-networking/wireless-crafting-grid.adoc[] has moved from Refined Storage Addons to xref:../addons/quartz-accessories.adoc[*Quartz Accessories*].
+
+==== Unofficial addons
+
+Refined Storage 2 xref:../addons/unofficial-addons.adoc[already has a few unofficial addons]:
+
+- link:https://www.curseforge.com/minecraft/mc-mods/extra-disks[Extra Disks]
+- link:https://www.curseforge.com/minecraft/mc-mods/interdimensional-wireless-transmitter[Interdimensional Wireless Transmitter]
+- link:https://www.curseforge.com/minecraft/mc-mods/universal-grid[Universal Grid]
+- link:https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals[Advanced Peripherals]
 
 === Viewing resources
 
@@ -64,12 +94,12 @@ New integrations:
 * image:../../assets/news/whats-new-in-refined-storage-2/crafting-grid-highlight.png[Crafting Grid highlighting items from the crafting matrix]
 * A config option to clear items from the matrix to the player or network inventory when closing the screen.
 * image:../../assets/news/whats-new-in-refined-storage-2/grid-moving.png[Screenshot showing ability to move items out of the crafting matrix]
-- The amount screen (e.g., for Detectors) now:
+- The amount screen (e.g., for xref:../networking/detector.adoc[*Detectors*]) now:
 * Supports scrollbars and increment/decrement buttons.
 * Highlights invalid amounts in red.
 * image:../../assets/news/whats-new-in-refined-storage-2/detector-amount.png[Detector amount screen]
 - Grid UI settings like smooth scrolling and row stretch are now global client config.
-- The Portable Grid UI now displays an energy bar.
+- The xref:../viewing-resources/portable-grid.adoc[*Portable Grid*] UI now displays an energy bar.
 - Contents of storages in "insert-only" mode are now visible in the Grid.
 
 === Autocrafting
@@ -77,19 +107,18 @@ New integrations:
 - The *Crafter* has been renamed to the xref:../autocrafting/autocrafter.adoc[*Autocrafter*].
 - The *Autocrafter* now:
 * Faces the block you're placing it against, like other cable blocks.
-* Supports renaming from the GUI.
+* Supports renaming from the UI.
 * Supports configuring a priority value to give precedence to patterns with the same output.
-* Allows toggling visibility to the Autocrafter Manager (enabled by default).
-* Connects to other Autocrafters only through the front face, avoiding unintended network connections when used with Interfaces.
+* Allows toggling visibility to the xref:../autocrafting/autocrafter-manager.adoc[] (enabled by default).
+* Connects to other Autocrafters only through the front face, avoiding unintended network connections when used with xref:../input-and-output/interface.adoc[interfaces].
 * image:../../assets/news/whats-new-in-refined-storage-2/autocrafter.png[Autocrafter UI]
-- *Locking mode* replaces the old "crafter mode" with:
+- *Locking mode* replaces the old "crafter mode" with following options:
 * Never
 * Lock until redstone pulse
 * Lock until connected machine is empty (for blocking mode)
 * Lock until all outputs are received (for blocking mode)
 * Lock until low redstone signal
 * Lock until high redstone signal
-* In chained Autocrafters, locking mode can only be configured on the head.
 - The xref:../autocrafting/autocrafter-manager.adoc[*Autocrafter Manager*] now includes:
 * A view filter: All, Not Full, or Visible-only Autocrafters.
 * A revamped search that targets pattern inputs, outputs, names, or all.
@@ -98,9 +127,10 @@ New integrations:
 - Tasks can’t be cancelled if there’s not enough storage space to return intermediates.
 - The **crafting preview** now:
 * Merges preview and amount selection into one screen with live updates.
-* Lets you fill out the maximum amount craftable.
-* Allows enabling notifications when a task is completed.
+* Lets you fill out the maximum amount that is craftable.
 * image:../../assets/news/whats-new-in-refined-storage-2/autocrafting-preview.png[Autocrafting preview]
+* Allows enabling notifications when a task is completed.
+* image:../../assets/news/whats-new-in-refined-storage-2/autocrafting-notifications.png[Autocrafting notification]
 * Shows all parallel requests triggered by recipe mods.
 - The xref:../autocrafting/autocrafting-monitor.adoc[**Autocrafting Monitor**] now:
 * Uses compacted units.
@@ -108,14 +138,9 @@ New integrations:
 * Uses a sidebar for tasks instead of tabs.
 * image:../../assets/news/whats-new-in-refined-storage-2/autocrafting-monitor.png[Autocrafting Monitor]
 - The Grid and Pattern Grid:
-* Visually mark autocraftable items with orange backdrops and tooltips.
+* Visually mark autocraftable resources with orange backdrops and tooltips.
 * Also consider uninserted patterns in your inventory.
 * image:../../assets/news/whats-new-in-refined-storage-2/pattern-grid.png[Pattern Grid screenshot]
-- xref:../autocrafting/pattern.adoc[*Patterns*]:
-* Show the recipe in their tooltip.
-* image:../../assets/news/whats-new-in-refined-storage-2/pattern-recipe.png[Pattern with recipe in the tooltip]
-* Use different textures and names to distinguish from empty patterns.
-* image:../../assets/news/whats-new-in-refined-storage-2/pattern-types.png[Pattern types]
 - The xref:../autocrafting/pattern-grid.adoc[**Pattern Grid**]:
 * Supports encoding *stonecutter* and *smithing table* recipes.
 * image:../../assets/news/whats-new-in-refined-storage-2/pattern-grid-types.png[Pattern Grid modes]
@@ -123,12 +148,17 @@ New integrations:
 * The alternatives screen supports searching, tag-based resource groups (collapsible), and translated tag names.
 * image:../../assets/news/whats-new-in-refined-storage-2/alternatives.png[Allowed alternatives for a processing input]
 * "Exact mode" replaced by inverse *Fuzzy mode*.
+- xref:../autocrafting/pattern.adoc[*Patterns*]:
+* Show the recipe in their tooltip.
+* image:../../assets/news/whats-new-in-refined-storage-2/pattern-recipe.png[Pattern with recipe in the tooltip]
+* Use different textures and names to distinguish from empty patterns.
+* image:../../assets/news/whats-new-in-refined-storage-2/pattern-types.png[Pattern types]
 
 === Storage
 
-- *Storage Disks and Blocks* can now be upgraded by combining with a higher-tier Storage Part. The original part is returned.
+- *Storage disks and blocks* can now be upgraded by combining with a higher-tier Storage Part. The original part is returned.
 * image:../../assets/news/whats-new-in-refined-storage-2/storage-disk-upgrading.png[Recipe showing storage disk upgrading]
-- You can now configure separate *insert and extract priorities* on storage.
+- You can now configure separate *insert and extract priorities* on storages.
 * image:../../assets/news/whats-new-in-refined-storage-2/priority.png[Different insert/extract priorities]
 - The xref:../input-and-output/interface.adoc[*Interface*]:
 * Now supports fluids and chemicals (replaces the "Fluid Interface").
@@ -140,20 +170,20 @@ New integrations:
 * Supports multiple resource types simultaneously.
 - The xref:../input-and-output/constructor.adoc[*Constructor*] and xref:../input-and-output/exporter.adoc[*Exporter*]:
 * Support scheduling modes: first available, round robin, or random.
-* Filter slots now show hints for missing, blocked, autocrafting, or uncraftable resources.
+* Filter slots now show hints for missing, blocked, currently autocrafting, or uncraftable resources.
 * image:../../assets/news/whats-new-in-refined-storage-2/filter-slot-hints.png[Filter slot hints]
 - The xref:../input-and-output/importer.adoc[*Importer*]:
 * Extracts as much of a single resource type as possible across all slots, following the per-tick quota.
 * Automatically detects the connected resource type (item/fluid/chemical).
 - The xref:../upgrades/regulator-upgrade.adoc[*Regulator Upgrade*]:
-* Along Exporters now supports Importers and stops importing once the set amount is reached.
-* Must now be configured via the item, not the device GUI.
-- *Void excess* mode can be enabled on storages with an allowlist filter.
+* Previously supported Exporters, but now also supports Importers and stops importing once the set amount is reached.
+* Must now be configured via the item, not the device UI.
+- *Void excess mode* can be enabled on storages to automatically delete overflow. An allowlist filter is required.
 - You no longer have to pre-select a resource type in filter slots: right-click a container or drag from a recipe viewer instead.
 - Item storage capacities are now multiples of 1024 for better stack alignment.
 - A single resource can now exceed 2,147,483,647 units in storage.
 - *Fuzzy mode* replaces "Exact mode" and is off by default for performance.
-- The Disk Manipulator has been renamed to **Disk Interface**.
+- The Disk Manipulator has been renamed to xref:../input-and-output/disk-interface.adoc[**Disk Interface**].
 
 === Networking
 
@@ -164,21 +194,21 @@ New integrations:
 * Subnet storage allows configuring filter mode, fuzzy mode, access mode, and priority.
 * link:https://www.youtube.com/watch?v=fRGH4ZUAnhQ[Check out this video explaining how pass-through modes work in the Relay]
 - The xref:../wireless-networking/network-transmitter.adoc[*Network Transmitter*]:
-* Shows an error when the Receiver connection breaks.
+* Shows an error when the xref:../wireless-networking/network-receiver.adoc[] connection breaks.
 * Attempts to reconnect automatically if the connection is lost.
 - The xref:../security/security-manager.adoc[*Security Manager*]:
 * Locks the network by default when placed.
 * xref:../security/security-card.adoc[*Security Cards*] are configured through their own GUI.
 * Cards can be bound to online players.
 * A xref:../security/fallback-security-card.adoc[*Fallback Security Card*] defines default access for unlisted players.
-* The GUI shows which permissions were changed.
+* The UI shows which permissions were changed.
 * image:../../assets/news/whats-new-in-refined-storage-2/security-card.png[Security Card UI]
 
 === UI and accessibility
 
-- Disk Drives, Disk Interfaces (formerly known as "Disk Manipulator"), and Portable Grids now render item, fluid, and chemical disks distinctly.
-* image:../../assets/news/whats-new-in-refined-storage-2/custom-disk-models.png[Custom disk models]
-- GUI titles now scroll (marquee) when overflowing.
+- Disk Drives, Disk Interfaces (formerly known as "Disk Manipulator"), and Portable Grids now support custom disk models for each disk type.
+* image:../../assets/news/whats-new-in-refined-storage-2/custom-disk-models.png[Custom item, fluid, and chemical disk models]
+- UI titles now scroll (marquee) when overflowing.
 - New Grid size: *Extra Large* (12 rows).
 - Hints, tooltips, and SHIFT-help added across many screens.
 * image:../../assets/news/whats-new-in-refined-storage-2/help.png[Help tooltip]
@@ -200,19 +230,19 @@ New integrations:
 * image:../../assets/news/whats-new-in-refined-storage-2/colored-cables.png[Colored cables and upside down blocks]
 - New xref:../utility/wrench.adoc[*Wrench*] behavior:
 * Crouch-wrench to dismantle a block (preserving config).
-* Supports wrench tags like `c:wrenches`.
+* Supports wrenches from other mods that have the `c:wrenches` tag.
 - Recipes now follow tag conventions from NeoForge and Fabric.
 - Compatibility improvements with modded block movers:
 * Fixed moving devices with mods like Carrier.
-* Fixed CTRL+Click in creative mode not preserving block data.
+* Fixed CTRL + click in creative mode not preserving block data.
 
-== Infrastructure improvements
+=== Infrastructure improvements
 
 Refined Storage 2 wasn’t built in isolation. As part of its development, the broader Refined Mods ecosystem saw major upgrades:
 
-- The website was overhauled with a brand-new wiki system that supports multiple versions side by side.
+- The website was overhauled with a brand-new wiki system that supports multiple versions at a time.
 - The wiki was completely rewritten from scratch.
-- link:https://github.com/refinedmods/refinedarchitect[Refined Architect] was created—a shared project used across all Refined Mods. It includes GitHub workflows, version management, and a Gradle convention plugin to simplify (cross-platform) mod development.
+- On the more technical side, link:https://github.com/refinedmods/refinedarchitect[Refined Architect] was created—a shared project used across all Refined Mods. It includes GitHub workflows, version management, and a Gradle convention plugin to simplify (cross-platform) mod development.
 
 == What's next?
 

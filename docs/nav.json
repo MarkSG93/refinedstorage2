@@ -412,6 +412,9 @@
         "ref": "addons/trinkets.adoc"
       },
       {
+        "ref": "addons/unofficial-addons.adoc"
+      },
+      {
         "ref": "addons/fabric-ecosystem.adoc"
       }
     ]
