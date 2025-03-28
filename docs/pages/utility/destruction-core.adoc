@@ -1,0 +1,5 @@
+= Destruction Core
+:from: v0.3.0-alpha
+:icon: destruction-core.png
+
+include::../../partials/crafting-item.adoc[]

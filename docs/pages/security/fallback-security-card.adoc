@@ -1,0 +1,11 @@
+= Fallback Security Card
+:from: v2.0.0
+:icon: fallback-security-card.png
+
+When a xref:security-manager.adoc[] is added to a storage network, access is locked for all players by default.
+
+To define permissions for players that do not have a matching xref:security-card.adoc[], use a {doctitle}.
+
+== Size
+
+include::../../partials/size.adoc[]

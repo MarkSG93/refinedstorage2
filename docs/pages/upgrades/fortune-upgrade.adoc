@@ -1,0 +1,17 @@
+= Fortune Upgrade
+:icon: fortune-upgrade.png
+:from: v1.2.0
+
+The {doctitle} allows the xref:../input-and-output/destructor.adoc[] to apply a fortune level when breaking blocks. The level depends on the upgrade used.
+
+== Tiers
+
+This upgrade comes in three tiers:
+
+- Fortune 1
+- Fortune 2
+- Fortune 3
+
+== Applicable storage network devices
+
+- xref:../input-and-output/destructor.adoc[] (1)

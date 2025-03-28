@@ -1,0 +1,7 @@
+= Silicon
+:icon: silicon.png
+:since: v0.3.0-alpha
+
+include::../../partials/crafting-item.adoc[]
+
+{doctitle} can be obtained by smelting Nether Quartz.

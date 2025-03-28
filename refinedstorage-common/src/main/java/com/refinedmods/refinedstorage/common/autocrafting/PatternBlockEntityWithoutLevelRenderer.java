@@ -42,6 +42,7 @@ public class PatternBlockEntityWithoutLevelRenderer extends BlockEntityWithoutLe
                 Minecraft.getInstance().getBlockEntityRenderDispatcher(),
                 Minecraft.getInstance().getEntityModels()
             );
+            instance.onResourceManagerReload(Minecraft.getInstance().getResourceManager());
         }
         return instance;
     }

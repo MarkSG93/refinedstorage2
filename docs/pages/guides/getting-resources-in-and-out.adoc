@@ -1,0 +1,32 @@
+= Getting resources in and out
+
+Now that you know xref:../getting-started.adoc[how to add storage disks to your network and access them], how can you automate resource transfer?
+
+Below is an overview of devices that manage resource flow in the storage network.
+
+== Exporter
+
+The xref:../input-and-output/exporter.adoc[] extracts resources from the storage network and inserts them into a connected inventory.
+Configure its filter slots to specify which resources should be exported.
+
+== Importer
+
+The xref:../input-and-output/importer.adoc[] retrieves resources from a connected inventory and inserts them into the storage network.
+
+== Interface
+
+The xref:../input-and-output/interface.adoc[] combines importing and exporting functionality in a single block.
+
+== Constructor
+
+The xref:../input-and-output/constructor.adoc[] places blocks from the storage network into the world.
+Configure its filter slots to specify which blocks to place.
+
+== Destructor
+
+The xref:../input-and-output/destructor.adoc[] breaks blocks in the world and inserts them into the storage network.
+It supports allowlist and blocklist configurations for targeted block removal.
+
+== Disk Interface
+
+The xref:../input-and-output/disk-interface.adoc[] transfers resources between storage disks and the storage network.

@@ -1,0 +1,17 @@
+= Portable Grid
+:icon: portable-grid.png
+:from: v1.4.5-beta
+
+The {doctitle} provides xref:../viewing-resources/grid.adoc[grid-like] access to a xref:../storage/index.adoc#_storage_disks[storage disk] without requiring a storage network.
+
+> It can be used as an inventory item or placed in the world as a block.
+
+== Energy consumption
+
+The {doctitle} consumes energy when opening the view, inserting, or extracting a resource.
+
+== Keybinding
+
+An unbound keybinding is available to open the {doctitle}.
+
+include::../../partials/redstone-mode.adoc[]

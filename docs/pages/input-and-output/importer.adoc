@@ -1,0 +1,36 @@
+= Importer
+:icon: importer.png
+:from: v0.3.0-alpha
+
+The {doctitle} extracts resources from a connected external inventory and inserts them into the storage network.
+
+> Ensure that the {doctitle} is connected to the external inventory from the correct side, so it can access the desired slots for importing.
+
+== Behavior
+
+Each tick, it extracts as much of a single resource type as allowed by its per-tick quota. It cannot extract multiple resource types at once.
+
+== Filter
+
+The top row of the {doctitle} allows you to configure which resources can or cannot be imported.
+
+By default, the {doctitle} is in _blocklist_ mode, meaning resources in the filter slots _will not_ be imported. An empty blocklist allows all resources.
+
+You can switch to _allowlist_ mode, where only listed resources will be imported. If no resources are configured in allowlist mode, nothing will be imported.
+
+=== Fuzzy mode
+
+Fuzzy mode, off by default, determines whether the filter considers additional attributes, such as a pickaxe’s damage value.
+
+== Applicable upgrades
+
+- xref:../upgrades/speed-upgrade.adoc[] (4)
+* Increases transfer speed.
+- xref:../upgrades/stack-upgrade.adoc[] (1)
+* Increases transfer amount per tick.
+- xref:../upgrades/regulator-upgrade.adoc[] (4)
+* Maintains a minimum amount of a resource in the connected inventory.
+
+include::../../partials/connections.adoc[]
+
+include::../../partials/redstone-mode.adoc[]

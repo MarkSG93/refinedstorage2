@@ -1,0 +1,14 @@
+= Stack Upgrade
+:icon: stack-upgrade.png
+:from: v0.7.7-beta
+
+The {doctitle} increases the transfer amount per tick of the device it is installed in.
+
+It can be combined with xref:speed-upgrade.adoc[speed upgrades] to increase the transfer speed.
+
+== Applicable storage network devices
+
+- xref:../input-and-output/importer.adoc[] (1)
+- xref:../input-and-output/exporter.adoc[] (1)
+- xref:../input-and-output/constructor.adoc[] (1)
+- xref:../input-and-output/disk-interface.adoc[] (1)

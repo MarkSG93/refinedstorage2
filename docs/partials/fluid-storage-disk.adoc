@@ -1,0 +1,14 @@
+Fluids in the storage network can be stored on a {doctitle}, which must be placed in a xref:../pages/storage/disk-drive.adoc[].
+
+== Upgrading
+
+You can combine the {doctitle} with a higher tier xref:../pages/storage/index.adoc#_fluid_storage_parts[fluid storage part] to upgrade it.
+
+The original xref:../pages/storage/index.adoc#_fluid_storage_parts[fluid storage part] will be returned.
+
+== Uncrafting
+
+Sneak and use an empty {doctitle} to retrieve its components:
+
+- The corresponding xref:../pages/storage/index.adoc#_fluid_storage_parts[fluid storage part]
+- xref:../pages/storage/storage-housing.adoc[]

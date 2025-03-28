@@ -1,0 +1,11 @@
+= Creative Range Upgrade
+:icon: creative-range-upgrade.png
+:from: v2.0.0
+
+The {doctitle} grants infinite range for the xref:../wireless-networking/wireless-transmitter.adoc[].
+
+It can only be obtained in creative mode.
+
+== Applicable storage network devices
+
+- xref:../wireless-networking/wireless-transmitter.adoc[] (1)

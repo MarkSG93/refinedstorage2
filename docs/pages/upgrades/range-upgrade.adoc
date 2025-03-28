@@ -1,0 +1,9 @@
+= Range Upgrade
+:icon: range-upgrade.png
+:from: v0.6.0-alpha
+
+The {doctitle} increases the range of the xref:../wireless-networking/wireless-transmitter.adoc[].
+
+== Applicable storage network devices
+
+- xref:../wireless-networking/wireless-transmitter.adoc[] (4)

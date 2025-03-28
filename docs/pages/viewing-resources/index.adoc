@@ -1,0 +1,6 @@
+= Viewing resources
+
+- xref:grid.adoc[]
+- xref:crafting-grid.adoc[]
+- xref:storage-monitor.adoc[]
+- xref:portable-grid.adoc[]

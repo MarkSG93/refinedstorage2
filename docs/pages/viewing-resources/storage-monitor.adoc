@@ -1,0 +1,34 @@
+= Storage Monitor
+:icon: storage-monitor.png
+:from: v1.4.1-beta
+
+The {doctitle} displays the current amount of a specified resource in the storage network.
+
+== Configuration
+
+SHIFT + Right-click the {doctitle} to set the displayed resource.
+
+=== Fuzzy mode
+
+Fuzzy mode, off by default, determines whether additional attributes, such as a pickaxe’s damage value, are considered.
+
+== Inserting and extracting items
+
+- **Extracting:**
+* Left-click to extract a full stack (64 items).
+* SHIFT + Left-click to extract a single item.
+- **Inserting:**
+* Right-click to insert items from your inventory.
+
+== Inserting and extracting fluids
+
+- **Extracting:** Left-click to extract a fluid. A bucket must be available in the storage network or your inventory.
+- **Inserting:** Right-click a fluid container to insert its contents.
+
+== Autocrafting
+
+If a resource is no longer available, you can start an autocrafting task for it from the {doctitle}.
+
+include::../../partials/redstone-mode.adoc[]
+
+include::../../partials/connections-uncolored.adoc[]

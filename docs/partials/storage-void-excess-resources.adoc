@@ -1,0 +1,7 @@
+== Void excess resources
+
+When the storage is in allowlist mode, **void excess resources** mode can be enabled.
+
+If this mode is active and a resource is allowed but there is no available space, the resource is still accepted, and the excess is voided.
+
+> This mode is only available in allowlist mode to ensure that voiding is a deliberate choice and to prevent accidental loss of resources.

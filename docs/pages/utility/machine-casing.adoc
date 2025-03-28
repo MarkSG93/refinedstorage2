@@ -1,0 +1,5 @@
+= Machine Casing
+:icon: machine-casing.png
+:from: v0.3.0-alpha
+
+include::../../partials/crafting-item.adoc[]

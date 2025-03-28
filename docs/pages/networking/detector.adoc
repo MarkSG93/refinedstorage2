@@ -1,0 +1,25 @@
+= Detector
+:icon: detector.png
+:from: v0.3.0-alpha
+
+The {doctitle} emits a redstone signal based on the amount of a specified resource in the storage network.
+
+== Filter
+
+You can configure the resource and amount to monitor.
+
+=== Fuzzy mode
+
+Fuzzy mode, off by default, determines whether additional attributes, such as a pickaxe’s damage value, are considered.
+
+== Mode
+
+The {doctitle} can emit a redstone signal under the following conditions:
+
+- When the resource amount is **equal to** the set value
+- When the resource amount is **above** the set value
+- When the resource amount is **below** the set value
+
+include::../../partials/connections-all.adoc[]
+
+include::../../partials/recoloring.adoc[]

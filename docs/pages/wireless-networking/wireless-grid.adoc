@@ -1,0 +1,17 @@
+= Wireless Grid
+:from: v0.3.0-alpha
+:icon: wireless-grid.png
+
+The {doctitle} is a wireless version of the xref:../viewing-resources/grid.adoc[].
+
+== Usage
+
+To use the {doctitle}:
+
+- Bind it to a storage network by using it on any storage network device.
+- Ensure at least one xref:wireless-transmitter.adoc[] is installed in the storage network for connectivity.
+- Charge the {doctitle}, as it consumes energy when opening the view, inserting, or extracting a resource.
+
+== Keybinding
+
+An unbound keybinding is available to open the {doctitle}.

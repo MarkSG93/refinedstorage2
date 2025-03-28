@@ -1,0 +1,62 @@
+= Constructor
+:icon: constructor.png
+:from: v0.3.0-alpha
+
+The {doctitle} places resources from the storage network into the block space in front of it.
+
+> The {doctitle} requires an empty space in front of it to function.
+
+== Filter
+
+The top row of the {doctitle} specifies which resources should be placed. If no resources are set, it will not function.
+
+The last known state for each filtered resource is displayed:
+
+- **None** – The resource was placed successfully or hasn't been placed yet.
+- **Resource missing** – The resource is not available in the storage network.
+- **Autocrafting started** – An autocrafting task was started for the missing resource (requires a xref:../upgrades/autocrafting-upgrade.adoc[]).
+- **Autocrafting detected missing resources** – The autocrafting task could not start due to missing ingredients.
+
+=== Fuzzy mode
+
+Fuzzy mode, off by default, determines whether the filter considers additional attributes, such as a pickaxe’s damage value.
+
+== Scheduling mode
+
+If multiple resources are set, the {doctitle} follows a scheduling mode to determine placement order.
+
+=== Default
+
+Places each resource in order, moving to the next only if the current one is unavailable.
+
+=== Round-robin
+
+Places each resource in turn.
+
+=== Random
+
+Places a random resource from the filter.
+
+== Fireworks
+
+The {doctitle} can launch firework rockets into the air.
+
+== Dropping items instead of placing blocks
+
+The {doctitle} can drop items into the world instead of placing blocks.
+
+> With a xref:../upgrades/stack-upgrade.adoc[], it drops stacks at a time.
+
+== Applicable upgrades
+
+- xref:../upgrades/speed-upgrade.adoc[] (4)
+* Increases placement speed.
+- xref:../upgrades/stack-upgrade.adoc[] (1)
+* Drops stacks instead of individual items when in drop mode.
+- xref:../upgrades/autocrafting-upgrade.adoc[] (1)
+* Starts an autocrafting task if the configured resource is missing and a block can be placed.
+
+include::../../partials/connections.adoc[]
+
+include::../../partials/redstone-mode.adoc[]
+

@@ -1,0 +1,32 @@
+= Pattern
+:icon: pattern.png
+:from: v0.6.0-alpha
+
+The {doctitle} stores inputs and outputs for an autocrafting recipe. Recipes are assigned using a xref:pattern-grid.adoc[].
+
+[#_crafting_patterns]
+== Crafting patterns
+
+A pattern can represent a standard crafting recipe.
+When Fuzzy mode is enabled, alternatives are allowed.
+
+[#_processing_patterns]
+== Processing patterns
+
+Processing patterns are used to interface with external machines via a xref:autocrafter.adoc[].
+Inputs are sent to the machine, and the task completes only if the outputs are returned to the storage network.
+
+For each input, alternatives can be set using link:https://minecraft.gamepedia.com/Tag[Minecraft's tag system].
+
+== Other pattern types
+
+- Stonecutter pattern
+- Smithing Table pattern
+
+== Clearing a pattern
+
+SHIFT + right-click while holding the {doctitle} to clear it.
+
+== Modifying existing patterns
+
+Re-insert a {doctitle} into the output slot of the xref:pattern-grid.adoc[] to modify it.
