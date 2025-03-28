@@ -10,6 +10,8 @@ By default, the {doctitle} is in pass-through mode. This allows the network sign
 
 When pass-through mode is *off*, the {doctitle} stops transmitting the signal by default. From that point, the output side receives an isolated (empty) network unless specific components are manually passed through.
 
+link:https://www.youtube.com/watch?v=fRGH4ZUAnhQ[Check out this video explaining how pass-through modes work in the Relay]
+
 == Pass energy
 
 When pass-through mode is off, the {doctitle} can be configured to pass energy from the input sides to the output side.
