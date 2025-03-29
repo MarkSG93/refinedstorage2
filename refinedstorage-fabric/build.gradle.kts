@@ -19,7 +19,9 @@ refinedarchitect {
     publishing {
         maven = true
         curseForge = "243076"
+        curseForgeRequiredDependencies = listOf("fabric-api")
         modrinth = "KDvYkUg3"
+        modrinthRequiredDependencies = listOf("fabric-api")
     }
 }
 
