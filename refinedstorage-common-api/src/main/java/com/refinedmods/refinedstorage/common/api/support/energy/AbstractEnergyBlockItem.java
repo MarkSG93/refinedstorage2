@@ -1,17 +1,12 @@
 package com.refinedmods.refinedstorage.common.api.support.energy;
 
 import java.util.List;
-import javax.annotation.Nullable;
 
-import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
 import org.apiguardian.api.API;
 
 @API(status = API.Status.STABLE, since = "2.0.0-milestone.3.1")
@@ -51,18 +46,5 @@ public abstract class AbstractEnergyBlockItem extends BlockItem {
 
     public ItemStack createAtEnergyCapacity() {
         return helper.createAtEnergyCapacity(this);
-    }
-
-    @Override
-    protected boolean updateCustomBlockEntityTag(
-        final BlockPos pos,
-        final Level level,
-        @Nullable final Player player,
-        final ItemStack stack,
-        final BlockState blockState
-    ) {
-        final boolean result = super.updateCustomBlockEntityTag(pos, level, player, stack, blockState);
-        helper.passEnergyToBlockEntity(pos, level, stack);
-        return result;
     }
 }
