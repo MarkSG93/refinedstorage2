@@ -1,4 +1,4 @@
-package com.refinedmods.refinedstorage.common.storage.storageblock;
+package com.refinedmods.refinedstorage.common.storage.diskdrive;
 
 import com.refinedmods.refinedstorage.api.resource.ResourceAmount;
 import com.refinedmods.refinedstorage.api.resource.filter.FilterMode;
@@ -19,20 +19,20 @@ import static com.refinedmods.refinedstorage.common.GameTestUtil.getItemAsDamage
 import static com.refinedmods.refinedstorage.common.GameTestUtil.insert;
 import static com.refinedmods.refinedstorage.common.GameTestUtil.networkIsAvailable;
 import static com.refinedmods.refinedstorage.common.GameTestUtil.storageContainsExactly;
-import static com.refinedmods.refinedstorage.common.storage.storageblock.StorageBlockTestPlots.preparePlot;
+import static com.refinedmods.refinedstorage.common.storage.diskdrive.DiskDriveTestPlots.preparePlot;
 import static net.minecraft.world.item.Items.DIAMOND_CHESTPLATE;
 import static net.minecraft.world.item.Items.DIRT;
 import static net.minecraft.world.item.Items.STONE;
 
 @GameTestHolder(IdentifierUtil.MOD_ID)
 @PrefixGameTestTemplate(false)
-public final class StorageBlockItemTest {
-    private StorageBlockItemTest() {
+public final class DiskDriveItemTest {
+    private DiskDriveItemTest() {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertItemsStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, true, (storageBlock, pos, sequence) -> {
+    public static void shouldInsertItemsDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, true, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 2)));
 
@@ -58,14 +58,14 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertItemAllowlistStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, true, (storageBlock, pos, sequence) -> {
+    public static void shouldInsertItemAllowlistDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, true, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 64)));
 
             // Act
-            storageBlock.setFilterMode(FilterMode.ALLOW);
-            storageBlock.setFilters(Set.of(asResource(STONE)));
+            diskDrive.setFilterMode(FilterMode.ALLOW);
+            diskDrive.setFilters(Set.of(asResource(STONE)));
 
             // Assert
             sequence
@@ -88,8 +88,8 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertItemFuzzyAllowlistStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, true, (storageBlock, pos, sequence) -> {
+    public static void shouldInsertItemFuzzyAllowlistDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, true, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> {
             }));
@@ -97,9 +97,9 @@ public final class StorageBlockItemTest {
             // Act
             final ItemStack damagedDiamondChestplate = getItemAsDamaged(DIAMOND_CHESTPLATE.getDefaultInstance(), 500);
 
-            storageBlock.setFuzzyMode(true);
-            storageBlock.setFilterMode(FilterMode.ALLOW);
-            storageBlock.setFilters(Set.of(asResource(DIAMOND_CHESTPLATE.getDefaultInstance())));
+            diskDrive.setFuzzyMode(true);
+            diskDrive.setFilterMode(FilterMode.ALLOW);
+            diskDrive.setFilters(Set.of(asResource(DIAMOND_CHESTPLATE.getDefaultInstance())));
 
             // Assert
             sequence
@@ -120,14 +120,14 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertItemBlocklistStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, true, (storageBlock, pos, sequence) -> {
+    public static void shouldInsertItemBlocklistDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, true, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 64)));
 
             // Act
-            storageBlock.setFilterMode(FilterMode.BLOCK);
-            storageBlock.setFilters(Set.of(asResource(DIRT)));
+            diskDrive.setFilterMode(FilterMode.BLOCK);
+            diskDrive.setFilters(Set.of(asResource(DIRT)));
 
             // Assert
             sequence
@@ -150,8 +150,8 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertItemFuzzyBlocklistStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, true, (storageBlock, pos, sequence) -> {
+    public static void shouldInsertItemFuzzyBlocklistDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, true, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> {
             }));
@@ -159,9 +159,9 @@ public final class StorageBlockItemTest {
             // Act
             final ItemStack damagedDiamondChestplate = getItemAsDamaged(DIAMOND_CHESTPLATE.getDefaultInstance(), 500);
 
-            storageBlock.setFuzzyMode(true);
-            storageBlock.setFilterMode(FilterMode.BLOCK);
-            storageBlock.setFilters(Set.of(asResource(DIAMOND_CHESTPLATE.getDefaultInstance())));
+            diskDrive.setFuzzyMode(true);
+            diskDrive.setFilterMode(FilterMode.BLOCK);
+            diskDrive.setFilters(Set.of(asResource(DIAMOND_CHESTPLATE.getDefaultInstance())));
 
             // Assert
             sequence
@@ -181,8 +181,8 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldExtractItemsStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, true, (storageBlock, pos, sequence) -> {
+    public static void shouldExtractItemsDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, true, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> {
                 insert(helper, network, STONE, 64);
@@ -211,14 +211,14 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldExtractItemAllowlistStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, true, (storageBlock, pos, sequence) -> {
+    public static void shouldExtractItemAllowlistDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, true, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 64)));
 
             // Act
-            storageBlock.setFilterMode(FilterMode.ALLOW);
-            storageBlock.setFilters(Set.of(asResource(STONE)));
+            diskDrive.setFilterMode(FilterMode.ALLOW);
+            diskDrive.setFilters(Set.of(asResource(STONE)));
 
             // Assert
             sequence
@@ -241,17 +241,17 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldExtractItemBlocklistStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, true, (storageBlock, pos, sequence) -> {
+    public static void shouldExtractItemBlocklistDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, true, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 64)));
 
             // Act
-            storageBlock.setFilterMode(FilterMode.BLOCK);
+            diskDrive.setFilterMode(FilterMode.BLOCK);
 
             // Assert
             sequence
-                .thenExecute(() -> storageBlock.setFilters(Set.of(asResource(DIRT))))
+                .thenExecute(() -> diskDrive.setFilters(Set.of(asResource(DIRT))))
                 .thenWaitUntil(storageContainsExactly(
                     helper,
                     pos,
@@ -271,15 +271,15 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldVoidItemsStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, true, (storageBlock, pos, sequence) -> {
+    public static void shouldVoidItemsDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, true, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 1024)));
 
             // Act
-            storageBlock.setFilterMode(FilterMode.ALLOW);
-            storageBlock.setFilters(Set.of(asResource(STONE)));
-            storageBlock.setVoidExcess(true);
+            diskDrive.setFilterMode(FilterMode.ALLOW);
+            diskDrive.setFilters(Set.of(asResource(STONE)));
+            diskDrive.setVoidExcess(true);
 
             // Assert
             sequence
@@ -302,13 +302,13 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldRespectItemInsertAccessModeStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, true, (storageBlock, pos, sequence) -> {
+    public static void shouldRespectItemInsertAccessModeDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, true, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 64)));
 
             // Act
-            storageBlock.setAccessMode(AccessMode.INSERT);
+            diskDrive.setAccessMode(AccessMode.INSERT);
 
             // Assert
             sequence
@@ -339,14 +339,14 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldRespectItemExtractAccessModeStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, true, (storageBlock, pos, sequence) -> {
+    public static void shouldRespectItemExtractAccessModeDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, true, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 64)));
 
             // Assert
             sequence
-                .thenExecute(() -> storageBlock.setAccessMode(AccessMode.EXTRACT))
+                .thenExecute(() -> diskDrive.setAccessMode(AccessMode.EXTRACT))
                 .thenWaitUntil(storageContainsExactly(
                     helper,
                     pos,

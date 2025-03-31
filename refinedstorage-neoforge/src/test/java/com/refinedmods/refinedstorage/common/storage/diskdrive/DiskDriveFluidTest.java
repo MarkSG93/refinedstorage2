@@ -1,4 +1,4 @@
-package com.refinedmods.refinedstorage.common.storage.storageblock;
+package com.refinedmods.refinedstorage.common.storage.diskdrive;
 
 import com.refinedmods.refinedstorage.api.resource.ResourceAmount;
 import com.refinedmods.refinedstorage.api.resource.filter.FilterMode;
@@ -18,19 +18,19 @@ import static com.refinedmods.refinedstorage.common.GameTestUtil.extract;
 import static com.refinedmods.refinedstorage.common.GameTestUtil.insert;
 import static com.refinedmods.refinedstorage.common.GameTestUtil.networkIsAvailable;
 import static com.refinedmods.refinedstorage.common.GameTestUtil.storageContainsExactly;
-import static com.refinedmods.refinedstorage.common.storage.storageblock.StorageBlockTestPlots.preparePlot;
+import static com.refinedmods.refinedstorage.common.storage.diskdrive.DiskDriveTestPlots.preparePlot;
 import static net.minecraft.world.level.material.Fluids.LAVA;
 import static net.minecraft.world.level.material.Fluids.WATER;
 
 @GameTestHolder(IdentifierUtil.MOD_ID)
 @PrefixGameTestTemplate(false)
-public final class StorageBlockFluidTest {
-    private StorageBlockFluidTest() {
+public final class DiskDriveFluidTest {
+    private DiskDriveFluidTest() {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertFluidsStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, false, (storageBlock, pos, sequence) -> {
+    public static void shouldInsertFluidsDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, false, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->
                 insert(helper, network, WATER, Platform.INSTANCE.getBucketAmount() * 2)));
@@ -57,15 +57,15 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertFluidAllowlistStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, false, (storageBlock, pos, sequence) -> {
+    public static void shouldInsertFluidAllowlistDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, false, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->
                 insert(helper, network, WATER, Platform.INSTANCE.getBucketAmount() * 16)));
 
             // Act
-            storageBlock.setFilterMode(FilterMode.ALLOW);
-            storageBlock.setFilters(Set.of(asResource(WATER)));
+            diskDrive.setFilterMode(FilterMode.ALLOW);
+            diskDrive.setFilters(Set.of(asResource(WATER)));
 
             // Assert
             sequence
@@ -88,15 +88,15 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertFluidBlocklistStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, false, (storageBlock, pos, sequence) -> {
+    public static void shouldInsertFluidBlocklistDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, false, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->
                 insert(helper, network, WATER, Platform.INSTANCE.getBucketAmount() * 16)));
 
             // Act
-            storageBlock.setFilterMode(FilterMode.BLOCK);
-            storageBlock.setFilters(Set.of(asResource(LAVA)));
+            diskDrive.setFilterMode(FilterMode.BLOCK);
+            diskDrive.setFilters(Set.of(asResource(LAVA)));
 
             // Assert
             sequence
@@ -119,8 +119,8 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldExtractFluidsStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, false, (storageBlock, pos, sequence) -> {
+    public static void shouldExtractFluidsDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, false, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> {
                 insert(helper, network, WATER, Platform.INSTANCE.getBucketAmount() * 16);
@@ -149,15 +149,15 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldExtractFluidAllowlistStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, false, (storageBlock, pos, sequence) -> {
+    public static void shouldExtractFluidAllowlistDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, false, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->
                 insert(helper, network, WATER, Platform.INSTANCE.getBucketAmount() * 16)));
 
             // Act
-            storageBlock.setFilterMode(FilterMode.ALLOW);
-            storageBlock.setFilters(Set.of(asResource(WATER)));
+            diskDrive.setFilterMode(FilterMode.ALLOW);
+            diskDrive.setFilters(Set.of(asResource(WATER)));
 
             // Assert
             sequence
@@ -180,15 +180,15 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldExtractFluidBlocklistStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, false, (storageBlock, pos, sequence) -> {
+    public static void shouldExtractFluidBlocklistDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, false, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->
                 insert(helper, network, WATER, Platform.INSTANCE.getBucketAmount() * 16)));
 
             // Act
-            storageBlock.setFilterMode(FilterMode.BLOCK);
-            storageBlock.setFilters(Set.of(asResource(LAVA)));
+            diskDrive.setFilterMode(FilterMode.BLOCK);
+            diskDrive.setFilters(Set.of(asResource(LAVA)));
 
             // Assert
             sequence
@@ -211,16 +211,16 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldVoidFluidsStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, false, (storageBlock, pos, sequence) -> {
+    public static void shouldVoidFluidsDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, false, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->
                 insert(helper, network, WATER, Platform.INSTANCE.getBucketAmount() * 64)));
 
             // Act
-            storageBlock.setFilterMode(FilterMode.ALLOW);
-            storageBlock.setFilters(Set.of(asResource(WATER)));
-            storageBlock.setVoidExcess(true);
+            diskDrive.setFilterMode(FilterMode.ALLOW);
+            diskDrive.setFilters(Set.of(asResource(WATER)));
+            diskDrive.setVoidExcess(true);
 
             // Assert
             sequence
@@ -243,14 +243,14 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldRespectFluidInsertAccessModeStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, false, (storageBlock, pos, sequence) -> {
+    public static void shouldRespectFluidInsertAccessModeDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, false, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->
                 insert(helper, network, WATER, Platform.INSTANCE.getBucketAmount() * 16)));
 
             // Act
-            storageBlock.setAccessMode(AccessMode.INSERT);
+            diskDrive.setAccessMode(AccessMode.INSERT);
 
             // Assert
             sequence
@@ -282,15 +282,15 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldRespectFluidExtractAccessModeStorageBlock(final GameTestHelper helper) {
-        preparePlot(helper, false, (storageBlock, pos, sequence) -> {
+    public static void shouldRespectFluidExtractAccessModeDiskDrive(final GameTestHelper helper) {
+        preparePlot(helper, false, (diskDrive, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->
                 insert(helper, network, WATER, Platform.INSTANCE.getBucketAmount() * 16)));
 
             // Assert
             sequence
-                .thenExecute(() -> storageBlock.setAccessMode(AccessMode.EXTRACT))
+                .thenExecute(() -> diskDrive.setAccessMode(AccessMode.EXTRACT))
                 .thenWaitUntil(storageContainsExactly(
                     helper,
                     pos,
