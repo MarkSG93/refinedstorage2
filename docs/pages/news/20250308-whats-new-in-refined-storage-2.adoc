@@ -64,7 +64,7 @@ To reduce core complexity, integrations have been moved to their own addon mods.
 - NeoForge config screen
 - xref:../addons/fabric-ecosystem.adoc[]
 * xref:../addons/trinkets.adoc[]
-- The xref:../wireless-networking/wireless-crafting-grid.adoc[] has moved from Refined Storage Addons to xref:../addons/quartz-accessories.adoc[*Quartz Accessories*].
+- The xref:../wireless-networking/wireless-crafting-grid.adoc[] has moved from Refined Storage Addons to xref:../addons/quartz-arsenal.adoc[*Quartz Arsenal*].
 
 ==== Unofficial addons
 
