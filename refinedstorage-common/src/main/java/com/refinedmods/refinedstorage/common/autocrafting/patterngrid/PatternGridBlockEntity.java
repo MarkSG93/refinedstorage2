@@ -372,7 +372,7 @@ public class PatternGridBlockEntity extends AbstractGridBlockEntity implements B
         return result;
     }
 
-    private static ItemStack createPatternStack(final PatternType patternType) {
+    public static ItemStack createPatternStack(final PatternType patternType) {
         final ItemStack result = new ItemStack(Items.INSTANCE.getPattern());
         final PatternState patternState = new PatternState(UUID.randomUUID(), patternType);
         result.set(DataComponents.INSTANCE.getPatternState(), patternState);
