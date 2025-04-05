@@ -46,7 +46,7 @@ public class SnapshotExtractTransaction implements ExtractTransaction {
         if (!available.contains(craftingMatrixResource)) {
             final long amount = rootStorage.extract(
                 craftingMatrixResource,
-                Long.MAX_VALUE,
+                Integer.MAX_VALUE, // integer for NeoForge support
                 Action.SIMULATE,
                 playerActor
             );

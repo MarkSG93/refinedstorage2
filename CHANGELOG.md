@@ -21,6 +21,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 -   Fixed Relay always requiring 8 energy on NeoForge.
 -   Fixed crash with processing patterns that have no outputs due to removing mods.
+-   Fixed not being able to shift click items in the Crafting Grid when an External Storage was connected, on NeoForge.
 
 ## [2.0.0-beta.1] - 2025-03-28
 
