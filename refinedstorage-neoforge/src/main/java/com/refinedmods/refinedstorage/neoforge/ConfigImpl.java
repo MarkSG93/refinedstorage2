@@ -971,10 +971,10 @@ public class ConfigImpl implements Config {
             builder.translation(translationKey("relay")).push("relay");
             inputNetworkEnergyUsage = builder
                 .translation(translationKey("relay.inputNetworkEnergyUsage"))
-                .defineInRange("inputNetworkEnergyUsage", DefaultEnergyUsage.RELAY_INPUT_NETWORK, 8, Long.MAX_VALUE);
+                .defineInRange("inputNetworkEnergyUsage", DefaultEnergyUsage.RELAY_INPUT_NETWORK, 0, Long.MAX_VALUE);
             outputNetworkEnergyUsage = builder
                 .translation(translationKey("relay.outputNetworkEnergyUsage"))
-                .defineInRange("outputNetworkEnergyUsage", DefaultEnergyUsage.RELAY_OUTPUT_NETWORK, 8, Long.MAX_VALUE);
+                .defineInRange("outputNetworkEnergyUsage", DefaultEnergyUsage.RELAY_OUTPUT_NETWORK, 0, Long.MAX_VALUE);
             builder.pop();
         }
 

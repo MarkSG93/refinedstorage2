@@ -17,6 +17,10 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 -   Updated Autocrafter casing textures.
 -   Updated Configuration Card, Processor Binding, Silicon, Quartz Enriched Iron and Quartz Enriched Copper textures.
 
+### Fixed
+
+-   Fixed Relay always requiring 8 energy on NeoForge.
+
 ## [2.0.0-beta.1] - 2025-03-28
 
 ### Changed
