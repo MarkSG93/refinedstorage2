@@ -192,6 +192,8 @@ public final class DestructorTest {
     public static void shouldPickupItemBlocklist(final GameTestHelper helper) {
         preparePlot(helper, Direction.EAST, (destructor, pos, sequence) -> {
             // Arrange
+            helper.setBlock(pos.east().below(), Blocks.STONE);
+
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> {
                 insert(helper, network, DIRT, 10);
                 insert(helper, network, STONE, 15);
@@ -204,11 +206,11 @@ public final class DestructorTest {
 
             // Assert
             sequence
-                .thenExecute(() -> helper.spawnItem(DIRT, pos.east()))
-                .thenWaitUntil(() -> helper.assertItemEntityNotPresent(DIRT, pos.east(), 1))
-                .thenExecute(() -> helper.spawnItem(STONE, pos.east()))
+                .thenExecute(() -> helper.spawnItem(DIRT, pos.east().getCenter()))
+                .thenWaitUntil(() -> helper.assertItemEntityNotPresent(DIRT, pos.east(), 2))
+                .thenExecute(() -> helper.spawnItem(STONE, pos.east().getCenter()))
                 .thenIdle(20)
-                .thenWaitUntil(() -> helper.assertItemEntityPresent(STONE, pos.east(), 1))
+                .thenExecute(() -> helper.assertItemEntityPresent(STONE, pos.east(), 2))
                 .thenWaitUntil(storageContainsExactly(
                     helper,
                     pos,
