@@ -21,15 +21,18 @@ Refined Storage 2 has been rebuilt from the ground up with the following goals i
 
 - A strong focus on code quality
 - Long-term maintainability
-- Mod loader independence
+- Mod loader independence (support for Fabric and NeoForge)
 - A complete rethinking and modernization of nearly every feature
 
 == What has changed?
 
 === Summary
 
+> Prefer watching a video instead? Check out link:https://www.youtube.com/watch?v=CJtzy_wMTYk[ChosenArchitect's showcase of Refined Storage 2].
+
 - Integrations have been moved to xref:../addons/index.adoc[addons].
 - There is a xref:../addons/mekanism.adoc[*Mekanism integration*] now adding support for chemical storage.
+- There is now support for the **Fabric** modloader, along NeoForge.
 - The *Fluid Grid* was removed. The regular xref:../viewing-resources/grid.adoc[*Grid*] now handles items, fluids, and chemicals.
 - The *Grid* marks autocraftable resources with an orange backdrop, also considering uninserted patterns in your inventory.
 - The xref:../autocrafting/autocrafter.adoc[*Autocrafter*] now supports more locking options for easier blocking mode.
@@ -260,7 +263,6 @@ Special thanks to:
 - link:https://discordapp.com/invite/VYzsydb[The Refined Mods Discord community] for bug reports, testing, and feedback.
 - Translators on Crowdin who eagerly kept up with all the changes.
 - Technici4n for early API feedback and major influence on the final API design.
-- shartte for untangling Gradle issues.
 - Ultramega for help with integration tests.
 - My supporters on link:https://patreon.com/raoulvdberge[Patreon] and link:https://ko-fi.com/raoulvdberge[Ko-Fi].
 - My partner Robin, for supporting me through every step of this journey.
