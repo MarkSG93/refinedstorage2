@@ -20,6 +20,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 
 -   Fixed Relay always requiring 8 energy on NeoForge.
+-   Fixed crash with processing patterns that have no outputs due to removing mods.
 
 ## [2.0.0-beta.1] - 2025-03-28
 
