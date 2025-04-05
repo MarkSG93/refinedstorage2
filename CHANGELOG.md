@@ -10,6 +10,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Changed
 
 -  Updated Disk Drive textures.
+-  Updated Machine Casing textures.
 
 ## [2.0.0-beta.1] - 2025-03-28
 

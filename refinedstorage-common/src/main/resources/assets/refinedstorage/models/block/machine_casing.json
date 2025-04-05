@@ -1,6 +1,7 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube_column",
   "textures": {
-    "all": "refinedstorage:block/machine_casing"
+    "side": "refinedstorage:block/machine_casing/side",
+    "end": "refinedstorage:block/machine_casing/end"
   }
 }
