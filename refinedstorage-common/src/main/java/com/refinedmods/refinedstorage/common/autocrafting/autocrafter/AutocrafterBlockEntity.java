@@ -566,11 +566,16 @@ public class AutocrafterBlockEntity extends AbstractBaseNetworkNodeContainerBloc
             return ExternalPatternSink.Result.LOCKED;
         }
         final ExternalPatternSink.Result result = sink.accept(resources, action);
+        updateLockedAfterAccept(action, result);
+        return result;
+    }
+
+    private void updateLockedAfterAccept(final Action action, final ExternalPatternSink.Result result) {
         // If we are using speed upgrades, we will try multiple insertions (steps) in 1 tick.
         // That is too late, however, if we only update the locked state every tick.
-        if (result == ExternalPatternSink.Result.ACCEPTED &&
-            action == Action.EXECUTE &&
-            lockMode == LockMode.LOCK_UNTIL_CONNECTED_MACHINE_IS_EMPTY) {
+        if (result == ExternalPatternSink.Result.ACCEPTED
+            && action == Action.EXECUTE
+            && lockMode == LockMode.LOCK_UNTIL_CONNECTED_MACHINE_IS_EMPTY) {
             updateLocked();
         }
         if (result == ExternalPatternSink.Result.ACCEPTED
@@ -579,7 +584,6 @@ public class AutocrafterBlockEntity extends AbstractBaseNetworkNodeContainerBloc
             || lockMode == LockMode.LOCK_UNTIL_ALL_OUTPUTS_ARE_RECEIVED)) {
             setLocked(true);
         }
-        return result;
     }
 
     @Override
