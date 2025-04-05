@@ -14,6 +14,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 -   Updated Crafting Grid textures.
 -   Updated Storage Monitor textures.
 -   Updated Controller casing textures.
+-   Updated Autocrafter casing textures.
 
 ## [2.0.0-beta.1] - 2025-03-28
 
