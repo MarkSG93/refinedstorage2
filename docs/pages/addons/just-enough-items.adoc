@@ -42,3 +42,8 @@ image::../../assets/addons/jei-ghost-dragging.png[JEI ghost ingredient dragging]
 == Exclusion zones
 
 JEI elements automatically reposition to avoid overlapping Refined Storage GUI components.
+
+== Download
+
+- link:https://www.curseforge.com/minecraft/mc-mods/refined-storage-jei-integration[Download on CurseForge]
+- link:https://modrinth.com/mod/refined-storage-jei-integration[Download on Modrinth]

@@ -3,17 +3,14 @@ package com.refinedmods.refinedstorage.common.support.energy;
 import com.refinedmods.refinedstorage.api.core.Action;
 import com.refinedmods.refinedstorage.common.api.RefinedStorageApi;
 import com.refinedmods.refinedstorage.common.api.support.energy.EnergyItemHelper;
-import com.refinedmods.refinedstorage.common.api.support.energy.TransferableBlockEntityEnergy;
 
 import java.util.List;
 
 import net.minecraft.ChatFormatting;
-import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
 
 import static com.refinedmods.refinedstorage.common.util.IdentifierUtil.createStoredWithCapacityTranslation;
 
@@ -57,17 +54,5 @@ public class EnergyItemHelperImpl implements EnergyItemHelper {
             Action.EXECUTE
         ));
         return stack;
-    }
-
-    @Override
-    public void passEnergyToBlockEntity(final BlockPos pos, final Level level, final ItemStack stack) {
-        if (level.isClientSide()
-            || !(level.getBlockEntity(pos) instanceof TransferableBlockEntityEnergy transferableBlockEntityEnergy)) {
-            return;
-        }
-        RefinedStorageApi.INSTANCE.getEnergyStorage(stack).ifPresent(
-            energyStorage -> transferableBlockEntityEnergy.getEnergyStorage()
-                .receive(energyStorage.getStored(), Action.EXECUTE)
-        );
     }
 }

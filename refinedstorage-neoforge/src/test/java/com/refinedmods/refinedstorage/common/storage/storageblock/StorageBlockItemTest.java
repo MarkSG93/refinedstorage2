@@ -31,7 +31,7 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertItems(final GameTestHelper helper) {
+    public static void shouldInsertItemsStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, true, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 2)));
@@ -58,7 +58,7 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertItemAllowlist(final GameTestHelper helper) {
+    public static void shouldInsertItemAllowlistStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, true, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 64)));
@@ -88,7 +88,7 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertItemFuzzyAllowlist(final GameTestHelper helper) {
+    public static void shouldInsertItemFuzzyAllowlistStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, true, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> {
@@ -120,7 +120,7 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertItemBlocklist(final GameTestHelper helper) {
+    public static void shouldInsertItemBlocklistStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, true, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 64)));
@@ -150,7 +150,7 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertItemFuzzyBlocklist(final GameTestHelper helper) {
+    public static void shouldInsertItemFuzzyBlocklistStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, true, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> {
@@ -181,7 +181,7 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldExtractItems(final GameTestHelper helper) {
+    public static void shouldExtractItemsStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, true, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> {
@@ -211,7 +211,7 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldExtractItemAllowlist(final GameTestHelper helper) {
+    public static void shouldExtractItemAllowlistStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, true, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 64)));
@@ -241,7 +241,7 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldExtractItemBlocklist(final GameTestHelper helper) {
+    public static void shouldExtractItemBlocklistStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, true, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 64)));
@@ -271,7 +271,7 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldVoidItems(final GameTestHelper helper) {
+    public static void shouldVoidItemsStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, true, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 1024)));
@@ -302,7 +302,7 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldRespectItemInsertAccessMode(final GameTestHelper helper) {
+    public static void shouldRespectItemInsertAccessModeStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, true, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 64)));
@@ -339,7 +339,7 @@ public final class StorageBlockItemTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldRespectItemExtractAccessMode(final GameTestHelper helper) {
+    public static void shouldRespectItemExtractAccessModeStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, true, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> insert(helper, network, STONE, 64)));

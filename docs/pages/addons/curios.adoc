@@ -1,6 +1,6 @@
 = Curios integration
 
-An optional integration mod adds support for Curios on NeoForge, providing two dedicated Curios slots for the following tools:
+An optional integration mod adds support for Curios on NeoForge, providing two dedicated Curios slots for the following Refined Storage tools:
 
 - xref:../wireless-networking/wireless-grid.adoc[]
 - xref:../wireless-networking/creative-wireless-grid.adoc[]
@@ -12,3 +12,8 @@ An optional integration mod adds support for Curios on NeoForge, providing two d
 You can combine this with a keybinding to quickly open these tools while equipped.
 
 image::../../assets/addons/curios.png[Curios slots]
+
+== Download
+
+- link:https://www.curseforge.com/minecraft/mc-mods/refined-storage-curios-integration[Download on CurseForge]
+- link:https://modrinth.com/mod/refined-storage-curios-integration[Download on Modrinth]

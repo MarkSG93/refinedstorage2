@@ -69,3 +69,8 @@ The xref:../viewing-resources/storage-monitor.adoc[] can display the amount of a
 
 You can autocraft chemicals by using xref:../autocrafting/pattern.adoc#_processing_patterns[processing patterns] that define chemical inputs and outputs.
 The xref:../autocrafting/autocrafter.adoc[] will insert chemicals into compatible machines, and expect the output chemicals to be returned to complete the task.
+
+== Download
+
+- link:https://www.curseforge.com/minecraft/mc-mods/refined-storage-mekanism-integration[Download on CurseForge]
+- link:https://modrinth.com/mod/refined-storage-mekanism-integration[Download on Modrinth]

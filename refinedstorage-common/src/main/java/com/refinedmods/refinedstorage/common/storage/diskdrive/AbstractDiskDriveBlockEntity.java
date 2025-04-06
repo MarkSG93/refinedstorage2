@@ -2,6 +2,8 @@ package com.refinedmods.refinedstorage.common.storage.diskdrive;
 
 import com.refinedmods.refinedstorage.api.network.impl.node.storage.StorageNetworkNode;
 import com.refinedmods.refinedstorage.api.resource.ResourceKey;
+import com.refinedmods.refinedstorage.api.resource.filter.FilterMode;
+import com.refinedmods.refinedstorage.api.storage.AccessMode;
 import com.refinedmods.refinedstorage.common.Platform;
 import com.refinedmods.refinedstorage.common.content.BlockEntities;
 import com.refinedmods.refinedstorage.common.content.ContentNames;
@@ -43,6 +45,23 @@ public abstract class AbstractDiskDriveBlockEntity extends AbstractDiskContainer
     @Override
     protected void setFilters(final Set<ResourceKey> filters) {
         mainNetworkNode.getStorageConfiguration().setFilters(filters);
+    }
+
+    void setFilterMode(final FilterMode mode) {
+        mainNetworkNode.getStorageConfiguration().setFilterMode(mode);
+        setChanged();
+    }
+
+    void setFuzzyMode(final boolean fuzzyMode) {
+        filter.setFuzzyMode(fuzzyMode);
+    }
+
+    void setAccessMode(final AccessMode accessMode) {
+        mainNetworkNode.getStorageConfiguration().setAccessMode(accessMode);
+    }
+
+    void setVoidExcess(final boolean voidExcess) {
+        mainNetworkNode.getStorageConfiguration().setVoidExcess(voidExcess);
     }
 
     @Override

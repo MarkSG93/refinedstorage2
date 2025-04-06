@@ -46,6 +46,7 @@ import com.refinedmods.refinedstorage.common.support.tooltip.HelpClientTooltipCo
 import com.refinedmods.refinedstorage.common.upgrade.RegulatorUpgradeItem;
 import com.refinedmods.refinedstorage.common.upgrade.UpgradeDestinationClientTooltipComponent;
 import com.refinedmods.refinedstorage.common.util.IdentifierUtil;
+import com.refinedmods.refinedstorage.fabric.autocrafting.PatternResourceReloadListener;
 import com.refinedmods.refinedstorage.fabric.autocrafting.PatternUnbakedModel;
 import com.refinedmods.refinedstorage.fabric.mixin.ItemPropertiesAccessor;
 import com.refinedmods.refinedstorage.fabric.networking.CableUnbakedModel;
@@ -69,6 +70,7 @@ import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.TooltipComponentCallback;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.gui.screens.Screen;
@@ -79,6 +81,7 @@ import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.PackType;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.DyeColor;
@@ -115,6 +118,7 @@ public class ClientModInitializerImpl extends AbstractClientModInitializer imple
         registerAlternativeGridHints();
         registerItemProperties();
         registerItemColors();
+        registerReloadListeners();
     }
 
     private void setRenderLayers() {
@@ -594,5 +598,11 @@ public class ClientModInitializerImpl extends AbstractClientModInitializer imple
 
     private void registerItemColors() {
         ColorProviderRegistry.ITEM.register(new PatternItemColor(), Items.INSTANCE.getPattern());
+    }
+
+    private void registerReloadListeners() {
+        ResourceManagerHelper
+            .get(PackType.CLIENT_RESOURCES)
+            .registerReloadListener(new PatternResourceReloadListener());
     }
 }

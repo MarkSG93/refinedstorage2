@@ -48,3 +48,8 @@ image::../../assets/addons/rei-ghost-dragging.png[REI ghost ingredient dragging]
 == Exclusion zones
 
 REI elements automatically reposition to avoid overlapping Refined Storage GUI components.
+
+== Download
+
+- link:https://www.curseforge.com/minecraft/mc-mods/refined-storage-rei-integration[Download on CurseForge]
+- link:https://modrinth.com/mod/refined-storage-rei-integration[Download on Modrinth]

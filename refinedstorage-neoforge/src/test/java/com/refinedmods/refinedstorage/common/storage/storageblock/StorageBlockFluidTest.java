@@ -29,7 +29,7 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertFluids(final GameTestHelper helper) {
+    public static void shouldInsertFluidsStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, false, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->
@@ -57,7 +57,7 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertFluidAllowlist(final GameTestHelper helper) {
+    public static void shouldInsertFluidAllowlistStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, false, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->
@@ -88,7 +88,7 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldInsertFluidBlocklist(final GameTestHelper helper) {
+    public static void shouldInsertFluidBlocklistStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, false, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->
@@ -119,7 +119,7 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldExtractFluids(final GameTestHelper helper) {
+    public static void shouldExtractFluidsStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, false, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network -> {
@@ -149,7 +149,7 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldExtractFluidAllowlist(final GameTestHelper helper) {
+    public static void shouldExtractFluidAllowlistStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, false, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->
@@ -180,7 +180,7 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldExtractFluidBlocklist(final GameTestHelper helper) {
+    public static void shouldExtractFluidBlocklistStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, false, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->
@@ -211,7 +211,7 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldVoidFluids(final GameTestHelper helper) {
+    public static void shouldVoidFluidsStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, false, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->
@@ -243,7 +243,7 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldRespectFluidInsertAccessMode(final GameTestHelper helper) {
+    public static void shouldRespectFluidInsertAccessModeStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, false, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->
@@ -282,7 +282,7 @@ public final class StorageBlockFluidTest {
     }
 
     @GameTest(template = "empty_15x15")
-    public static void shouldRespectFluidExtractAccessMode(final GameTestHelper helper) {
+    public static void shouldRespectFluidExtractAccessModeStorageBlock(final GameTestHelper helper) {
         preparePlot(helper, false, (storageBlock, pos, sequence) -> {
             // Arrange
             sequence.thenWaitUntil(networkIsAvailable(helper, pos, network ->

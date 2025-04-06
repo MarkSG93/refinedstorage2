@@ -7,6 +7,28 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [2.0.0-beta.2] - 2025-04-06
+
+### Changed
+
+-   Updated Disk Drive textures.
+-   Updated Machine Casing textures.
+-   Updated Crafting Grid textures.
+-   Updated Storage Monitor textures.
+-   Updated Controller casing textures.
+-   Updated Autocrafter casing textures.
+-   Updated Configuration Card, Processor Binding, Silicon, Quartz Enriched Iron and Quartz Enriched Copper textures.
+
+### Fixed
+
+-   Fixed Relay always requiring 8 energy on NeoForge.
+-   Fixed crash with processing patterns that have no outputs due to removing mods.
+-   Fixed not being able to shift click items in the Crafting Grid when an External Storage was connected, on NeoForge.
+-   Fixed locking mode on the Autocrafter "Lock until connected machine is empty" inserting too many resources when using speed upgrades.
+-   Fixed processing and crafting pattern tooltips sometimes not being large enough.
+-   Fixed crash when adding pattern for EnderIO conduits in single player.
+-   Fixed Portable Grid and Controller doubling stored energy when placed.
+
 ## [2.0.0-beta.1] - 2025-03-28
 
 ### Changed
@@ -919,7 +941,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 -   The Grid can now use smooth scrolling.
 -   The Grid now has syntax highlighting for the search query.
 
-[Unreleased]: https://github.com/refinedmods/refinedstorage2/compare/v2.0.0-beta.1...HEAD
+[Unreleased]: https://github.com/refinedmods/refinedstorage2/compare/v2.0.0-beta.2...HEAD
+
+[2.0.0-beta.2]: https://github.com/refinedmods/refinedstorage2/compare/v2.0.0-beta.1...v2.0.0-beta.2
 
 [2.0.0-beta.1]: https://github.com/refinedmods/refinedstorage2/compare/v2.0.0-milestone.4.14...v2.0.0-beta.1
 

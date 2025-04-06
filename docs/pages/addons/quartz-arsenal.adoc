@@ -6,3 +6,8 @@ Currently, it adds:
 
 - xref:../wireless-networking/wireless-crafting-grid.adoc[]
 - xref:../wireless-networking/creative-wireless-crafting-grid.adoc[]
+
+== Download
+
+- link:https://www.curseforge.com/minecraft/mc-mods/refined-storage-quartz-arsenal[Download on CurseForge]
+- link:https://modrinth.com/mod/refined-storage-quartz-arsenal[Download on Modrinth]

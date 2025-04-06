@@ -1,6 +1,6 @@
 #!/bin/bash
 
-refinedSitesVersion="0.5.2"
+refinedSitesVersion="0.6.0"
 
 rm -rf output 2>/dev/null
 

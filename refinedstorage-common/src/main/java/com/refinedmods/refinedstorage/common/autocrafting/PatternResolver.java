@@ -108,10 +108,8 @@ public class PatternResolver {
     }
 
     Optional<ResolvedProcessingPattern> getProcessingPattern(final PatternState patternState, final ItemStack stack) {
-        final ProcessingPatternState state = stack.get(
-            DataComponents.INSTANCE.getProcessingPatternState()
-        );
-        if (state == null) {
+        final ProcessingPatternState state = stack.get(DataComponents.INSTANCE.getProcessingPatternState());
+        if (state == null || state.getIngredients().isEmpty() || state.getFlatOutputs().isEmpty()) {
             return Optional.empty();
         }
         return Optional.of(
