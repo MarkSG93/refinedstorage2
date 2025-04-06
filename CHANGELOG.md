@@ -25,6 +25,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 -   Fixed locking mode on the Autocrafter "Lock until connected machine is empty" inserting too many resources when using speed upgrades.
 -   Fixed processing and crafting pattern tooltips sometimes not being large enough.
 -   Fixed crash when adding pattern for EnderIO conduits in single player.
+-   Fixed Portable Grid and Controller doubling stored energy when placed.
 
 ## [2.0.0-beta.1] - 2025-03-28
 
