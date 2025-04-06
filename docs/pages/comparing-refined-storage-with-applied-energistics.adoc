@@ -20,8 +20,6 @@ Refined Storage was never designed to copy AE2.
 
 While it originally started as a spiritual successor to AE1—drawing inspiration from its core concepts—the mod quickly evolved during development and found its own identity. Over time, it moved away from imitation and toward a clear, distinct philosophy: simplicity, accessibility, and intuitive design.
 
-Its strength lies in offering a unique experience for players who want powerful automation *without* having to dive deep into mod-specific mechanics.
-
 Refined Storage is not trying to compete with AE2. It's not a fork. It's not a lesser version. It's a different answer to the same problem.
 
 == Why becoming too similar is a problem
