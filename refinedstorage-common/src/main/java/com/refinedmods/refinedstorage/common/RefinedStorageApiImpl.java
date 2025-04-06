@@ -103,6 +103,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Set;
 import java.util.UUID;
+import java.util.WeakHashMap;
 import java.util.stream.Collectors;
 import javax.annotation.Nullable;
 
@@ -176,7 +177,7 @@ public class RefinedStorageApiImpl implements RefinedStorageApi {
     private final CompositeSlotReferenceProvider slotReferenceProvider = new CompositeSlotReferenceProvider();
     private final PlatformRegistry<PlatformPermission> permissionRegistry = new PlatformRegistryImpl<>();
     private final List<ResourceContainerInsertStrategy> resourceExtractStrategies = new ArrayList<>();
-    private final Map<UUID, Pattern> patternCache = new HashMap<>();
+    private final WeakHashMap<Level, Map<UUID, Pattern>> patternCache = new WeakHashMap<>();
     private final CompositePatternProviderExternalPatternSinkFactory patternProviderExternalPatternSinkFactory =
         new CompositePatternProviderExternalPatternSinkFactory();
 
@@ -590,9 +591,6 @@ public class RefinedStorageApiImpl implements RefinedStorageApi {
 
     @Override
     public Optional<Pattern> getPattern(final ItemStack stack, final Level level) {
-        if (patternCache.size() > 2000) {
-            patternCache.clear();
-        }
         if (!(stack.getItem() instanceof PatternProviderItem providerItem)) {
             return Optional.empty();
         }
@@ -600,7 +598,8 @@ public class RefinedStorageApiImpl implements RefinedStorageApi {
         if (id == null) {
             return Optional.empty();
         }
-        return Optional.ofNullable(patternCache.computeIfAbsent(
+        final Map<UUID, Pattern> patternLevelCache = patternCache.computeIfAbsent(level, l -> new HashMap<>());
+        return Optional.ofNullable(patternLevelCache.computeIfAbsent(
             id,
             i -> providerItem.getPattern(stack, level).orElse(null)
         ));
