@@ -45,6 +45,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.InputEvent;
 import net.neoforged.neoforge.client.event.ModelEvent;
+import net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent;
 import net.neoforged.neoforge.client.event.RegisterClientTooltipComponentFactoriesEvent;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
@@ -241,6 +242,11 @@ public final class ClientModInitializer extends AbstractClientModInitializer {
         e.register(PatternItem.ProcessingPatternTooltipComponent.class, PatternTooltipCache::getComponent);
         e.register(PatternItem.StonecutterPatternTooltipComponent.class, PatternTooltipCache::getComponent);
         e.register(PatternItem.SmithingTablePatternTooltipComponent.class, PatternTooltipCache::getComponent);
+    }
+
+    @SubscribeEvent
+    public static void onRegisterClientReloadListeners(final RegisterClientReloadListenersEvent e) {
+        e.registerReloadListener(PatternBlockEntityWithoutLevelRenderer.getInstance());
     }
 
     private static void registerItemProperties() {
