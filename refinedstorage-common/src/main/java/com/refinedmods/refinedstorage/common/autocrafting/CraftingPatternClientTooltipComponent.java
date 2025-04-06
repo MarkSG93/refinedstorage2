@@ -65,7 +65,10 @@ class CraftingPatternClientTooltipComponent implements ClientTooltipComponent {
 
     @Override
     public int getWidth(final Font font) {
-        return (width * 18) + ARROW_SPACING + LIGHT_ARROW_WIDTH + ARROW_SPACING + LARGE_SLOT_WIDTH;
+        return Math.max(
+            outputText != null ? font.width(outputText) : 0,
+            (width * 18) + ARROW_SPACING + LIGHT_ARROW_WIDTH + ARROW_SPACING + LARGE_SLOT_WIDTH
+        );
     }
 
     @Override

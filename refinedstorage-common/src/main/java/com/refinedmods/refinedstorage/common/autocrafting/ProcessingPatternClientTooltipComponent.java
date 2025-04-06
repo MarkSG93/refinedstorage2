@@ -87,7 +87,10 @@ class ProcessingPatternClientTooltipComponent implements ClientTooltipComponent 
 
     @Override
     public int getWidth(final Font font) {
-        return (18 * 3) + ARROW_SPACING + LIGHT_ARROW_WIDTH + ARROW_SPACING + (18 * 3);
+        return Math.max(
+            outputTexts.stream().mapToInt(font::width).max().orElse(0),
+            (18 * 3) + ARROW_SPACING + LIGHT_ARROW_WIDTH + ARROW_SPACING + (18 * 3)
+        );
     }
 
     @Override
