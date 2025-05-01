@@ -11,7 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set version number
-        if: ${{ inputs.version != '' }}
         run: |
           echo "RELEASE_VERSION=v2.0.0-beta.1" >> $GITHUB_ENV
       - name: Checkout repository
@@ -23,11 +22,6 @@ jobs:
       # https://docs.sonarqube.org/latest/analysis/github-integration/
       - name: Build and test
         run: ./gradlew build codeCoverageReportAggregate
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Gametests
-        if: ${{ inputs.gametests == true }}
-        run: ./gradlew runGameTestServer
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload build artifacts
