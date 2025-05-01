@@ -293,7 +293,7 @@ public class ResourceContainerImpl implements ResourceContainer {
 
     @Override
     public long insert(final ResourceKey resource, final long amount, final Action action) {
-        if (!(resource instanceof PlatformResourceKey platformResource)) {
+        if (!(resource instanceof PlatformResourceKey platformResource) || amount <= 0) {
             return 0L;
         }
         long remainder = amount;
