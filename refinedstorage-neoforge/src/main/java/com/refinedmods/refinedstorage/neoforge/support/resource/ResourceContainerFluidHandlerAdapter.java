@@ -52,6 +52,10 @@ public class ResourceContainerFluidHandlerAdapter implements IFluidHandler {
 
     @Override
     public int fill(final FluidStack resource, final FluidAction action) {
+        if (resource.getAmount() <= 0) {
+            return 0;
+        }
+
         return (int) container.insert(ofFluidStack(resource), resource.getAmount(), toAction(action));
     }
 

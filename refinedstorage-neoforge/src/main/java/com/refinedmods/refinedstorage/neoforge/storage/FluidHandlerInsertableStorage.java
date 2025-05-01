@@ -30,9 +30,10 @@ public class FluidHandlerInsertableStorage implements InsertableStorage {
 
     @Override
     public long insert(final ResourceKey resource, final long amount, final Action action, final Actor actor) {
-        if (!(resource instanceof FluidResource fluidResource)) {
+        if (!(resource instanceof FluidResource fluidResource) || amount <= 0) {
             return 0;
         }
+
         return capabilityCache.getFluidHandler()
             .map(fluidHandler -> insert(fluidResource, amount, action, fluidHandler))
             .orElse(0L);
