@@ -8,6 +8,8 @@ import com.refinedmods.refinedstorage.api.network.NetworkBuilder;
 import com.refinedmods.refinedstorage.api.network.node.GraphNetworkComponent;
 import com.refinedmods.refinedstorage.api.network.node.NetworkNode;
 import com.refinedmods.refinedstorage.api.network.node.container.NetworkNodeContainer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -162,13 +164,18 @@ public class NetworkBuilderImpl implements NetworkBuilder {
         }
 
         connectionProvider.sortDeterministically(removedEntries).stream().sorted(HIGHEST_PRIORITY_FIRST).forEach(e -> {
-            if (e.getNode().getNetwork() == null) {
-                throw new IllegalStateException(
-                    "Network of resulting removed node (" + e.getNode() + ") cannot be empty"
-                );
+            try {
+                if (e.getNode().getNetwork() == null) {
+                    throw new IllegalStateException(
+                        "Network of resulting removed node (" + e.getNode() + ") cannot be empty"
+                    );
+                }
+                e.getNode().getNetwork().removeContainer(e);
+                e.getNode().setNetwork(null);
+            }  catch (IllegalStateException ex) {
+                Logger LOGGER = LoggerFactory.getLogger(NetworkBuilderImpl.class);
+                LOGGER.error(ex.getMessage());
             }
-            e.getNode().getNetwork().removeContainer(e);
-            e.getNode().setNetwork(null);
         });
 
         final Set<Network> networksResultingOfSplit = connectionProvider.sortDeterministically(removedEntries)
