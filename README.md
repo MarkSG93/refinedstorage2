@@ -10,7 +10,7 @@ them to store items and fluids on a massively expandable device network.</p>
 
 ## About
 
-Items and fluids can be stored in one of the many storage capabilities that the mod offers. Any storage devices
+Item and fluids can be stored in one of the many storage capabilities that the mod offers. Any storage devices
 connected to the same network are accessible to the player through one simple Grid interface, allowing the player to
 access the inventories of many devices through a single unified GUI.
 
