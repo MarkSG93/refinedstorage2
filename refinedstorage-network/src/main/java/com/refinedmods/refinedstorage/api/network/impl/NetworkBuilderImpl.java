@@ -170,7 +170,7 @@ public class NetworkBuilderImpl implements NetworkBuilder {
                 }
                 e.getNode().getNetwork().removeContainer(e);
                 e.getNode().setNetwork(null);
-            }  catch (IllegalStateException ex) {
+            } catch (IllegalStateException ex) {
                 System.out.println(ex.getMessage());
             }
         });
