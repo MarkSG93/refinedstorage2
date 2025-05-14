@@ -8,8 +8,6 @@ import com.refinedmods.refinedstorage.api.network.NetworkBuilder;
 import com.refinedmods.refinedstorage.api.network.node.GraphNetworkComponent;
 import com.refinedmods.refinedstorage.api.network.node.NetworkNode;
 import com.refinedmods.refinedstorage.api.network.node.container.NetworkNodeContainer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -173,8 +171,7 @@ public class NetworkBuilderImpl implements NetworkBuilder {
                 e.getNode().getNetwork().removeContainer(e);
                 e.getNode().setNetwork(null);
             }  catch (IllegalStateException ex) {
-                Logger LOGGER = LoggerFactory.getLogger(NetworkBuilderImpl.class);
-                LOGGER.error(ex.getMessage());
+                System.out.println(ex.getMessage());
             }
         });
 
