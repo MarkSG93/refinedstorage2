@@ -8,8 +8,6 @@ import com.refinedmods.refinedstorage.api.network.NetworkBuilder;
 import com.refinedmods.refinedstorage.api.network.node.GraphNetworkComponent;
 import com.refinedmods.refinedstorage.api.network.node.NetworkNode;
 import com.refinedmods.refinedstorage.api.network.node.container.NetworkNodeContainer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.Collections;
 import java.util.Comparator;
